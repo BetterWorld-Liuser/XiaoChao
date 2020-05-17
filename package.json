@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "active-win": "^6.1.0",
+    "axios": "^0.19.2",
+    "hotkeys-js": "^3.7.6",
+    "lowdb": "^1.0.0",
+    "md5": "^2.2.1",
+    "sortablejs": "^1.10.2",
+    "uuid": "^8.0.0",
+    "vuedraggable": "^2.23.2",
+    "electron": "^8.2.5"
+  },
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-rebuild": "^1.10.1"
+  },
+  "name": "shortcuthelper",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "hottest": "node hotkeytest.js",
+    "test": "./node_modules/.bin/electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

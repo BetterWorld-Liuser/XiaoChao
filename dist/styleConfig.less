@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "OPPOSans";
+    src: url('OPPOSans.ttf') format("truetype");
+}
+
+.disappear {
+    animation: disshow 0.5s ease 0s 1 normal forwards;
+}
+
+.appear {
+    z-index: 2 !important;
+    animation: show 0.5s ease 0s 1 normal forwards;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'OPPOSans';
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    #app {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 2rem;
+        position: relative;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        #title {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .status {
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            padding: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 43.8px;
+                height: 25.6px;
+            }
+
+            div {
+                line-height: 20px;
+                height: 20px;
+                font-size: 15px;
+                display: inline-block;
+            }
+        }
+
+        .configBox {
+            width: 100%;
+            position: relative;
+
+            .account {
+                margin-top: 20px;
+                width: 50%;
+                height: 300px;
+
+                .form-control {
+                    margin-bottom: 10px;
+                    padding-bottom: 20px;
+                    position: relative;
+
+                    label {
+                        color: #777;
+                        display: block;
+                        margin-bottom: 5px;
+                        font-size: 20px;
+                    }
+
+                    input {
+                        width: 100%;
+                        border: 2px solid #f0f0f0;
+                        border-radius: 4px;
+                        display: block;
+                        padding: 5px;
+                        font-size: 14px;
+
+                        &:focus {
+                            border-color: #777;
+                            outline: 0;
+                        }
+                    }
+
+                    small {
+                        color: var(--error-color);
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        visibility: hidden;
+                    }
+
+                    .error small {
+                        visibility: visible;
+                    }
+
+                    .success input {
+                        border-color: var(--success-color);
+                    }
+
+                    .error input {
+                        border-color: var(--error-color);
+                    }
+                }
+
+                button {
+                    cursor: pointer;
+                    background-color: #ff4d4f;
+                    border: 2px solid #ff4d4f;
+                    border-radius: 4px;
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 5px;
+                    width: 30%;
+                }
+                p{
+                    font-size: small;
+                    color: #777;
+                }
+            }
+
+            .other {
+                width: 100%;
+                font-size: 1rem;
+
+                div {
+                    padding: 10px;
+
+                    input[type="checkbox"] {
+                        width: 1rem;
+                        height: 1rem;
+                        opacity: 0;
+
+                        &:checked+label::before{
+                            line-height: 16px;
+                            content: '✔';
+                            position: absolute;
+                            width: 16px;
+                            height: 16px;
+                            left:-22px;
+                            border-radius: 3px;
+                            border:2px solid #bfbfbf;
+                            font-size: 12px;
+                        }
+                        &+label {
+                            width: 500px;
+                            cursor: pointer;
+                            position: relative;
+                            &::before{
+                                line-height: 16px;
+                                content: '';
+                                position: absolute;
+                                width: 16px;
+                                height: 16px;
+                                left:-22px;
+                                background-color:#f8f7f7 ;
+                                border-radius: 3px;
+                                border:2px solid #bfbfbf;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                .form-control {
+                    margin-bottom: 10px;
+                    padding-bottom: 20px;
+                    position: relative;
+                    left: -6px;
+                    label{
+                        margin-bottom: 10px;
+                    }
+                    #keys {  
+                        height: 36px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        flex-shrink: 3;
+                        min-width: 75%;
+                        padding: 5px;
+                        border: 2px solid rgba(119, 119, 119, 0.363);
+                        cursor: pointer;
+                        &:focus {
+                            border: 2px solid #777;
+                            outline: 0;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+
+                        .itemKey {
+                            margin-top: 2px;
+                            height: 20px;
+                            line-height: 20px;
+                            font-size: small;
+                            border-radius: 3px;
+                            padding: 0 2px 0 2px;
+                            margin: 0 2px 0 2px;
+                            background-color: #e9e8e8;
+                            color: rgba(0, 0, 0, 0.774);
+                            font-family: 'OPPOSans';
+                        }
+                    }
+                }
+            }
+
+        }
+        .save {
+            position: absolute;
+            right:31px;
+            bottom: 22px;
+            cursor: pointer;
+            background-color: #ff4d4f;
+            border: 2px solid #ff4d4f;
+            border-radius: 4px;
+            color: #fff;
+            display: inline-block;
+            font-size: 16px;
+            padding: 5px;
+            width: 30%;
+        }
+    }
+}

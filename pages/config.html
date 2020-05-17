@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../dist/vue.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="../dist/styleConfig.less" />
+    <script src="../dist/less.js" type="text/javascript"></script>
+    <title>设置</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="title">设置</div>
+        <div class="status"><img :src="imgSrc">
+            <div>{{loginState}}</div>
+        </div>
+        <div class="configBox">
+            <div class="account">
+                <div class="form-control">
+                    <label for="username">邮箱</label>
+                    <input type="text" id="email" placeholder="请输入邮箱" v-model="email" />
+                    <small>错误提示</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">密码</label>
+                    <input type="password" id="password" placeholder="请输入密码" v-model="password" />
+                    <small>错误提示</small>
+                </div>
+                <button @click="login">提交</button>
+                <p>未注册会自动注册,留空则会回到未登陆状态</p>
+            </div>
+
+            <div class="other">
+                <div class="startInPower"><input type="checkbox" id="startInPower" v-model="powerConfig"><label
+                        for="startInPower">开机启动</label></div>
+                <div class="hide"><input type="checkbox" id="hide" v-model="showConfig"><label
+                        for="hide">图标显示在系统任务栏</label></div>
+                <div class="form-control">
+                    <label for="keys">应用切换快捷键</label>
+                    <div id="keys" tabindex="2" @focus="watchKey" @blur="cancelWatchKey">
+                        <div class="itemKey" v-for="key in keys" :key="key">
+                            {{keyCodes[key]}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="save" @click="save">保存</button>
+    </div>
+</body>
+<script src="../render/config.js"></script>
+
+</html>
