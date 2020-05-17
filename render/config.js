@@ -11,6 +11,7 @@ let loginImgPath = {
     2:"../dist/icons/nologin.png"
 }
 
+
 //console.log(config)
 
 
@@ -25,6 +26,8 @@ let configApp = new Vue({
         keys:[18,83],
         powerConfig:true,
         showConfig:true,
+        update:0,
+        updatePlace:""
     },
     methods:{
         async login(){
@@ -80,6 +83,15 @@ let configApp = new Vue({
             db.set('config',saveConfig).write()
             ipcRenderer.sendSync('closeConfigWindow')
             
+        },
+        async knowUpDate(){
+            let res = request.getUpdate()
+            let localVersion = db.get('version').value()
+            let onlineVersion = res.version
+            if(localVersion!=onlineVersion){
+                this.update=1,
+                this.updatePlace=res.updatePlace
+            }
         }
     },
     created(){
@@ -93,5 +105,6 @@ let configApp = new Vue({
             this.imgSrc = loginImgPath[1]
             this.loginState = "已登录"
         }
+        knowUpDate()
     }
 })

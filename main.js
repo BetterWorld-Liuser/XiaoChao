@@ -58,7 +58,7 @@ let openAndCreateConfigWindow = function(){
     },
     frame: false,
     zoomFactor: 1.1,
-    parent:mainWindow,
+    //parent:mainWindow,
     //backgroundColor: '#d9d9d9',
     transparent: true,
     //thickFrame:false,
@@ -84,7 +84,7 @@ let openAndCreateDonateWindow = function(){
       nodeIntegration: true,
       nodeIntegrationInWorker: true,
     },
-    parent: mainWindow,
+    //parent: mainWindow,
     frame: false,
     zoomFactor: 1.1,
     //backgroundColor: '#d9d9d9',
@@ -100,7 +100,7 @@ let openAndCreateDonateWindow = function(){
   })
   donateWindow.loadFile("./pages/donate.html")
   donateWindow.on("closed", () => {
-    configWindow = null;
+    donateWindow = null;
   });
 }
 let registerShortCut = function(){
@@ -144,9 +144,6 @@ let createTray = function(){
     } },
     { label: "退出", type: "normal", click: () => {
       app.quit()
-    } },
-    { label: "打开应用", type: "normal", click: () => {
-      mainWindow.show()
     } }
   ]);
   tray.setToolTip("快捷键助手");
@@ -224,7 +221,7 @@ app.on("ready", () => {
   });
 
   //打开调试器
-  mainWindow.webContents.openDevTools(); 
+  //mainWindow.webContents.openDevTools(); 
   //donateWindow.webContents.openDevTools();
   //configWindow.webContents.openDevTools();
 });

@@ -1,5 +1,5 @@
 {
-  "userEmail": "7350830494@qq.com",
+  "userEmail": "7350830493@qq.com",
   "passWord": "233wsgtc",
   "config": {
     "keys": [
@@ -9,5 +9,6 @@
     "powerConfig": true,
     "showConfig": true
   },
-  "loginState": true
+  "loginState": true,
+  "version": "1.0.0"
 }

@@ -25,8 +25,8 @@ db.defaults({
       keys: [18,83],
       powerConfig:true,
       showConfig:true,
-      
-    }
+    },
+    version:"1.0.0"
  }).write()
   
 console.log('初始化成功')

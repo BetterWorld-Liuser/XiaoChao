@@ -79,6 +79,11 @@ let syncPersonalData =async function(email,password,appName,appData){
     return res
 }
 
+let getUpdate = async function(){
+    let res = await app.get('/update')
+    return res.data
+}
+
 //获取个人信息
 
 
@@ -86,6 +91,7 @@ let syncPersonalData =async function(email,password,appName,appData){
 
 
 let request = {
+    getUpdate,
     syncPersonalData,
     syncCommonData,
     getPersonalData,
