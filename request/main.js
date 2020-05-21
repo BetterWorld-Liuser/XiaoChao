@@ -2,7 +2,7 @@ let axios = require('axios')
 
 let app = new axios.create({
     //baseUrl:'http://shortCut.liuzhengdong.top:8361',
-    baseURL:'http://127.0.0.1:3012',
+    baseURL:'http://47.100.193.107:3012',
     timeout:7000,
     headers: {
         "Content-Type":"application/json",
