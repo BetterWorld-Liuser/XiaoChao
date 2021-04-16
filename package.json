@@ -1,18 +1,18 @@
 {
   "dependencies": {
-    "active-win": "^6.1.0",
-    "axios": "^0.19.2",
-    "fs-extra": "^9.0.0",
-    "hotkeys-js": "^3.7.6",
+    "active-win": "^6.3.0",
+    "axios": "^0.21.1",
+    "fs-extra": "^9.1.0",
+    "hotkeys-js": "^3.8.3",
     "lowdb": "^1.0.0",
-    "md5": "^2.2.1",
-    "sortablejs": "^1.10.2",
-    "uuid": "^8.0.0",
-    "vuedraggable": "^2.23.2"
+    "md5": "^2.3.0",
+    "sortablejs": "^1.13.0",
+    "uuid": "^8.3.2",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
-    "electron": "^8.2.5",
-    "electron-rebuild": "^1.10.1"
+    "electron": "^12.0.2",
+    "electron-rebuild": "^2.3.5"
   },
   "name": "shortcuthelper",
   "version": "1.0.0",

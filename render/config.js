@@ -12,9 +12,6 @@ let loginImgPath = {
 }
 
 
-//console.log(config)
-
-
 let configApp = new Vue({
     el: "#app",
     data:{

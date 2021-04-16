@@ -9,7 +9,6 @@ const fs = require('fs-extra');
 
 
 //定义变量
-const APP = process.type === 'renderer' ? remote.app : app; 
 const adapter = new FileSync(path.join(__dirname, 'datastore.json')) // 初始化lowdb读写的json文件名以及存储路径
 const db = low(adapter)
  

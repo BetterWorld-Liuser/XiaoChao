@@ -10,6 +10,7 @@ const activeWin = require("active-win");
 const path = require("path");
 let db = require("./DB/main.js");
 
+
 //声明变量
 let mainWindow = null; //声明要打开的主窗口
 let configWindow = null;
@@ -26,8 +27,8 @@ let openAndCreateMainWindow = function(){
     width: 1200,
     height: 700,
     webPreferences: {
-      nodeIntegration: true,
-      nodeIntegrationInWorker: true,
+      nodeIntegration:true,
+      contextIsolation:false
     },
     frame: false,
     zoomFactor: 1.0,
@@ -150,14 +151,11 @@ let createTray = function(){
   tray.setContextMenu(contextMenu);
   }
 }
-
-
-
 //读取设置
 let config = db.get("config").value();
 
 //APP设置
-app.allowRendererProcessReuse = true;
+//app.allowRendererProcessReuse = true;
 
 //设置主进程和渲染进程之间的通信
 ipcMain.on("getWindow", (event) => {
@@ -185,19 +183,6 @@ ipcMain.on("openConfigWindow", (event) => {
 });
 
 
-const exeName = path.basename(process.execPath)
-
-app.setLoginItemSettings({
-  openAtLogin: db.get('config.powerConfig').value(),
-  openAsHidden:true,
-  path: process.execPath,
-  args: [
-    '--processStart', `"${exeName}"`,
-  ]
-})
-
-
-
 
 app.on("ready", () => {
   //注册全局快捷键
@@ -221,7 +206,7 @@ app.on("ready", () => {
   });
 
   //打开调试器
-  //mainWindow.webContents.openDevTools(); 
+  mainWindow.webContents.openDevTools(); 
   //donateWindow.webContents.openDevTools();
   //configWindow.webContents.openDevTools();
 });

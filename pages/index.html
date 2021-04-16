@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📄快捷键助手</title>
-    <!-- <script src="../dist/vue.js"></script> -->
-    <!-- <script src="../dist/vuedraggable.umd.min.js"></script>
-    <script src="../dist/Sortable.min.js"></script> -->
     <script src="../dist/vue.min.js"></script>
     <link rel="stylesheet" href="../dist/styleIndex.css" />
     
@@ -15,50 +12,14 @@
     <div id="app">
         <div class="title" >💕{{appName}}</div>
         <div class="toolBar">
-            <div id="newZone" @click="addModule('模块')">添加模块</div>
-            <div id="addNewKey" @click="reverseDisplay()">添加新的快捷键</div>
-            <div id="sync" @click="syncData">保存</div>
-            <div id="SwitchData" @click="changeDataState">{{dataState}}</div>
+            <div id="newZone" @click="">添加模块</div>
+            <div id="addNewKey" @click="">添加新的快捷键</div>
+            <div id="sync" @click="">保存</div>
+            <div id="SwitchData" @click="">{{dataState}}</div>
             
             <div id='emoji'>🗑️</div>
             <draggable id="trash" group="keys" v-model="trash" animation="150"></draggable>
         </div>
-        <draggable v-if="dataStateWith==0" v-model="commonData" id="content" class="content" group="modules" animation="150" handle="#addNewItem">
-            <div class="element" v-for="element in appData" :key="element.id">
-                <div class="eleTitleZone">
-                    <div class="eleTitle" contenteditable="true" @blur="blurConsole(element.id)">{{element.moduleName}}</div>
-                    <div id="addNewItem"></div>
-                </div>
-                <draggable v-model="element.items" animation="150" class="itemList" :id="element.id" group="keys">
-                    <div class="item" :id="item.id" v-for="item in element.items" :key="item.id">
-                        <span class="itemTitle">{{item.use}}</span>
-                        <div class="itemKeys">
-                            <div class="itemKey" v-for="(key,index) in item.keys" :key="index">
-                                {{keyCodes[key]}}
-                            </div>
-                        </div>
-                    </div>
-                </draggable>
-            </div>
-        </draggable>
-        <draggable v-if="dataStateWith==1" v-model="personalData" id="content" class="content" group="modules" animation="150" handle="#addNewItem">
-            <div class="element" v-for="element in appData" :key="element.id">
-                <div class="eleTitleZone">
-                    <div class="eleTitle" contenteditable="true" @blur="blurConsole(element.id)">{{element.moduleName}}</div>
-                    <div id="addNewItem"></div>
-                </div>
-                <draggable v-model="element.items" animation="150" class="itemList" :id="element.id" group="keys">
-                    <div class="item" :id="item.id" v-for="item in element.items" :key="item.id">
-                        <span class="itemTitle">{{item.use}}</span>
-                        <div class="itemKeys">
-                            <div class="itemKey" v-for="(key,index) in item.keys" :key="index">
-                                {{keyCodes[key]}}
-                            </div>
-                        </div>
-                    </div>
-                </draggable>
-            </div>
-        </draggable>
 
 
         <div id="popWindow" class="disappear">
@@ -70,16 +31,16 @@
                   <small>错误提示</small>
                 </div>
                 <div class="form-control">
-                  <label for="keys">快捷键  <font @click="changeInputState">{{inputState}}</font></label>
-                  <div id="keys" tabindex="2" @focus="WatchKey" @blur="cancelWatchKey">
+                  <label for="keys">快捷键  <font @click="">{{inputState}}</font></label>
+                  <div id="keys" tabindex="2" @focus="" @blur="">
                     <div  class="itemKey"  v-for="(key,index) in keyForm.keys" :key="index" >
                         {{keyCodes[key]}}
                     </div>
                   </div>
                   <small>错误提示</small>
                 </div>
-                <button @click="addNewKey">提交</button>
-                <button @click="reverseDisplay">取消</button>
+                <button @click="">提交</button>
+                <button @click="">取消</button>
               </form>
         </div>
         <div id="footer">
@@ -90,11 +51,11 @@
                         {{keyCodes[key]}}
                     </div>
                 </div>
-                <div class="config" @click="openConfig()">⚙</div>
+                <div class="config" @click="">⚙</div>
             </div>
         </div>
     </div>
     
 </body>
-<script src="../render/main.js" type="text/javascript"></script>
+<script src="../render/main.js"></script>
 </html>
