@@ -1,11 +1,11 @@
 {
-    "version": "0.0.2",
+    "version": "0.0.3",
     "apps": [
       {
         "name": "onenote",
         "appkeys": [
           {
-            "classification": "编辑",
+            "classification": "编辑1",
             "keys": [
               {
                 "key": "Ctrl+1",
