@@ -1,40 +1,120 @@
 {
-    "version": "0.0.3",
+    "version": "0.0.4",
     "apps": [
       {
-        "name": "onenote",
+        "name": "OneNote",
         "appkeys": [
           {
-            "classification": "编辑1",
+            "classification": "编辑",
             "keys": [
               {
-                "key": "Ctrl+1",
+                "key": "Ctrl+Alt+1",
                 "detail": "标题一"
               },
               {
-                "key": "Ctrl+2",
-                "detail": "标题二"
+                "key": "Ctrl+Alt+N",
+                "detail": "正文"
               },
               {
-                "key": "Ctrl+2",
-                "detail": "标题三"
+                "key": "Ctrl+Shift+>",
+                "detail": "增大字体"
+              },
+              {
+                "key": "Ctrl+Shift+<",
+                "detail": "减小字体"
               }
             ]
           },
           {
-            "classification": "编辑3",
+            "classification": "编辑",
             "keys": [
               {
-                "key": "Ctrl+1",
+                "key": "Ctrl+Alt+1",
                 "detail": "标题一"
               },
               {
-                "key": "Ctrl+2",
-                "detail": "标题二"
+                "key": "Ctrl+Alt+N",
+                "detail": "正文"
               },
               {
-                "key": "Ctrl+2",
-                "detail": "标题三"
+                "key": "Ctrl+Shift+>",
+                "detail": "增大字体"
+              },
+              {
+                "key": "Ctrl+Shift+<",
+                "detail": "减小字体"
+              }
+            ]
+          },
+          {
+            "classification": "编辑",
+            "keys": [
+              {
+                "key": "Ctrl+Alt+1",
+                "detail": "标题一"
+              },
+              {
+                "key": "Ctrl+Alt+N",
+                "detail": "正文"
+              },
+              {
+                "key": "Ctrl+Shift+>",
+                "detail": "增大字体"
+              },
+              {
+                "key": "Ctrl+Shift+<",
+                "detail": "减小字体"
+              }
+            ]
+          },
+          {
+            "classification": "编辑",
+            "keys": [
+              {
+                "key": "Ctrl+Alt+1",
+                "detail": "标题一"
+              },
+              {
+                "key": "Ctrl+Alt+N",
+                "detail": "正文"
+              },
+              {
+                "key": "Ctrl+Shift+>",
+                "detail": "增大字体"
+              },
+              {
+                "key": "Ctrl+Shift+<",
+                "detail": "减小字体"
+              }
+            ]
+          },
+          {
+            "classification": "编辑",
+            "keys": [
+              {
+                "key": "Ctrl+Alt+1",
+                "detail": "标题一"
+              },
+              {
+                "key": "Ctrl+Alt+N",
+                "detail": "正文"
+              },
+              {
+                "key": "Ctrl+Shift+>",
+                "detail": "增大字体"
+              },
+              {
+                "key": "Ctrl+Shift+<",
+                "detail": "减小字体"
+              }
+            ]
+          },
+          {
+            "classification": "窗口",
+            "keys": [
+              {
+                "key": "Ctrl+M",
+                "detail": "打开新的窗口"
               }
             ]
           }
