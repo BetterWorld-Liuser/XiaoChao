@@ -124,7 +124,121 @@
     "default": {
       "appkeys": [
         {
-          "classification": "编辑",
+          "classification": "编辑1",
+          "keys": [
+            {
+              "key": "Ctrl+1",
+              "detail": "标题一"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题二"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题三"
+            }
+          ]
+        },
+        {
+          "classification": "编辑2",
+          "keys": [
+            {
+              "key": "Ctrl+1",
+              "detail": "标题一"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题二"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题三"
+            }
+          ]
+        },
+        {
+          "classification": "编辑3",
+          "keys": [
+            {
+              "key": "Ctrl+1",
+              "detail": "标题一"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题二"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题三"
+            }
+          ]
+        },{
+          "classification": "编辑4",
+          "keys": [
+            {
+              "key": "Ctrl+1",
+              "detail": "标题一"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题二"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题三"
+            }
+          ]
+        },{
+          "classification": "编辑5",
+          "keys": [
+            {
+              "key": "Ctrl+1",
+              "detail": "标题一"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题二"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题三"
+            }
+          ]
+        },{
+          "classification": "编辑6",
+          "keys": [
+            {
+              "key": "Ctrl+1",
+              "detail": "标题一"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题二"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题三"
+            }
+          ]
+        },{
+          "classification": "编辑7",
+          "keys": [
+            {
+              "key": "Ctrl+1",
+              "detail": "标题一"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题二"
+            },
+            {
+              "key": "Ctrl+2",
+              "detail": "标题三"
+            }
+          ]
+        },{
+          "classification": "编辑8",
           "keys": [
             {
               "key": "Ctrl+1",
