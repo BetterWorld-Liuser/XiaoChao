@@ -1,295 +1,163 @@
 {
-    "version": "0.0.6",
-    "apps": [
-      {
-        "name": "OneNote",
-        "appkeys": [
-          {
-            "classification": "常用",
-            "keys": [
-              {
-                "key": "Ctrl+Shift+G",
-                "detail": "焦点放在当前分区上"
-              },
-              {
-                "key": "Shift+F10",
-                "detail": "打开上下文菜单"
-              },
-              {
-                "key": "Ctrl+N",
-                "detail": "添加新页"
-              },
-              {
-                "key": "Ctrl+O",
-                "detail": "打开笔记本"
-              },
-              {
-                "key": "Ctrl+G",
-                "detail": "切换笔记本"
-              },
-              {
-                "key": "Ctrl+T",
-                "detail": "创建新分区"
-              },
-              {
-                "key": "Ctrl+Alt+N",
-                "detail": "创建新页面"
-              },
-              {
-                "key": "Ctrl+Alt+Shift+N",
-                "detail": "创建子页"
-              },
-              {
-                "key": "F11",
-                "detail": "启/禁用整页视图"
-              },
-              {
-                "key": "Ctrl+Alt+G",
-                "detail": "聚焦页面选项卡"
-              },
-              {
-                "key": "Ctrl+Alt+M",
-                "detail": "移动/复制页"
-              },
-              {
-                "key": "Ctrl+Shift+T",
-                "detail": "跳转到页面标题"
-              },
-              {
-                "key": "Ctrl+E",
-                "detail": "搜索"
-              }
-            ]
-          },
-          {
-            "classification": "编辑",
-            "keys": [
-              {
-                "key": "Ctrl+Alt+1",
-                "detail": "标题一"
-              },
-              {
-                "key": "Ctrl+Alt+N",
-                "detail": "正文"
-              },
-              {
-                "key": "Ctrl+Shift+>",
-                "detail": "增大字体"
-              },
-              {
-                "key": "Ctrl+Shift+<",
-                "detail": "减小字体"
-              }
-            ]
-          },
-          {
-            "classification": "编辑",
-            "keys": [
-              {
-                "key": "Ctrl+Alt+1",
-                "detail": "标题一"
-              },
-              {
-                "key": "Ctrl+Alt+N",
-                "detail": "正文"
-              },
-              {
-                "key": "Ctrl+Shift+>",
-                "detail": "增大字体"
-              },
-              {
-                "key": "Ctrl+Shift+<",
-                "detail": "减小字体"
-              }
-            ]
-          },
-          {
-            "classification": "编辑",
-            "keys": [
-              {
-                "key": "Ctrl+Alt+1",
-                "detail": "标题一"
-              },
-              {
-                "key": "Ctrl+Alt+N",
-                "detail": "正文"
-              },
-              {
-                "key": "Ctrl+Shift+>",
-                "detail": "增大字体"
-              },
-              {
-                "key": "Ctrl+Shift+<",
-                "detail": "减小字体"
-              }
-            ]
-          },
-          {
-            "classification": "编辑",
-            "keys": [
-              {
-                "key": "Ctrl+Alt+1",
-                "detail": "标题一"
-              },
-              {
-                "key": "Ctrl+Alt+N",
-                "detail": "正文"
-              },
-              {
-                "key": "Ctrl+Shift+>",
-                "detail": "增大字体"
-              },
-              {
-                "key": "Ctrl+Shift+<",
-                "detail": "减小字体"
-              }
-            ]
-          },
-          {
-            "classification": "窗口",
-            "keys": [
-              {
-                "key": "Ctrl+M",
-                "detail": "打开新的窗口"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "default": {
+  "version": "0.0.7",
+  "apps": [
+    {
+      "name": "OneNote",
       "appkeys": [
         {
-          "classification": "编辑1",
+          "classification": "常用",
           "keys": [
             {
-              "key": "Ctrl+1",
-              "detail": "标题一"
+              "key": "Ctrl+Shift+G",
+              "detail": "焦点放在当前分区上"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题二"
+              "key": "Shift+F10",
+              "detail": "打开上下文菜单"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题三"
-            }
-          ]
-        },
-        {
-          "classification": "编辑2",
-          "keys": [
-            {
-              "key": "Ctrl+1",
-              "detail": "标题一"
+              "key": "Ctrl+N",
+              "detail": "添加新页"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题二"
+              "key": "Ctrl+O",
+              "detail": "打开笔记本"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题三"
-            }
-          ]
-        },
-        {
-          "classification": "编辑3",
-          "keys": [
-            {
-              "key": "Ctrl+1",
-              "detail": "标题一"
+              "key": "Ctrl+G",
+              "detail": "切换笔记本"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题二"
+              "key": "Ctrl+T",
+              "detail": "创建新分区"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题三"
-            }
-          ]
-        },{
-          "classification": "编辑4",
-          "keys": [
-            {
-              "key": "Ctrl+1",
-              "detail": "标题一"
+              "key": "Ctrl+Alt+N",
+              "detail": "创建新页面"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题二"
+              "key": "Ctrl+Alt+Shift+N",
+              "detail": "创建子页"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题三"
-            }
-          ]
-        },{
-          "classification": "编辑5",
-          "keys": [
-            {
-              "key": "Ctrl+1",
-              "detail": "标题一"
+              "key": "F11",
+              "detail": "启/禁用整页视图"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题二"
+              "key": "Ctrl+Alt+G",
+              "detail": "聚焦页面选项卡"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题三"
-            }
-          ]
-        },{
-          "classification": "编辑6",
-          "keys": [
-            {
-              "key": "Ctrl+1",
-              "detail": "标题一"
+              "key": "Ctrl+Alt+M",
+              "detail": "移动/复制页"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题二"
+              "key": "Ctrl+Shift+T",
+              "detail": "跳转到页面标题"
             },
             {
-              "key": "Ctrl+2",
-              "detail": "标题三"
-            }
-          ]
-        },{
-          "classification": "编辑7",
-          "keys": [
-            {
-              "key": "Ctrl+1",
-              "detail": "标题一"
-            },
-            {
-              "key": "Ctrl+2",
-              "detail": "标题二"
-            },
-            {
-              "key": "Ctrl+2",
-              "detail": "标题三"
-            }
-          ]
-        },{
-          "classification": "编辑8",
-          "keys": [
-            {
-              "key": "Ctrl+1",
-              "detail": "标题一"
-            },
-            {
-              "key": "Ctrl+2",
-              "detail": "标题二"
-            },
-            {
-              "key": "Ctrl+2",
-              "detail": "标题三"
+              "key": "Ctrl+E",
+              "detail": "搜索"
             }
           ]
         }
       ]
     }
+  ],
+  "default": {
+    "appkeys": [
+      {
+        "classification": "Windows",
+        "keys": [
+          {
+            "key": "Win+L",
+            "detail": "快速锁屏"
+          },
+          {
+            "key": "Win+Shift+S",
+            "detail": "快速截图"
+          },
+          {
+            "key": "Win+Q",
+            "detail": "搜索"
+          },
+          {
+            "key": "Win+E",
+            "detail": "我的电脑"
+          },
+          {
+            "key": "Win+D",
+            "detail": "进入桌面"
+          },
+          {
+            "key": "Win+R",
+            "detail": "运行"
+          },
+          {
+            "key": "Win+← →",
+            "detail": "分屏操作"
+          },
+          {
+            "key": "Win+Tab",
+            "detail": "新建桌面"
+          },
+          {
+            "key": "Win+↓↑",
+            "detail": "窗口最小/大化"
+          },
+          {
+            "key": "Win+空格",
+            "detail": "切换输入法"
+          },
+          {
+            "key": "Win+I",
+            "detail": "打开设置"
+          },
+          {
+            "key": "Win+123..",
+            "detail": "打开任务栏程序"
+          },
+          {
+            "key": "Shift+Ctrl+Esc",
+            "detail": "打开任务管理器"
+          },
+          {
+            "key": "Alt+Tab",
+            "detail": "快速切换窗口"
+          },
+
+          {
+            "key": "Shift+Ctrl+Esc",
+            "detail": "打开任务管理器"
+          }
+
+        ]
+      },
+      {
+        "classification": "资源管理器",
+        "keys": [
+            {
+              "key": "Ctrl+Shift+N",
+              "detail": "创建文件夹"
+            },
+            {
+              "key": "Ctrl+鼠标拖",
+              "detail": "快速创建副本"
+            },
+            {
+              "key": "Shift+Delete",
+              "detail": "永久删除"
+            },
+            {
+              "key": "Alt+↑",
+              "detail": "上一级界面"
+            },
+            {
+              "key": "Alt+←",
+              "detail": "上一次界面"
+            }
+        ]
+      }
+    ]
   }
+}
