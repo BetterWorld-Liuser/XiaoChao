@@ -2,6 +2,153 @@
   "version": "0.0.8",
   "apps": [
     {
+      "name": "知乎",
+      "appkeys": [
+        {
+          "classification": "知乎",
+          "keys": [
+            {
+              "key": "V",
+              "detail": "赞同"
+            },
+            {
+              "key": "D",
+              "detail": "反对"
+            },
+            {
+              "key": "L",
+              "detail": "喜欢"
+            },
+            {
+              "key": "C",
+              "detail": "展开/收起评论"
+            },{
+              "key": "Shift+C",
+              "detail": "聚焦到评论框"
+            },
+            {
+              "key": "O",
+              "detail": "展开/收起全文"
+            },{
+              "key": "S C",
+              "detail": "收藏"
+            },
+            {
+              "key": "F X",
+              "detail": "分享"
+            },
+            {
+              "key": "J",
+              "detail": "下一项"
+            },
+            {
+              "key": "K",
+              "detail": "上一项"
+            },{
+              "key": "G G",
+              "detail": "顶部"
+            },
+            {
+              "key": "Shift+G",
+              "detail": "底部"
+            },
+            {
+              "key": "Shift+U",
+              "detail": "向上滚动半屏"
+            },{
+              "key": "Shift+D",
+              "detail": "向下滚动半屏"
+            },
+            {
+              "key": "/",
+              "detail": "搜索"
+            },
+            {
+              "key": "?",
+              "detail": "快捷键帮助"
+            }
+          ]
+        },
+        {
+          "classification": "Edge常用",
+          "keys": [
+            {
+              "key": "Ctrl + Shift + B",
+              "detail": "显示/隐藏收藏夹栏"
+            },
+            {
+              "key": "Ctrl + D",
+              "detail": "存为收藏夹"
+            },
+            {
+              "key": "Alt + D",
+              "detail": "编辑地址栏"
+            },
+            {
+              "key": "Ctrl + E",
+              "detail": "搜索"
+            },
+            {
+              "key": "Ctrl + F",
+              "detail": "在页面上查找"
+            },
+            {
+              "key": "Ctrl + H",
+              "detail": "历史记录"
+            },
+            {
+              "key": "Ctrl + Shift + I",
+              "detail": "开发人员工具"
+            },
+            {
+              "key": "Ctrl + J",
+              "detail": "下载"
+            },
+            {
+              "key": "Ctrl + M",
+              "detail": "静音"
+            },
+            {
+              "key": "Ctrl + N",
+              "detail": "新窗口"
+            },
+            {
+              "key": "Ctrl + Shift + N",
+              "detail": "隐私窗口"
+            },
+            {
+              "key": "Ctrl + Shift + O",
+              "detail": "收藏夹管理"
+            },
+            {
+              "key": "Ctrl + R",
+              "detail": "重新加载当前页"
+            },
+            {
+              "key": "Ctrl + Tab",
+              "detail": "切换标签页"
+            },
+            {
+              "key": "Alt +◀ ▶",
+              "detail": "返回/前进"
+            },
+            {
+              "key": "F12",
+              "detail": "打开开发者工具"
+            },
+            {
+              "key": "Ctrl + Shift + T",
+              "detail": "恢复页面"
+            },
+            {
+              "key": "Ctrl + W",
+              "detail": "关闭标签页"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "OneNote",
       "appkeys": [
         {
@@ -277,154 +424,8 @@
           ]
         }
       ]
-    },
-    {
-      "name": "知乎",
-      "appkeys": [
-        {
-          "classification": "知乎",
-          "keys": [
-            {
-              "key": "V",
-              "detail": "赞同"
-            },
-            {
-              "key": "D",
-              "detail": "反对"
-            },
-            {
-              "key": "L",
-              "detail": "喜欢"
-            },
-            {
-              "key": "C",
-              "detail": "展开/收起评论"
-            },{
-              "key": "Shift+C",
-              "detail": "聚焦到评论框"
-            },
-            {
-              "key": "O",
-              "detail": "展开/收起全文"
-            },{
-              "key": "S C",
-              "detail": "收藏"
-            },
-            {
-              "key": "F X",
-              "detail": "分享"
-            },
-            {
-              "key": "J",
-              "detail": "下一项"
-            },
-            {
-              "key": "K",
-              "detail": "上一项"
-            },{
-              "key": "G G",
-              "detail": "顶部"
-            },
-            {
-              "key": "Shift+G",
-              "detail": "底部"
-            },
-            {
-              "key": "Shift+U",
-              "detail": "向上滚动半屏"
-            },{
-              "key": "Shift+D",
-              "detail": "向下滚动半屏"
-            },
-            {
-              "key": "/",
-              "detail": "搜索"
-            },
-            {
-              "key": "?",
-              "detail": "快捷键帮助"
-            }
-          ]
-        },
-        {
-          "classification": "Edge常用",
-          "keys": [
-            {
-              "key": "Ctrl + Shift + B",
-              "detail": "显示/隐藏收藏夹栏"
-            },
-            {
-              "key": "Ctrl + D",
-              "detail": "存为收藏夹"
-            },
-            {
-              "key": "Alt + D",
-              "detail": "编辑地址栏"
-            },
-            {
-              "key": "Ctrl + E",
-              "detail": "搜索"
-            },
-            {
-              "key": "Ctrl + F",
-              "detail": "在页面上查找"
-            },
-            {
-              "key": "Ctrl + H",
-              "detail": "历史记录"
-            },
-            {
-              "key": "Ctrl + Shift + I",
-              "detail": "开发人员工具"
-            },
-            {
-              "key": "Ctrl + J",
-              "detail": "下载"
-            },
-            {
-              "key": "Ctrl + M",
-              "detail": "静音"
-            },
-            {
-              "key": "Ctrl + N",
-              "detail": "新窗口"
-            },
-            {
-              "key": "Ctrl + Shift + N",
-              "detail": "隐私窗口"
-            },
-            {
-              "key": "Ctrl + Shift + O",
-              "detail": "收藏夹管理"
-            },
-            {
-              "key": "Ctrl + R",
-              "detail": "重新加载当前页"
-            },
-            {
-              "key": "Ctrl + Tab",
-              "detail": "切换标签页"
-            },
-            {
-              "key": "Alt +◀ ▶",
-              "detail": "返回/前进"
-            },
-            {
-              "key": "F12",
-              "detail": "打开开发者工具"
-            },
-            {
-              "key": "Ctrl + Shift + T",
-              "detail": "恢复页面"
-            },
-            {
-              "key": "Ctrl + W",
-              "detail": "关闭标签页"
-            }
-          ]
-        }
-      ]
     }
+    
   ],
   "default": {
     "appkeys": [
