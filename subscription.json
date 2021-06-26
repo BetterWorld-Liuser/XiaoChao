@@ -62,6 +62,157 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Microsoft​ Edge",
+      "appkeys": [
+        {
+          "classification": "常用",
+          "keys": [
+            {
+              "key": "Ctrl + Shift + B",
+              "detail": "显示/隐藏收藏夹栏"
+            },
+            {
+              "key": "Ctrl + D",
+              "detail": "存为收藏夹"
+            },
+            {
+              "key": "Alt + D",
+              "detail": "编辑地址栏"
+            },
+            {
+              "key": "Ctrl + E",
+              "detail": "搜索"
+            },
+            {
+              "key": "Ctrl + F",
+              "detail": "在页面上查找"
+            },
+            {
+              "key": "Ctrl + H",
+              "detail": "历史记录"
+            },
+            {
+              "key": "Ctrl + Shift + I",
+              "detail": "开发人员工具"
+            },
+            {
+              "key": "Ctrl + J",
+              "detail": "下载"
+            },
+            {
+              "key": "Ctrl + M",
+              "detail": "静音"
+            },
+            {
+              "key": "Ctrl + N",
+              "detail": "新窗口"
+            },
+            {
+              "key": "Ctrl + Shift + N",
+              "detail": "隐私窗口"
+            },
+            {
+              "key": "Ctrl + Shift + O",
+              "detail": "收藏夹管理"
+            },
+            {
+              "key": "Ctrl + R",
+              "detail": "重新加载当前页"
+            }
+            ,
+            {
+              "key": "Ctrl + Tab",
+              "detail": "切换标签页"
+            },
+            {
+              "key": "Alt +◀ ▶",
+              "detail": "返回/前进"
+            },
+            {
+              "key": "F12",
+              "detail": "打开开发者工具"
+            },
+            {
+              "key": "Ctrl + Shift + T",
+              "detail": "恢复页面"
+            },
+            {
+              "key": "Ctrl + W",
+              "detail": "关闭标签页"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Word",
+      "appkeys": [
+        {
+          "classification": "常用",
+          "keys": [
+            {
+              "key": "Ctrl+O",
+              "detail": "打开文档"
+            },
+            {
+              "key": "Ctrl+N",
+              "detail": "创建新文档"
+            },
+            {
+              "key": "Ctrl+S",
+              "detail": "保存文档"
+            },
+            {
+              "key": "Ctrl+W",
+              "detail": "关闭文档"
+            },
+            {
+              "key": "Ctrl+B",
+              "detail": "加粗"
+            },
+            {
+              "key": "Ctrl+I",
+              "detail": "斜体"
+            },
+            {
+              "key": "Ctrl+U",
+              "detail": "下划线"
+            },
+            {
+              "key": "Ctrl+[/]",
+              "detail": "减小/增大字号"
+            },
+            {
+              "key": "Ctrl+E",
+              "detail": "居中"
+            },
+            {
+              "key": "Ctrl+L",
+              "detail": "左对齐"
+            },
+            {
+              "key": "Ctrl+R",
+              "detail": "右对齐"
+            },
+            {
+              "key": "Ctrl+Z",
+              "detail": "撤回"
+            },
+            {
+              "key": "Ctrl+Y",
+              "detail": "恢复"
+            }
+            ,
+            {
+              "key": "Ctrl+Alt+S",
+              "detail": "拆分文档窗口"
+            }
+            
+          ]
+        }
+      ]
     }
   ],
   "default": {
