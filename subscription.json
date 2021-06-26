@@ -1,5 +1,5 @@
 {
-  "version": "0.0.7",
+  "version": "0.0.8",
   "apps": [
     {
       "name": "OneNote",
@@ -208,6 +208,75 @@
             {
               "key": "Ctrl+Alt+S",
               "detail": "拆分文档窗口"
+            }
+            
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Visual Studio Code",
+      "appkeys": [
+        {
+          "classification": "常用",
+          "keys": [
+            {
+              "key": "Ctrl+Shift+P",
+              "detail": "命令窗口"
+            },
+            {
+              "key": "Ctrl+P",
+              "detail": "快速打开"
+            },
+            {
+              "key": "Ctrl+Shift+N",
+              "detail": "打开新窗口"
+            },
+            {
+              "key": "Ctrl+Shift+W",
+              "detail": "关闭新窗口"
+            },
+            {
+              "key": "Ctrl+,",
+              "detail": "设置"
+            },
+            {
+              "key": "Ctrl+K-S",
+              "detail": "快捷键设置"
+            }
+            
+          ]
+        },
+        {
+          "classification": "编辑",
+          "keys": [
+            {
+              "key": "Ctrl+X",
+              "detail": "剪切行"
+            },
+            {
+              "key": "Ctrl+C",
+              "detail": "复制行"
+            },
+            {
+              "key": "Alt+↑/↓",
+              "detail": "上下移动行"
+            },
+            {
+              "key": "Shift+Alt+↓/↑",
+              "detail": "上下复制行"
+            },
+            {
+              "key": "Ctrl+Shift+K",
+              "detail": "删除行"
+            },
+            {
+              "key": "Ctrl+Enter",
+              "detail": "向下插入"
+            },
+            {
+              "key": "Ctrl+Shift+Enter",
+              "detail": "向上插入"
             }
             
           ]

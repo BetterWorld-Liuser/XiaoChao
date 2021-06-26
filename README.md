@@ -3,4 +3,7 @@
 小白在学习新软件的时候也总要花费很长时间来记忆快捷键，加上MACOS上有类似的软件”CheatSheet”。
 
 # 已添加快捷键软件列表
+- Windows常用快捷键
 - OneNote
+- Word
+- Edge
