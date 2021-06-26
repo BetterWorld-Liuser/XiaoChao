@@ -1,27 +1,63 @@
 {
-    "version": "0.0.5",
+    "version": "0.0.6",
     "apps": [
       {
         "name": "OneNote",
         "appkeys": [
           {
-            "classification": "编辑",
+            "classification": "常用",
             "keys": [
               {
-                "key": "Ctrl+Alt+1",
-                "detail": "标题一"
+                "key": "Ctrl+Shift+G",
+                "detail": "焦点放在当前分区上"
+              },
+              {
+                "key": "Shift+F10",
+                "detail": "打开上下文菜单"
+              },
+              {
+                "key": "Ctrl+N",
+                "detail": "添加新页"
+              },
+              {
+                "key": "Ctrl+O",
+                "detail": "打开笔记本"
+              },
+              {
+                "key": "Ctrl+G",
+                "detail": "切换笔记本"
+              },
+              {
+                "key": "Ctrl+T",
+                "detail": "创建新分区"
               },
               {
                 "key": "Ctrl+Alt+N",
-                "detail": "正文"
+                "detail": "创建新页面"
               },
               {
-                "key": "Ctrl+Shift+>",
-                "detail": "增大字体"
+                "key": "Ctrl+Alt+Shift+N",
+                "detail": "创建子页"
               },
               {
-                "key": "Ctrl+Shift+<",
-                "detail": "减小字体"
+                "key": "F11",
+                "detail": "启/禁用整页视图"
+              },
+              {
+                "key": "Ctrl+Alt+G",
+                "detail": "聚焦页面选项卡"
+              },
+              {
+                "key": "Ctrl+Alt+M",
+                "detail": "移动/复制页"
+              },
+              {
+                "key": "Ctrl+Shift+T",
+                "detail": "跳转到页面标题"
+              },
+              {
+                "key": "Ctrl+E",
+                "detail": "搜索"
               }
             ]
           },
