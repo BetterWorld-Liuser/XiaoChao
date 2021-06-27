@@ -7,3 +7,5 @@
 - OneNote
 - Word
 - Edge
+- 知乎
+- PhotoShop
