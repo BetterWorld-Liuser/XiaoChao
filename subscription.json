@@ -2,6 +2,60 @@
   "version": "0.0.10",
   "apps": [
     {
+      "name": "CAD",
+      "appkeys": [
+        {
+          "classification": "常用",
+          "keys": [
+            {"detail":"直线","key":"L "},
+            {"detail":"圆","key":"C "},
+            {"detail":"圆弧","key":"A "},
+            {"detail":"矩形","key":"REC "},
+            {"detail":"点","key":"PO "},
+            {"detail":"单行文本","key":"DT"},
+            {"detail":"多行文本","key":"MT"},
+            {"detail":"填充","key":"H"},
+            {"detail":"将已经画出的线段延伸到某一线段","key":"EX "},
+            {"detail":"将已经画出的矩形倒圆角","key":"F "},
+            {"detail":"修剪绘图过程中多余的线","key":"TR "},
+            {"detail":"修改文本","key":"ED "},
+            {"detail":"移动命令","key":"M"},
+            {"detail":"旋转命令","key":"RO "},
+            {"detail":"偏移命令","key":"O "},
+            {"detail":"镜像命令","key":"MI "},
+            {"detail":"复制命令","key":"CO "},
+            {"detail":"局部观察平面图细节时,通常使用","key":"Z "},
+            {"detail":"可以在工作区看到实时缩放的放大镜","key":"Z  "},
+            {"detail":"平移视图","key":"P "},
+            {"detail":"通过平移视图平移视图","key":"P "},
+            {"detail":"返回上一视图","key":"Z P "},
+            {"detail":"全局显示自己绘的平面图","key":"Z A "},
+            {"detail":"快捷方式代表打印文件","key":"CTRL+P"},
+            {"detail":"新建文件","key":"CTRL+N"},
+            {"detail":"在CAD里寻求帮助时,可直接点击","key":"F1"},
+            {"detail":"正交","key":"F8"},
+            {"detail":"打开和关闭对象捕捉工具","key":"F3"},
+            {"detail":"直线标注","key":"DLI "},
+            {"detail":"调整文字样式可以通过快捷方式实现","key":"ST"},
+            {"detail":"设置捕捉模式可以通过快捷方式实现","key":"OS "},
+            {"detail":"重复操作","key":"ENTER键"},
+            {"detail":"刷新的快捷键","key":"RE "},
+            {"detail":"取消","key":"ESC"},
+            {"detail":"设置捕捉模式的快捷键","key":"OS"},
+            {"detail":"旋转命令","key":"RO"},
+            {"detail":"计算面积的快捷键","key":"AA"},
+            {"detail":"平移的快捷键","key":"P "},
+            {"detail":"最常用的标注快捷键","key":"DLI"},
+            {"detail":"直线","key":"LINE"},
+            {"detail":"圆的快捷键","key":"C"},
+            {"detail":"偏移命令","key":"O"}
+            
+            ]
+            
+        }
+      ]
+    },
+    {
       "name": "3dsMax",
       "appkeys": [
         {
