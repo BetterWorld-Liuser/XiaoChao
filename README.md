@@ -7,5 +7,9 @@
 - OneNote
 - Word
 - Edge
-- 知乎
-- PhotoShop
+- 知乎网页版
+- Adobe PhotoShop
+- CAD
+- Adobe illustrator
+- 3dsMax
+- SketchUp
