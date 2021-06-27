@@ -1,6 +1,271 @@
 {
-  "version": "0.0.8",
+  "version": "0.0.10",
   "apps": [
+    {
+      "name": "PhotoShop",
+      "appkeys": [
+        {
+          "classification": "工具箱",
+          "keys": [
+            {
+              "key": "M",
+              "detail": "矩形"
+            },
+            {
+              "key": "C",
+              "detail": "裁剪"
+            },
+            {
+              "key": "B",
+              "detail": "画笔"
+            },
+            {
+              "key": "S",
+              "detail": "图章"
+            },
+            {
+              "key": "Y",
+              "detail": "历史画笔"
+            },
+            {
+              "key": "E",
+              "detail": "橡皮擦"
+            },{
+              "key": "R",
+              "detail": "涂抹"
+            },
+            {
+              "key": "O",
+              "detail": "海绵"
+            },
+            {
+              "key": "P",
+              "detail": "钢笔"
+            },
+            {
+              "key": "G",
+              "detail": "油漆桶"
+            },{
+              "key": "I",
+              "detail": "吸管"
+            },
+            {
+              "key": "H",
+              "detail": "抓手"
+            },
+            {
+              "key": "Ctrl",
+              "detail": "临时移动"
+            },{
+              "key": "Alt",
+              "detail": "临时吸色"
+            },
+            {
+              "key": "空格",
+              "detail": "临时抓手"
+            },
+            {
+              "key": "+/-",
+              "detail": "添加/删除锚点"
+            },
+            {
+              "key": "A",
+              "detail": "直接选取"
+            },{
+              "key": "T",
+              "detail": "文字蒙版"
+            },
+            {
+              "key": "G",
+              "detail": "渐变"
+            },
+            {
+              "key": "Z",
+              "detail": "缩放"
+            },{
+              "key": "X",
+              "detail": "切换前/背景色"
+            },
+            {
+              "key": "Q",
+              "detail": "标准/蒙版模式"
+            },
+            {
+              "key": "F",
+              "detail": "布局切换"
+            },
+            {
+              "key": "[/]",
+              "detail": "切换画笔"
+            },{
+              "key": "Shift+[/]",
+              "detail": "第一/末个画笔"
+            }
+          ]
+        },
+        {
+          "classification": "文件操作",
+          "keys": [
+            {
+              "key": "Ctrl+N",
+              "detail": "新建图形文件"
+            },
+            {
+              "key": "Ctrl+Shift+N",
+              "detail": "新建图层"
+            },
+            {
+              "key": "Ctrl+Alt+N",
+              "detail": "创建文件(默认设置)"
+            },
+            {
+              "key": "Ctrl+O",
+              "detail": "打开图像"
+            },
+            {
+              "key": "Ctrl+Alt+O",
+              "detail": "打开为..."
+            },
+            {
+              "key": "Ctrl+W",
+              "detail": "关闭当前图像"
+            },{
+              "key": "Ctrl+S",
+              "detail": "保存当前图像"
+            },
+            {
+              "key": "Ctrl+Shift+S",
+              "detail": "另存为..."
+            },
+            {
+              "key": "Ctrl+Alt+S",
+              "detail": "存储副本"
+            },
+            {
+              "key": "Ctrl+Shift+P",
+              "detail": "页面设置"
+            },{
+              "key": "Ctrl+P",
+              "detail": "打印"
+            },
+            {
+              "key": "Ctrl+K",
+              "detail": "打开预置"
+            }
+          ]
+        },
+        {
+          "classification": "图层混合",
+          "keys": [
+            {
+              "key": "Shift+Alt+N",
+              "detail": "正常"
+            },
+            {
+              "key": "Shift+Alt+L",
+              "detail": "阈值(位图模式)"
+            },
+            {
+              "key": "Shift+Alt+I",
+              "detail": "溶解"
+            },
+            {
+              "key": "Shift+Alt+Q",
+              "detail": "背后"
+            },
+            {
+              "key": "Ctrl+Alt+R",
+              "detail": "清除"
+            },
+            {
+              "key": "Ctrl+Alt+M",
+              "detail": "正片叠底"
+            },{
+              "key": "Ctrl+Alt+S",
+              "detail": "屏幕"
+            },
+            {
+              "key": "Ctrl+Alt+O",
+              "detail": "叠加"
+            }
+          ]
+        },
+        {
+          "classification": "选择功能",
+          "keys": [
+            {
+              "key": "Ctrl+A",
+              "detail": "全部选择"
+            },
+            {
+              "key": "Ctrl+D",
+              "detail": "取消选择"
+            },
+            {
+              "key": "Ctrl+Shift+D",
+              "detail": "重新选择"
+            },
+            {
+              "key": "Ctrl+Alt+D",
+              "detail": "羽化选择"
+            },
+            {
+              "key": "Ctrl+Shift+I",
+              "detail": "反向选择"
+            }
+          ]
+        },
+        {
+          "classification": "图层操作",
+          "keys": [
+            {
+              "key": "Ctrl+Shift+N",
+              "detail": "新建图层"
+            },
+            {
+              "key": "Ctrl+Alt+SHift+N",
+              "detail": "快速新建图层"
+            },
+            {
+              "key": "Ctrl+J",
+              "detail": "拷贝新建图层"
+            },
+            {
+              "key": "Ctrl+Shift+J",
+              "detail": "剪切新建图层"
+            },
+            {
+              "key": "Ctrl+G",
+              "detail": "编组"
+            },
+            {
+              "key": "Ctrl+Shift+G",
+              "detail": "取消编组"
+            },
+            {
+              "key": "Ctrl+E",
+              "detail": "向下合并图层"
+            },
+            {
+              "key": "Ctrl+SHift+E",
+              "detail": "合并可见图层"
+            },
+            {
+              "key": "Ctrl+[/]",
+              "detail": "移动图层"
+            },
+            {
+              "key": "Ctrl+Shift+[/]",
+              "detail": "置顶/底图层"
+            },
+            {
+              "key": "Alt+[/]",
+              "detail": "激活图层"
+            }
+          ]
+        }
+      ]
+    },
     {
       "name": "知乎",
       "appkeys": [
@@ -66,83 +331,6 @@
             {
               "key": "?",
               "detail": "快捷键帮助"
-            }
-          ]
-        },
-        {
-          "classification": "Edge常用",
-          "keys": [
-            {
-              "key": "Ctrl + Shift + B",
-              "detail": "显示/隐藏收藏夹栏"
-            },
-            {
-              "key": "Ctrl + D",
-              "detail": "存为收藏夹"
-            },
-            {
-              "key": "Alt + D",
-              "detail": "编辑地址栏"
-            },
-            {
-              "key": "Ctrl + E",
-              "detail": "搜索"
-            },
-            {
-              "key": "Ctrl + F",
-              "detail": "在页面上查找"
-            },
-            {
-              "key": "Ctrl + H",
-              "detail": "历史记录"
-            },
-            {
-              "key": "Ctrl + Shift + I",
-              "detail": "开发人员工具"
-            },
-            {
-              "key": "Ctrl + J",
-              "detail": "下载"
-            },
-            {
-              "key": "Ctrl + M",
-              "detail": "静音"
-            },
-            {
-              "key": "Ctrl + N",
-              "detail": "新窗口"
-            },
-            {
-              "key": "Ctrl + Shift + N",
-              "detail": "隐私窗口"
-            },
-            {
-              "key": "Ctrl + Shift + O",
-              "detail": "收藏夹管理"
-            },
-            {
-              "key": "Ctrl + R",
-              "detail": "重新加载当前页"
-            },
-            {
-              "key": "Ctrl + Tab",
-              "detail": "切换标签页"
-            },
-            {
-              "key": "Alt +◀ ▶",
-              "detail": "返回/前进"
-            },
-            {
-              "key": "F12",
-              "detail": "打开开发者工具"
-            },
-            {
-              "key": "Ctrl + Shift + T",
-              "detail": "恢复页面"
-            },
-            {
-              "key": "Ctrl + W",
-              "detail": "关闭标签页"
             }
           ]
         }
