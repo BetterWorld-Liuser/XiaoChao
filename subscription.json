@@ -7,12 +7,14 @@
         {
           "classification": "常用",
           "keys": [
-            {"key":"ctrl+n","detail":"创建新得page"},
-            {"key":"ctrl+shift+n","detail":"打开一个新的notion窗口"},
-            {"key":"ctrl+p","detail":"打开搜索或跳至最近浏览得页面"},
-            {"key":"ctrl+[","detail":"返回上一页"},
-            {"key":"ctrl+]","detail":"进入页面"},
-            {"key":"ctrl+shift+l","detail":"黑夜模式"} 
+            {"key":"Ctrl+N","detail":"创建新得page"},
+            {"key":"Ctrl+Shift+N","detail":"打开一个新的notion窗口"},
+            {"key":"Ctrl+U","detail":"转到父页面"},
+            {"key":"Ctrl+P","detail":"打开搜索或跳至最近浏览得页面"},
+            {"key":"Ctrl+[","detail":"返回上一页"},
+            {"key":"Ctrl+]","detail":"进入页面"},
+            {"key":"Ctrl+Shift+L","detail":"黑夜模式"}, 
+            {"key":"Ctrl+\\","detail":"打开/关闭侧边栏"} 
             ]
             
         },
@@ -29,8 +31,14 @@
             {"key":"##","detail":"二级标题"},
             {"key":"###","detail":"三级标题"},
             {"key":">","detail":"折叠列表"},
-            {"key":"\"","detail":"引用"},
-            {"key":"1.","detail":"有序表格"}
+            {"key":"\"","detail":"引用"}
+            ]
+            
+        },
+        {
+          "classification": "内容",
+          "keys": [
+            {"key":"Ctrl+E","detail":"内联代码"}
             ]
             
         }
