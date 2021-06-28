@@ -1,6 +1,41 @@
 {
-  "version": "0.0.10",
+  "version": "0.0.11",
   "apps": [
+    {
+      "name": "Notion",
+      "appkeys": [
+        {
+          "classification": "常用",
+          "keys": [
+            {"key":"ctrl+n","detail":"创建新得page"},
+            {"key":"ctrl+shift+n","detail":"打开一个新的notion窗口"},
+            {"key":"ctrl+p","detail":"打开搜索或跳至最近浏览得页面"},
+            {"key":"ctrl+[","detail":"返回上一页"},
+            {"key":"ctrl+]","detail":"进入页面"},
+            {"key":"ctrl+shift+l","detail":"黑夜模式"} 
+            ]
+            
+        },
+        {
+          "classification": "Markdown",
+          "keys": [
+            {"key":"**","detail":"加粗文本"},
+            {"key":"*","detail":"斜体"},
+            {"key":"`","detail":"内联代码"},
+            {"key":"~","detail":"删除线"},
+            {"key":"[]","detail":"待办清单"},
+            {"key":"1.","detail":"有序表格"},
+            {"key":"#","detail":"一级标题"},
+            {"key":"##","detail":"二级标题"},
+            {"key":"###","detail":"三级标题"},
+            {"key":">","detail":"折叠列表"},
+            {"key":"\"","detail":"引用"},
+            {"key":"1.","detail":"有序表格"}
+            ]
+            
+        }
+      ]
+    },
     {
       "name": "CAD",
       "appkeys": [
@@ -639,17 +674,15 @@
         {
           "classification": "常用",
           "keys": [
-            {
-              "key": "Ctrl + Shift + B",
-              "detail": "显示/隐藏收藏夹栏"
-            },
+            
             {
               "key": "Ctrl + D",
               "detail": "存为收藏夹"
             },
+            
             {
-              "key": "Alt + D",
-              "detail": "编辑地址栏"
+              "key": "Ctrl + W",
+              "detail": "关闭标签页"
             },
             {
               "key": "Ctrl + E",
@@ -663,10 +696,7 @@
               "key": "Ctrl + H",
               "detail": "历史记录"
             },
-            {
-              "key": "Ctrl + Shift + I",
-              "detail": "开发人员工具"
-            },
+            
             {
               "key": "Ctrl + J",
               "detail": "下载"
@@ -688,6 +718,18 @@
               "detail": "收藏夹管理"
             },
             {
+              "key": "Ctrl + Shift + I",
+              "detail": "开发人员工具"
+            },
+            {
+              "key": "Ctrl + Shift + T",
+              "detail": "恢复页面"
+            },
+            {
+              "key": "Ctrl + Shift + B",
+              "detail": "显示/隐藏收藏夹栏"
+            },
+            {
               "key": "Ctrl + R",
               "detail": "重新加载当前页"
             },
@@ -700,17 +742,15 @@
               "detail": "返回/前进"
             },
             {
+              "key": "Alt + D",
+              "detail": "编辑地址栏"
+            },
+            {
               "key": "F12",
               "detail": "打开开发者工具"
-            },
-            {
-              "key": "Ctrl + Shift + T",
-              "detail": "恢复页面"
-            },
-            {
-              "key": "Ctrl + W",
-              "detail": "关闭标签页"
             }
+            
+            
           ]
         }
       ]
@@ -940,6 +980,19 @@
             "key": "Alt+←",
             "detail": "上一次界面"
           }
+        ]
+      }
+    ]
+  },
+  "global":{
+    "appkeys": [
+      {
+        "classification": "输入法",
+        "keys": [
+          {"key": "Ctrl+.","detail": "中/英文标点"},
+          {"key": "Shift+空","detail": "全/半角"},
+          {"key": "Ctrl+Shift+F","detail": "简/繁"},
+          {"key": "Win+空","detail": "切换输入法"} 
         ]
       }
     ]
