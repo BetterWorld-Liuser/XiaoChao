@@ -2,6 +2,105 @@
   "version": "0.0.11",
   "apps": [
     {
+      "name": "WPS",
+      "appkeys": [
+        {
+          "classification": "WPS文字",
+          "keys": [
+            {"key":"Ctrl+A","detail":"全选"},
+            {"key":"Ctrl+B","detail":"加粗"},
+            {"key":"Ctrl+C","detail":"复制"},
+            {"key":"Ctrl+D","detail":"字体"},
+            {"key":"Ctrl+E","detail":"居中"},
+            {"key":"Ctrl+F","detail":"查找"},
+            {"key":"Ctrl+G","detail":"定位"},
+            {"key":"Ctrl+H","detail":"替换"},
+            {"key":"Ctrl+I","detail":"倾斜"},
+            {"key":"Ctrl+J","detail":"两端对齐"},
+            {"key":"Ctrl+K","detail":"超链接"},
+            {"key":"Ctrl+L","detail":"左对齐"},
+            {"key":"Ctrl+N","detail":"新建文档"},
+            {"key":"Ctrl+O","detail":"打开文档"},
+            {"key":"Ctrl+P","detail":"打印文档"},
+            {"key":"Ctrl+R","detail":"右对齐"},
+            {"key":"Ctrl+S","detail":"保存"},
+            {"key":"Ctrl+U","detail":"下划线"},
+            {"key":"Ctrl+V","detail":"粘贴"},
+            {"key":"Ctrl+W","detail":"关闭文档"},
+            {"key":"Ctrl+X","detail":"剪切"},
+            {"key":"Ctrl+Z","detail":"撤销"},
+            {"key":"Ctrl+】增大字号","detail":""},
+            {"key":"Ctrl+】减小字号","detail":""},
+            {"key":"Ctrl+Alt+A","detail":"截图"},
+            {"key":"Ctrl+Tab","detail":"文档切换"},
+            {"key":"Ctrl+鼠标拖动","detail":"选定不连续文字"},
+            {"key":"Shift+End","detail":"选定到行围"},
+            {"key":"Shift+Home","detail":"选定到行首"},
+            {"key":"Shift+←","detail":"选定到左侧的一个字符"},
+            {"key":"Shift+→","detail":"选定到右侧的一个字符"},
+            {"key":"Shift+↑","detail":"选定到上一行"},
+            {"key":"Shift+↓","detail":"选定到下一行"},
+            {"key":"Ctrl+Shift+↑","detail":"选定到段首"},
+            {"key":"Ctrl+Shift+↓","detail":"选定到段尾"}
+            
+            ]
+            
+        },
+        {
+          "classification": "WPS演示",
+          "keys": [
+            {"key":"Alt+Delete","detail":"删除"},
+            {"key":"Alt+Insert","detail":"插入新页"},
+            {"key":"Ctrl+A","detail":"全选（当前页对象）"},
+            {"key":"Ctrl+L","detail":"页面设置"},
+            {"key":"Ctrl+N","detail":"新建演示稿"},
+            {"key":"Ctrl+O","detail":"打开演示稿"},
+            {"key":"Ctrl+S","detail":"文件存盘"},
+            {"key":"Ctrl+Shift+U","detail":"文字添加或清除着重号"},
+            {"key":"Ctrl+U","detail":"文字添加或清除下划线"},
+            {"key":"Ctrl+P","detail":"文件打印"},
+            {"key":"Ctrl+Alt+F","detail":"设置字体"},
+            {"key":"Ctrl+Alt+R","detail":"设置显示比例"},
+            {"key":"Ctrl+Alt+S","detail":"设置字体大小"},
+            {"key":"Ctrl+Enter","detail":"编辑状态/插入新页"},
+            {"key":"Ctrl+Delete","detail":"删除当前页"},
+            {"key":"F5","detail":"当前页面播放"},
+            {"key":"Esc","detail":"退出演示播放"},
+            {"key":"Number+Enter","detail":"跳转到第X页演示页"},
+            {"key":"Ctrl+H","detail":"隐藏鼠标指针"},
+            {"key":"Shift+F10","detail":"显示右键菜单"}
+            
+            ]
+            
+        },
+        {
+          "classification": "WPS表格",
+          "keys": [
+            {"key":"Ctrl+A","detail":"选定整张工作表"},
+            {"key":"Ctrl+N","detail":"新建空白文档"},
+            {"key":"Ctrl+D","detail":"向下填充"},
+            {"key":"Ctrl+R","detail":"向右填充"},
+            {"key":"Ctrl+F3","detail":"定义名称"},
+            {"key":"Ctrl+K","detail":"插入超链接"},
+            {"key":"Ctrl+；","detail":"键入当前日期"},
+            {"key":"Ctrl+Shift+;","detail":"键入当前时间"},
+            {"key":"Ctrl+Enter","detail":"用当前输入项填充选定的单元格区域"},
+            {"key":"Ctrl+PageUp","detail":"切换到上一个工作表"},
+            {"key":"Ctrl+PageDown","detail":"切换到下一个工作表"},
+            {"key":"Shift+PageUp","detail":"选中到上一屏相应单元格区域"},
+            {"key":"Shift+PageDown","detail":"选中到下一屏相应单元格区域"},
+            {"key":"Ctrl+Shift+Home","detail":"将选定区域扩展到工作表的开始"},
+            {"key":"Shift+Enter","detail":"完成输入并向上选取上一个单元格"},
+            {"key":"Shift+Home","detail":"将选定区域扩展到行首"},
+            {"key":"Tab","detail":"完成输入并向右选取下一个单元格"},
+            {"key":"Shift+Tab","detail":"完成输入并向左选取上一个单元格"},
+            {"key":"Alt+向下键（↓）","detail":"显示清单的当前列中的数值下拉列表"}
+            ]
+            
+        }
+      ]
+    },
+    {
       "name": "Notion",
       "appkeys": [
         {
