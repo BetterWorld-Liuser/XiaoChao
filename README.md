@@ -27,6 +27,7 @@
 - 3dsMax
 - SketchUp
 - notion
+- WPS
 
 # 安装说明
 需要预先安装windowsdesktop-runtime-5.0.7-win-x64.exe
