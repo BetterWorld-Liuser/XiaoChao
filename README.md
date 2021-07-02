@@ -26,6 +26,7 @@
 - Adobe illustrator
 - 3dsMax
 - SketchUp
+- notion
 
 # 安装说明
 需要预先安装windowsdesktop-runtime-5.0.7-win-x64.exe
@@ -67,3 +68,16 @@ https://github.com/liuzhengdong2/ShortCutHelper
 本软件要求.NET 5的运行环境，刚打开软件的时候系统会自动提示安装，同时在发布地址也有运行环境的安装包。
 
 下载地址：https://gitee.com/liuzhengdong666/ShortCutHelper/releases
+
+
+# 捐赠
+如果你想快一点实现自己的需求，可以找作者定制。如果你用爽了也能捐赠给作者，啦啦啦~
+请备注自己的联系方式哟~
+当前捐赠人数：1人
+当前捐赠总额：200元
+
+| 微信 | 支付宝|
+| --- | --- |
+|![微信二维码](https://tuchuang-liuzhengdong.oss-cn-shanghai.aliyuncs.com/mm_facetoface_collect_qrcode_1624722635201.png)|![支付宝二维码](https://tuchuang-liuzhengdong.oss-cn-shanghai.aliyuncs.com/1624722646.jpg)|
+
+
