@@ -137,6 +137,21 @@
         {
           "classification": "内容",
           "keys": [
+            {"key":"Ctrl+Shift+123","detail":"标题123"},
+            {"key":"Ctrl+Shift+4","detail":"待办"},
+            {"key":"Ctrl+Shift+5","detail":"无序列表"},
+            {"key":"Ctrl+Shift+6","detail":"有序列表"},
+            {"key":"Ctrl+Shift+7","detail":"折叠列表"},
+            {"key":"Ctrl+Shift+8","detail":"引用"},
+            {"key":"Ctrl+Shift+9","detail":"页面"},
+            {"key":"Ctrl+B","detail":"粗体"},
+            {"key":"Ctrl+i","detail":"斜体"},
+            {"key":"Ctrl+u","detail":"下划线"},
+            {"key":"Ctrl+Shift+s","detail":"删除线"},
+            {"key":"Ctrl+K","detail":"链接"},
+            {"key":"Ctrl+E","detail":"内联代码"},
+            {"key":"Ctrl+E","detail":"内联代码"},
+            {"key":"Ctrl+E","detail":"内联代码"},
             {"key":"Ctrl+E","detail":"内联代码"}
             ]
             
