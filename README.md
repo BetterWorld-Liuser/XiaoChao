@@ -11,9 +11,9 @@
 
 快捷键助手是一款帮助您记忆并提示“正在使用的软件”的快捷键的应用。随着我们使用的电脑软件越来越多，CAD、Vistual Studio、OneNote、Word、WPS、QQ、Mathpix、utools、VSCode、Blender、Solidworks、PS、AI 等等软件的快捷键混杂在一起很难记忆。
 小白在学习新软件的时候也总要花费很长时间来记忆快捷键，加上在我最初入坑 MacOS 的时候就被上面类似的软件”CheatSheet”深深吸引了。
-![图1](https://tuchuang-liuzhengdong.oss-cn-shanghai.aliyuncs.com/023329axpwzobopzp77xxx.png)
+![图1](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%871.png)
 
-![图2](https://tuchuang-liuzhengdong.oss-cn-shanghai.aliyuncs.com/023642xzxttnsr1isx9e2u.png)
+![图2](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%872.png)
 
 所以就本软件就诞生啦。
 
@@ -76,6 +76,6 @@ https://github.com/liuzhengdong2/ShortCutHelper
 当前捐赠人数：3 人
 当前捐赠总额：260 元
 
-| 微信            | 支付宝            |
-| --------------- | ----------------- |
-| ![微信二维码]() | ![支付宝二维码]() |
+| 微信                                                                                                      | 支付宝                                                                                                      |
+| --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| ![微信二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%875.jpg) | ![支付宝二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%876.png) |
