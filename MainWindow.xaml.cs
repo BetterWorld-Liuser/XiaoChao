@@ -30,7 +30,10 @@ namespace xiaochao
 
         //-------------------------- 属性定义↓ --------------------------
         public Structofdata Data { get; set; } = Structofdata.InitInstance();
-        private readonly string _sub_dictionary = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "data");
+        //data文件夹地址
+        private readonly string _sub_directory = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "data");
+        //local文件夹地址
+        private readonly string _local_directory = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "local");
 
 
         public ConfigManager ConfigManagerInstance { get; set; } = ConfigManager.GetInstance();
@@ -54,16 +57,7 @@ namespace xiaochao
 
             Hide();
 
-
-            //测试是否有data文件夹
-            if (!Directory.Exists(_sub_dictionary))
-            {
-                MessageShow(1);
-            }
-            if (!File.Exists(Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "设置.md")))
-            {
-                MessageShow(2);
-            }
+            Check_Directory_Exist();
 
             //绑定快捷键
             Hotkey hotkey = HotkeyConverter.Convert(ConfigManagerInstance.Shortcut);
@@ -128,9 +122,21 @@ namespace xiaochao
             //初始化数据array
             KeyValueAssembleList[] keyValueAssemblesArray = new KeyValueAssembleList[Column_count];
 
-            if (!Directory.Exists(Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "data"))) return;
+            //判断是否有data文件夹
+            bool data_exist = Directory.Exists(Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "data"));
+            bool local_exist = Directory.Exists(Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "local"));
+            if ((!data_exist)&&(!local_exist)) return;
+
+
             //搜索文件List
-            string[] fileArray = Directory.GetFiles("data", "*.*", SearchOption.TopDirectoryOnly);
+            string[] data_fileArray = Directory.GetFiles("data", "*.*", SearchOption.TopDirectoryOnly);
+            string[] local_fileArray = Directory.GetFiles("local", "*.*", SearchOption.TopDirectoryOnly);
+
+            //连接两个文件List
+            string[] fileArray = new string[data_fileArray.Length+local_fileArray.Length];
+            Array.Copy(data_fileArray, fileArray, data_fileArray.Length);
+            Array.Copy(local_fileArray, 0, fileArray, data_fileArray.Length, local_fileArray.Length);
+
             List<string> fileList = new List<string>();
             for (int i = 0; i < fileArray.Length; i++)
             {
@@ -277,6 +283,7 @@ namespace xiaochao
 
         //------------------- 工具函数 --------------------
 
+        //打开设置文件夹
         private void Setting_Click(object sender, RoutedEventArgs e)
         {
             if (File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "设置.md")))
@@ -291,7 +298,28 @@ namespace xiaochao
 
         }
 
+        //检查是否有数据文件夹，没有则创建
+        private void Check_Directory_Exist()
+        {
+            if (!Directory.Exists(_sub_directory))
+            {
+                Directory.CreateDirectory(_sub_directory);
+            }
+            if (!Directory.Exists(_local_directory))
+            {
+                Directory.CreateDirectory(_local_directory);
+            }
+        }
 
+        //打开数据文件夹
+        private void Data_Click(object sender, RoutedEventArgs e)
+        {
+
+            System.Diagnostics.Process.Start("Explorer.exe", Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "local"));
+
+        }
+
+        //退出程序
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             Close();
