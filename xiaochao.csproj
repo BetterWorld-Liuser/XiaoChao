@@ -34,8 +34,8 @@
     <ProductName>小抄</ProductName>
     <PublisherName>Liu</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>3</ApplicationRevision>
-    <ApplicationVersion>22.1.1.3</ApplicationVersion>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>22.1.1.4</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
