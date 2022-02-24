@@ -16,9 +16,9 @@ using System.IO;
 using NHotkey.Wpf;
 using NHotkey;
 using Path = System.IO.Path;
-using WK.Libraries.BootMeUpNS;
 using System.Reflection;
-
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace xiaochao
 {
@@ -30,10 +30,13 @@ namespace xiaochao
 
         //-------------------------- 属性定义↓ --------------------------
         public Structofdata Data { get; set; } = Structofdata.InitInstance();
+
+        private static string BaseDir = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+        private static string AppDir = Path.Combine(BaseDir, "小抄.exe");
         //data文件夹地址
-        private readonly string _sub_directory = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "data");
+        private readonly string _sub_directory = Path.Combine(BaseDir, "data");
         //local文件夹地址
-        private readonly string _local_directory = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "local");
+        private readonly string _local_directory = Path.Combine(BaseDir, "local");
 
 
         public ConfigManager ConfigManagerInstance { get; set; } = ConfigManager.GetInstance();
@@ -64,40 +67,45 @@ namespace xiaochao
             HotkeyManager.Current.AddOrReplace("SwitchShow", hotkey.KeyCode, hotkey.Modifiers, HotkeyPressed);
 
 
-            //设置相开机启动
-            if (ConfigManagerInstance.Start_Up)
-            {
-                var bootMeUp = new BootMeUp
-                {
-                    UseAlternativeOnFail = true,
-                    BootArea = BootMeUp.BootAreas.StartupFolder,
-                    TargetUser = BootMeUp.TargetUsers.CurrentUser,
+            //设置开机启动.旧代码
+            //if (ConfigManagerInstance.Start_Up)
+            //{
+            //    var bootMeUp = new BootMeUp
+            //    {
+            //        UseAlternativeOnFail = true,
+            //        BootArea = BootMeUp.BootAreas.StartupFolder,
+            //        TargetUser = BootMeUp.TargetUsers.CurrentUser,
 
-                    // Enable auto-booting.
-                    Enabled = true
-                };
-            }
-            else
-            {
-                var bootMeUp = new BootMeUp
-                {
-                    UseAlternativeOnFail = true,
-                    BootArea = BootMeUp.BootAreas.StartupFolder,
-                    TargetUser = BootMeUp.TargetUsers.CurrentUser,
+            //        // Enable auto-booting.
+            //        Enabled = true
+            //    };
+            //}
+            //else
+            //{
+            //    var bootMeUp = new BootMeUp
+            //    {
+            //        UseAlternativeOnFail = true,
+            //        BootArea = BootMeUp.BootAreas.StartupFolder,
+            //        TargetUser = BootMeUp.TargetUsers.CurrentUser,
 
-                    // Enable auto-booting.
-                    Enabled = false
-                };
-            }
-
-
-
-            //UpdateApp();
+            //        // Enable auto-booting.
+            //        Enabled = false
+            //    };
+            //}
 
 
-            //初始化数据
+            //设置开机启动.新代码2022年2月24日
+            StartUp(ConfigManagerInstance.Start_Up);
+
+
+            //如果不是开机启动，初始化数据
+            string[] args = Environment.GetCommandLineArgs();
             RetrieveData();
-            Show();
+            if (!args.Contains("--autostart"))
+            {
+                Show();
+            }
+            
 
         }
 
@@ -123,14 +131,14 @@ namespace xiaochao
             KeyValueAssembleList[] keyValueAssemblesArray = new KeyValueAssembleList[Column_count];
 
             //判断是否有data文件夹
-            bool data_exist = Directory.Exists(Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "data"));
-            bool local_exist = Directory.Exists(Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "local"));
+            bool data_exist = Directory.Exists(Path.Combine(BaseDir, "data"));
+            bool local_exist = Directory.Exists(Path.Combine(BaseDir, "local"));
             if ((!data_exist)&&(!local_exist)) return;
 
 
             //搜索文件List
-            string[] data_fileArray = Directory.GetFiles("data", "*.*", SearchOption.TopDirectoryOnly);
-            string[] local_fileArray = Directory.GetFiles("local", "*.*", SearchOption.TopDirectoryOnly);
+            string[] data_fileArray = Directory.GetFiles(Path.Combine(BaseDir, "data"), "*.*", SearchOption.TopDirectoryOnly);
+            string[] local_fileArray = Directory.GetFiles(Path.Combine(BaseDir, "local"), "*.*", SearchOption.TopDirectoryOnly);
 
             //连接两个文件List
             string[] fileArray = new string[data_fileArray.Length+local_fileArray.Length];
@@ -236,11 +244,11 @@ namespace xiaochao
 
             if (code == 1)
             {
-                MessageBox.Show("没有检测到data文件夹(1)");
+                System.Windows.MessageBox.Show("没有检测到data文件夹(1)");
             }
             else if (code == 2)
             {
-                MessageBox.Show("没有检测到设置文件, 采用默认设置(2)");
+                System.Windows.MessageBox.Show("没有检测到设置文件, 采用默认设置(2)");
             }
         }
 
@@ -255,6 +263,12 @@ namespace xiaochao
             }
             else
             {
+                
+                Screen screen = Screen.FromPoint(System.Windows.Forms.Cursor.Position);
+                var scaleRatio = Math.Max(VisualTreeHelper.GetDpi(this).DpiScaleX, VisualTreeHelper.GetDpi(this).DpiScaleY);
+
+                this.Left = (screen.WorkingArea.Left + (screen.WorkingArea.Width - this.Width * scaleRatio) / 2) / scaleRatio;
+                this.Top = (screen.WorkingArea.Top + (screen.WorkingArea.Height - this.Height * scaleRatio) / 2) / scaleRatio;
                 RetrieveData();
                 Show();
                 Activate();
@@ -288,11 +302,11 @@ namespace xiaochao
         {
             if (File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "设置.md")))
             {
-                System.Diagnostics.Process.Start("Explorer.exe", Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "设置.md"));
+                System.Diagnostics.Process.Start("Explorer.exe", Path.Combine(BaseDir, "设置.md"));
             }
             else
             {
-                MessageBox.Show("请自行创建 {设置.md} 文件");
+                System.Windows.MessageBox.Show("请自行创建 {设置.md} 文件");
                 System.Diagnostics.Process.Start("Explorer.exe", Directory.GetCurrentDirectory());
             }
 
@@ -315,8 +329,33 @@ namespace xiaochao
         private void Data_Click(object sender, RoutedEventArgs e)
         {
 
-            System.Diagnostics.Process.Start("Explorer.exe", Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "local"));
+            System.Diagnostics.Process.Start("Explorer.exe", Path.Combine(BaseDir, "local"));
 
+        }
+
+
+        //startUp
+        private void StartUp(bool start)
+        {
+            if (start)
+            {
+                try
+                {
+                    Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                    Assembly curAssembly = Assembly.GetExecutingAssembly();
+                    key.SetValue(curAssembly.GetName().Name, "\""+AppDir+"\""+" --autostart");
+                }
+                catch { }
+            }
+            else
+            {
+                try
+                {
+                    Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                    Assembly curAssembly = Assembly.GetExecutingAssembly();
+                    key.DeleteValue(curAssembly.GetName().Name);
+                }catch { }
+            }
         }
 
         //退出程序

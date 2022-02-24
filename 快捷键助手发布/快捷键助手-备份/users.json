@@ -1,0 +1,620 @@
+{
+  "RECORDS": [
+    {
+      "_id": "5ec1386b447ce0116408880d",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1386f447ce0116408880e\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ { \"id\" : \"55864db0-9842-11ea-8aba-b152770985a2\", \"moduleName\" : \"模块\", \"items\" : [ { \"id\" : \"5dea4880-9842-11ea-8aba-b152770985a2\", \"use\" : \"测试\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"65\" } ] ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"5ec13879447ce0116408880f\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec138d4447ce01164088811\" }, \"appName\" : \"electron\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec13c37447ce01164088814\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec13c3e447ce01164088815\" }, \"appName\" : \"obs64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec13c47447ce01164088817\" }, \"appName\" : \"ApplicationFrameHost\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec13c57447ce01164088819\" }, \"appName\" : \"TickTick\" } ]",
+      "email": "test@liu.com",
+      "password": "9d4d6204ee943564637f06093236b181"
+    },
+    {
+      "_id": "5ec1605e447ce0116408881b",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec16067447ce0116408881c\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1606f447ce0116408881e\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1608a447ce0116408881f\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1608e447ce01164088820\" }, \"appName\" : \"ApplicationFrameHost\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec160c5447ce01164088821\" }, \"appName\" : \"fdm\" } ]",
+      "email": "dagwbl@qq.com",
+      "password": "157b9063a4b8eeb011345c883204da88"
+    },
+    {
+      "_id": "5ec16689447ce01164088825",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec166bc447ce01164088826\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec166be447ce01164088827\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1671a447ce01164088828\" }, \"appName\" : \"msedge\" } ]",
+      "email": "zxham@163.com",
+      "password": "f5bb0c8de146c67b44babbf4e6584cc0"
+    },
+    {
+      "_id": "5ec1677d447ce01164088829",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec16784447ce0116408882a\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec167df447ce0116408882b\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec167e3447ce0116408882c\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec168ef447ce0116408882d\" }, \"appName\" : \"PotPlayerMini64\" } ]",
+      "email": "it.ym@qq.com",
+      "password": "1c41d7a0f12c4ea6b8b9b51c370ac27a"
+    },
+    {
+      "_id": "5ec169b0447ce0116408882f",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec16a0c447ce01164088830\" }, \"appName\" : \"googledrivesync\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec16a0c447ce01164088832\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec16a21447ce01164088833\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec16b44447ce01164088835\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec16b79447ce01164088836\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ecd1d8a447ce011640888a2\" }, \"appName\" : \"QQ\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ecde8cf447ce011640888a3\" }, \"appName\" : \"WeChat\" } ]",
+      "email": "eggie@163.com",
+      "password": "644b7242d7ceb2ab6410d3f174955e8f"
+    },
+    {
+      "_id": "5ec170c6447ce01164088837",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec20fe5447ce0116408886f\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec210e2447ce01164088870\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec2a9c9447ce0116408887c\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "o2_2o@msn.com",
+      "password": "b65a79dd0bc519c2aff4aded75ac58e1"
+    },
+    {
+      "_id": "5ec1ccda447ce01164088838",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1cd73447ce01164088839\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1cd7f447ce0116408883a\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1cdba447ce0116408883b\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1cefe447ce0116408883c\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec324fb447ce01164088880\" }, \"appName\" : \"360DesktopLite64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec34d8c447ce01164088886\" }, \"appName\" : \"QQ\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec38843447ce01164088889\" }, \"appName\" : \"devenv\" } ]",
+      "email": "740839751@qq.com",
+      "password": "dd19ea9a72fb0f2566f01f78140206fa"
+    },
+    {
+      "_id": "5ec1d43b447ce0116408883d",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d473447ce0116408883e\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "17860711810@163.com",
+      "password": "8f9ae9e04427ee72e01367dac2638e24"
+    },
+    {
+      "_id": "5ec1d53d447ce01164088840",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d576447ce01164088841\" }, \"appName\" : \"WeChat\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d582447ce01164088843\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e049447ce0116408884e\" }, \"appName\" : \"chrome\" } ]",
+      "email": "maxiaopingfanziwei@gmail.com",
+      "password": "f1ce48265bbc141a183cbd0a0508e9e6"
+    },
+    {
+      "_id": "5ec1d67d447ce01164088844",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d68b447ce01164088845\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d68d447ce01164088846\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d691447ce01164088847\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d88f447ce01164088848\" }, \"appName\" : \"et\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d8ca447ce0116408884a\" }, \"appName\" : \"WeChat\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1d8fb447ce0116408884b\" }, \"appName\" : \"DingTalk\" } ]",
+      "email": "287892512@qq.com",
+      "password": "3a8d6e09d3ec30f063f54b9e9625bffd"
+    },
+    {
+      "_id": "5ec1d9be447ce0116408884d",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "523219809@qq.com",
+      "password": "a870983486784cbca8bef58c19803d9e"
+    },
+    {
+      "_id": "5ec1e26d447ce0116408884f",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e28d447ce01164088850\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e28f447ce01164088851\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e37a447ce01164088855\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e3cd447ce01164088856\" }, \"appName\" : \"ApplicationFrameHost\" } ]",
+      "email": "569975430@qq.com",
+      "password": "8ea01d438e535be9106a63b4e49aced5"
+    },
+    {
+      "_id": "5ec1e2c8447ce01164088852",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e2e2447ce01164088853\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e2f1447ce01164088854\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e5cd447ce01164088859\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e6bb447ce0116408885c\" }, \"appName\" : \"WeChat\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e6cd447ce0116408885e\" }, \"appName\" : \"WINWORD.EXE\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e6df447ce01164088860\" }, \"appName\" : \"EXCEL.EXE\" } ]",
+      "email": "cdkx405128@163.com",
+      "password": "f011b6c3dce8cdb48dca67f1c6343843"
+    },
+    {
+      "_id": "5ec1e413447ce01164088857",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e427447ce01164088858\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ { \"id\" : \"bea9c960-98a7-11ea-8d8e-8355dea2278c\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5ec1e667447ce0116408885a\" }, \"appName\" : \"TIM\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e6a3447ce0116408885b\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e6ca447ce0116408885d\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e711447ce01164088862\" }, \"appName\" : \"chrome\" } ]",
+      "email": "amala19991005@outlook.com",
+      "password": "f046da86e1f731b0b817ef0ebf7c037d"
+    },
+    {
+      "_id": "5ec1e863447ce01164088863",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "284071399@qq.com",
+      "password": "7f9a33cf278f76c8d54cc6e2eb1db3b1"
+    },
+    {
+      "_id": "5ec1e959447ce01164088864",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1e982447ce01164088865\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "751507422@qq.com",
+      "password": "fb166b320823f94dbfcb82ee2f5f3568"
+    },
+    {
+      "_id": "5ec1ef08447ce01164088867",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1ef13447ce01164088868\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "975319942@qq.com",
+      "password": "61ba072a129c0ae544c483e812c057e0"
+    },
+    {
+      "_id": "5ec1ef93447ce01164088869",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1efb1447ce0116408886a\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "1370139154@qq.com",
+      "password": "2d3d61f918f2ff7a8cb64a9ae0ce056f"
+    },
+    {
+      "_id": "5ec1f294447ce0116408886b",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec1f2a2447ce0116408886c\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ { \"id\" : \"2de23680-98af-11ea-87fd-7b0eaa8acc96\", \"moduleName\" : \"模块\", \"items\" : [ { \"id\" : \"5d5287d0-98af-11ea-87fd-7b0eaa8acc96\", \"use\" : \"123\", \"keys\" : [ { \"$numberInt\" : \"49\" }, { \"$numberInt\" : \"50\" }, { \"$numberInt\" : \"51\" } ], \"info\" : { } }, { \"id\" : \"63210ab0-98af-11ea-87fd-7b0eaa8acc96\", \"use\" : \"123\", \"keys\" : [ { \"$numberInt\" : \"49\" }, { \"$numberInt\" : \"50\" }, { \"$numberInt\" : \"51\" } ], \"info\" : { } } ] }, { \"id\" : \"50293cc0-98af-11ea-87fd-7b0eaa8acc96\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"51a1abf0-98af-11ea-87fd-7b0eaa8acc96\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"51e25e70-98af-11ea-87fd-7b0eaa8acc96\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"522b4e50-98af-11ea-87fd-7b0eaa8acc96\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"526d3950-98af-11ea-87fd-7b0eaa8acc96\", \"moduleName\" : \"123块\", \"items\" : [ ] }, { \"id\" : \"52b69e60-98af-11ea-87fd-7b0eaa8acc96\", \"moduleName\" : \"模123块\", \"items\" : [ ] }, { \"id\" : \"52f86250-98af-11ea-87fd-7b0eaa8acc96\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5ec1f2a4447ce0116408886d\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "asdfasfd@asdf.com",
+      "password": "f25a2fc72690b780b2a14e140ef6a9e0"
+    },
+    {
+      "_id": "5ec2023a447ce0116408886e",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "486889026@qq.com",
+      "password": "0aa109a24c51bbee3b8def91fd51a88b"
+    },
+    {
+      "_id": "5ec27a76447ce01164088872",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec27a89447ce01164088873\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "yumenawei@qq.com",
+      "password": "7d22827a43a1701fa99604f967ddd7b6"
+    },
+    {
+      "_id": "5ec2a8bb447ce01164088876",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec2a8d5447ce01164088877\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec2a8e1447ce01164088878\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec2a8e7447ce01164088879\" }, \"appName\" : \"onmyoji\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec2a8f3447ce0116408887b\" }, \"appName\" : \"msedge\" } ]",
+      "email": "641161516@qq.com",
+      "password": "9ec215516b004afb19d6b528b9b3d9d7"
+    },
+    {
+      "_id": "5ec2b981447ce0116408887d",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "recobaggio@qq.com",
+      "password": "8016a3ecd41cf90077dbfa1a90877849"
+    },
+    {
+      "_id": "5ec33afc447ce01164088882",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec33b16447ce01164088883\" }, \"appName\" : \"EXCEL.EXE\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec33c05447ce01164088884\" }, \"appName\" : \"chrome\" } ]",
+      "email": "ttc077sk@mail.bccto.me",
+      "password": "a096e8fecd0b2f4677f6f34b66fde82b"
+    },
+    {
+      "_id": "5ec36511447ce01164088887",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec3651f447ce01164088888\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec3d52e447ce0116408888b\" }, \"appName\" : \"cloudmusic\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec77e97447ce0116408889d\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec77e9b447ce0116408889e\" }, \"appName\" : \"WINWORD.EXE\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec77ea3447ce0116408889f\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "2215821095@qq.com",
+      "password": "64f21e69899ed53de92c9e254dc3fbc4"
+    },
+    {
+      "_id": "5ec4b734447ce0116408888e",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec4b7be447ce01164088892\" }, \"appName\" : \"explorer\" } ]",
+      "email": "898821617@qq.com",
+      "password": "18d0c3d22ec45fa5e33c46522df36396"
+    },
+    {
+      "_id": "5ec4b755447ce0116408888f",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ { \"id\" : \"e58487a0-9a5f-11ea-9cd2-955df81e9fa9\", \"moduleName\" : \"鹤城Excel\", \"items\" : [ { \"id\" : \"b2a94920-9a63-11ea-98ff-e5479994e9c8\", \"use\" : \"撤销\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"90\" } ], \"info\" : { } }, { \"id\" : \"d90fc2b0-9a63-11ea-98ff-e5479994e9c8\", \"use\" : \"取消撤回\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"89\" } ], \"info\" : { } }, { \"id\" : \"afbd8c20-9a69-11ea-95d9-59d67d58b5ca\", \"use\" : \"保存\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"83\" } ], \"info\" : { } }, { \"id\" : \"3bde8b40-9a6b-11ea-9003-e5ac478c1a60\", \"use\" : \"复制\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"67\" } ], \"info\" : { } }, { \"id\" : \"42cd7240-9a6b-11ea-9003-e5ac478c1a60\", \"use\" : \"粘贴\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"86\" } ], \"info\" : { } }, { \"id\" : \"ae954c90-9bd9-11ea-8537-db688a762cbe\", \"use\" : \"复制上格\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"68\" } ], \"info\" : { } }, { \"id\" : \"e0d90300-9bf6-11ea-90ef-35ac24fb439c\", \"use\" : \"打印\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"80\" } ], \"info\" : { } }, { \"id\" : \"1fdd8b10-9bda-11ea-8537-db688a762cbe\", \"use\" : \"合并内容\", \"keys\" : [ [ { \"$numberInt\" : \"187\" } ], [ { \"$numberInt\" : \"80\" } ], [ { \"$numberInt\" : \"72\" } ], [ { \"$numberInt\" : \"79\" } ], [ { \"$numberInt\" : \"78\" } ], [ { \"$numberInt\" : \"69\" } ], [ { \"$numberInt\" : \"84\" } ], [ { \"$numberInt\" : \"73\" } ], [ { \"$numberInt\" : \"67\" } ] ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"5ec4b77b447ce01164088890\" }, \"appName\" : \"wps\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec4b77c447ce01164088891\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec4b7ec447ce01164088893\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec4c06e447ce01164088894\" }, \"appName\" : \"360chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec4c07b447ce01164088896\" }, \"appName\" : \"WeChat\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec4d5e3447ce01164088897\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec7735b447ce0116408889b\" }, \"appName\" : \"photolaunch\" } ]",
+      "email": "上海鹤城",
+      "password": "18d0c3d22ec45fa5e33c46522df36396"
+    },
+    {
+      "_id": "5ec4db3c447ce01164088898",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec4db57447ce01164088899\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec4db5f447ce0116408889a\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "a1070018330@gmail.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
+    },
+    {
+      "_id": "5ec780af447ce011640888a0",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ec780bf447ce011640888a1\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "xufanchn@outlook.com",
+      "password": "792e9dd50a5773ee564e9300aadaaf5e"
+    },
+    {
+      "_id": "5ed5e54a447ce011640888a5",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ed5e58e447ce011640888a6\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ed5e5d9447ce011640888a7\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ed5e5f4447ce011640888a8\" }, \"appName\" : \"Flash\" } ]",
+      "email": "58663791@qq.com",
+      "password": "07a8b422bd4c1a53288ef14b1a57fcd2"
+    },
+    {
+      "_id": "5ed61433447ce011640888aa",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ed6146d447ce011640888ab\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ed61492447ce011640888ac\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "ssq17393123564@163.com",
+      "password": "a43a486fd9ee278fa9c6a5f7b33c7c6e"
+    },
+    {
+      "_id": "5edecd51447ce011640888b2",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5edecdf4447ce011640888b3\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "aminoyls@gmail.com",
+      "password": "d62a73388ea6daadbe07b9573ff40e90"
+    },
+    {
+      "_id": "5ee04c07447ce011640888b4",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee04ce0447ce011640888b5\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee04e36447ce011640888b6\" }, \"appName\" : \"Photoshop\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee04e46447ce011640888b8\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "1259510708@qq.com`",
+      "password": "06a8647723d4d285aefdb02ed285220b"
+    },
+    {
+      "_id": "5ee87d6e447ce011640888ba",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee87da8447ce011640888bb\" }, \"appName\" : \"baidunetdisk\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee87daa447ce011640888bc\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee87e18447ce011640888bd\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee87f24447ce011640888be\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee87f84447ce011640888bf\" }, \"appName\" : \"MarkdownPad2\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee884d1447ce011640888c1\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee89047447ce011640888c2\" }, \"appName\" : \"WINWORD.EXE\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fac91be5fea626c05ca1177\" }, \"appName\" : \"notepad++\" } ]",
+      "email": "1255002874@qq.com",
+      "password": "f52f90ca9473ba793ddbe65b70a3e6f3"
+    },
+    {
+      "_id": "5ee9b2e6447ce011640888c3",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee9b2fe447ce011640888c4\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee9b321447ce011640888c5\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ { \"id\" : \"9f22b670-b061-11ea-893e-a3cf8d76bdc8\", \"moduleName\" : \"Win桌面操作习惯\", \"items\" : [ { \"id\" : \"cd07d3e0-b061-11ea-893e-a3cf8d76bdc8\", \"use\" : \"打开任务管理器\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"27\" } ] ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"5ee9b346447ce011640888c6\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee9b34f447ce011640888c7\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5ee9b4fc447ce011640888c8\" }, \"appName\" : \"Rainmeter\" } ]",
+      "email": "1764026842@qq.com",
+      "password": "a87e3976feadb9d454d74b9eebd94125"
+    },
+    {
+      "_id": "5eea12ba447ce011640888cb",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5eea1323447ce011640888cc\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5eea1323447ce011640888cd\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5eea132f447ce011640888ce\" }, \"appName\" : \"VISIO.EXE\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5eea173c447ce011640888cf\" }, \"appName\" : \"360DesktopLite64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5eef4fc9447ce011640888d0\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "1255383237@qq.com",
+      "password": "a5edd98a534ef2fc64d4a2d599e4fa22"
+    },
+    {
+      "_id": "5efaa84c447ce011640888d2",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efaa864447ce011640888d3\" }, \"appName\" : \"360chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efaa897447ce011640888d4\" }, \"appName\" : \"Photoshop\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efaa8eb447ce011640888d5\" }, \"appName\" : \"cloudmusic\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efaa8f7447ce011640888d6\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efaa90f447ce011640888d7\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efaaad3447ce011640888d8\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ { \"id\" : \"56c845c0-ba7f-11ea-b4bf-e9d602dbd12a\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"57501360-ba7f-11ea-b4bf-e9d602dbd12a\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5efaaae5447ce011640888d9\" }, \"appName\" : \"XMind\" } ]",
+      "email": "461232365@qq.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
+    },
+    {
+      "_id": "5efec832663c900a79238306",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efec859663c900a79238307\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efec891663c900a79238308\" }, \"appName\" : \"EXCEL.EXE\" }, { \"appData\" : [ { \"id\" : \"d755e6a0-bcf2-11ea-9b5e-fbd1e939aa4f\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5efec8bc663c900a79238309\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efeca09663c900a7923830a\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5efeca22663c900a7923830b\" }, \"appName\" : \"WeChat\" } ]",
+      "email": "244147855@qq.com",
+      "password": "98536265bb0b7927eca140b2d0042223"
+    },
+    {
+      "_id": "5eff4716663c900a7923830c",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5eff47a2663c900a7923830d\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "1115428001@qq.com",
+      "password": "eb91d80d1457a04be82e6080f6cb5fda"
+    },
+    {
+      "_id": "5f07d2d0663c900a7923830f",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ { \"id\" : \"cc63d330-c25e-11ea-9ec6-9d8873ef4212\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5f07e287663c900a79238312\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f07e29a663c900a79238313\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "136900214@qq.com",
+      "password": "7a9c3b8634f163da86d82f4dc2948688"
+    },
+    {
+      "_id": "5f09a220663c900a79238314",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f09a29f663c900a79238315\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f09a2c7663c900a79238316\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f09a2cb663c900a79238317\" }, \"appName\" : \"explorer\" } ]",
+      "email": "1924533433@qq.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
+    },
+    {
+      "_id": "5f0eab7d663c900a79238318",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f0eabea663c900a79238319\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f0eac19663c900a7923831a\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "111",
+      "password": "6512bd43d9caa6e02c990b0a82652dca"
+    },
+    {
+      "_id": "5f171509663c900a7923831c",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f171511663c900a7923831d\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f171513663c900a7923831e\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f17151b663c900a7923831f\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f171520663c900a79238320\" }, \"appName\" : \"EXCEL.EXE\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f171530663c900a79238321\" }, \"appName\" : \"DesktopMgr64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f171537663c900a79238323\" }, \"appName\" : \"WINWORD.EXE\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f17159e663c900a79238324\" }, \"appName\" : \"Thunder\" } ]",
+      "email": "827515145@qq.com",
+      "password": "c848b7081ba96a1460e472495f68b888"
+    },
+    {
+      "_id": "5f2375905fea626c05ca10df",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2378a55fea626c05ca10e1\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2378ad5fea626c05ca10e2\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2378ba5fea626c05ca10e3\" }, \"appName\" : \"xplorer2_64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2379b65fea626c05ca10e4\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f237bc55fea626c05ca10e5\" }, \"appName\" : \"studio64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2765d55fea626c05ca10e7\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f28aa895fea626c05ca10e8\" }, \"appName\" : \"幕布\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f29fd4f5fea626c05ca10f8\" }, \"appName\" : \"Clash for Windows - Dler Cloud\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f3c790f5fea626c05ca1103\" }, \"appName\" : \"Code\" } ]",
+      "email": "adfadf@163.com",
+      "password": "4a9d970a38b63f32496638e519ff34b3"
+    },
+    {
+      "_id": "5f29183c5fea626c05ca10ea",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2918605fea626c05ca10eb\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2918b65fea626c05ca10ec\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2918cb5fea626c05ca10ed\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2918d05fea626c05ca10ee\" }, \"appName\" : \"QQPlayer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2919645fea626c05ca10f0\" }, \"appName\" : \"HuoChat\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2919855fea626c05ca10f2\" }, \"appName\" : \"YoudaoNote\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2919fa5fea626c05ca10f4\" }, \"appName\" : \"Typora\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f292b455fea626c05ca10f6\" }, \"appName\" : \"Code\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f292ef95fea626c05ca10f7\" }, \"appName\" : \"cloudmusic\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f4369985fea626c05ca1104\" }, \"appName\" : \"上课投屏\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f57673f5fea626c05ca111b\" }, \"appName\" : \"Xshell\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f67f6935fea626c05ca1131\" }, \"appName\" : \"DesktopMgr64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f86ae7d5fea626c05ca114f\" }, \"appName\" : \"studio64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8c34975fea626c05ca1164\" }, \"appName\" : \"Shadowverse\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb508ee5fea626c05ca1182\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb50b335fea626c05ca1183\" }, \"appName\" : \"YoudaoDict\" } ]",
+      "email": "1098148273@qq.com",
+      "password": "9a40bf57f7c5c6d317ac689dfd359f89"
+    },
+    {
+      "_id": "5f2d3ce65fea626c05ca10fa",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2d3cf25fea626c05ca10fb\" }, \"appName\" : \"Clash for Windows\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2d3cf45fea626c05ca10fd\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2d3cf95fea626c05ca10fe\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2d3cff5fea626c05ca10ff\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2d3d2c5fea626c05ca1100\" }, \"appName\" : \"Code - Insiders\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f2d3e925fea626c05ca1102\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "test@gmail.com",
+      "password": "098f6bcd4621d373cade4e832627b4f6"
+    },
+    {
+      "_id": "5f468aeb5fea626c05ca1106",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f468af45fea626c05ca1107\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f468bf45fea626c05ca1108\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f468c095fea626c05ca1109\" }, \"appName\" : \"explorer\" } ]",
+      "email": "958149423@qq.com",
+      "password": "8c2fc4869203da887718b94069678f48"
+    },
+    {
+      "_id": "5f4774dd5fea626c05ca110a",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "1123987903@qq.com",
+      "password": "7ab7e79a5b7587452ba4a7b7ecdbc928"
+    },
+    {
+      "_id": "5f4faeb65fea626c05ca110d",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f4fafe55fea626c05ca110e\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f4fb0825fea626c05ca110f\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "350800267@qq.com",
+      "password": "6b1829f3dfbfa532fb9221ec293f8329"
+    },
+    {
+      "_id": "5f5330245fea626c05ca1111",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5330365fea626c05ca1112\" }, \"appName\" : \"360chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5330405fea626c05ca1113\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5330635fea626c05ca1114\" }, \"appName\" : \"XZDesktop64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f53306b5fea626c05ca1115\" }, \"appName\" : \"CorelDRW\" }, { \"appData\" : [ { \"id\" : \"4675a810-ef41-11ea-a7d3-2f1a069ecad2\", \"moduleName\" : \"快速查看\", \"items\" : [ { \"id\" : \"63fb2ea0-ef41-11ea-a7d3-2f1a069ecad2\", \"use\" : \"查看大图\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"18\" }, { \"$numberInt\" : \"49\" } ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"5f5330b15fea626c05ca1117\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5441325fea626c05ca111a\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "971695753@qq.com",
+      "password": "a120064d20855b25863e503c8d7b215f"
+    },
+    {
+      "_id": "5f53b0e45fea626c05ca1118",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ { \"id\" : \"e90be700-ef8d-11ea-9a54-8f8318aeaa64\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5f53b10f5fea626c05ca1119\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "2807623570@qq.com",
+      "password": "63404ca77f95b49ab2cf09a861a5e903"
+    },
+    {
+      "_id": "5f58e0565fea626c05ca111d",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f58e0625fea626c05ca111e\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f58e06b5fea626c05ca111f\" }, \"appName\" : \"ali213Pk\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f58e0b85fea626c05ca1121\" }, \"appName\" : \"360se\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f58e1715fea626c05ca1123\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f58e2765fea626c05ca1124\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "3156429822@qq.com",
+      "password": "c3fff14ec0c9d6e2874b49c84c8c3e94"
+    },
+    {
+      "_id": "5f5eff725fea626c05ca1125",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5eff885fea626c05ca1126\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5effb15fea626c05ca1127\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5f00015fea626c05ca1128\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5f05205fea626c05ca1129\" }, \"appName\" : \"OnlineCS\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f5f05235fea626c05ca112b\" }, \"appName\" : \"cloudmusic\" } ]",
+      "email": "151333328@qq.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
+    },
+    {
+      "_id": "5f6718dd5fea626c05ca112c",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f6718ea5fea626c05ca112d\" }, \"appName\" : \"WINWORD.EXE\" }, { \"appData\" : [ { \"id\" : \"0f82f4e0-fb1f-11ea-b7c9-0b5228128c96\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5f67190a5fea626c05ca112e\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f67193c5fea626c05ca112f\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f67194d5fea626c05ca1130\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f6844d45fea626c05ca1132\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "1984632280@qq.com",
+      "password": "a3e18ec62f6e66a16c21d45bccd1a20f"
+    },
+    {
+      "_id": "5f71939c5fea626c05ca1134",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f7193a35fea626c05ca1135\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "jsh199712@outlook.com",
+      "password": "86c7a90e753dcecc81ef1b3e161caaed"
+    },
+    {
+      "_id": "5f7295955fea626c05ca1136",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f72959c5fea626c05ca1137\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f7295ae5fea626c05ca1138\" }, \"appName\" : \"wps\" } ]",
+      "email": "1092881036@qq.com",
+      "password": "c989ce749cb21f7d98c443d7b6833f76"
+    },
+    {
+      "_id": "5f72ed865fea626c05ca1139",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f72ed9e5fea626c05ca113a\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f72eda35fea626c05ca113b\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f72edcc5fea626c05ca113c\" }, \"appName\" : \"WeChat\" }, { \"appData\" : [ { \"id\" : \"0c058000-0248-11eb-b4b0-8d3b10fd144d\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5f731c515fea626c05ca113d\" }, \"appName\" : \"ApplicationFrameHost\" }, { \"appData\" : [ { \"id\" : \"c9308dd0-024a-11eb-b4b0-8d3b10fd144d\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5f7320ed5fea626c05ca113e\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ { \"id\" : \"84967260-0255-11eb-b4b0-8d3b10fd144d\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"96fbeb60-0255-11eb-b4b0-8d3b10fd144d\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"97479a60-0255-11eb-b4b0-8d3b10fd144d\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"97b59e70-0255-11eb-b4b0-8d3b10fd144d\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5f7332da5fea626c05ca113f\" }, \"appName\" : \"firefox\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f73335d5fea626c05ca1140\" }, \"appName\" : \"GeePlayer\" } ]",
+      "email": "540604604@qq.com",
+      "password": "10ebdd866f01fcebc9d0661a8eb34a9f"
+    },
+    {
+      "_id": "5f78873a5fea626c05ca1142",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f7887635fea626c05ca1143\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f7887665fea626c05ca1144\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "95752015@qq.com",
+      "password": "1aed0186c7128a0299286c1e99b28078"
+    },
+    {
+      "_id": "5f788a375fea626c05ca1145",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f788a445fea626c05ca1146\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ { \"id\" : \"75259a80-0585-11eb-9299-9d0b51252994\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5f788a465fea626c05ca1147\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ { \"id\" : \"e656b210-0586-11eb-9299-9d0b51252994\", \"moduleName\" : \"WIN\", \"items\" : [ { \"id\" : \"0a328920-0587-11eb-9299-9d0b51252994\", \"use\" : \"剪贴板\", \"keys\" : [ [ { \"$numberInt\" : \"91\" } ], [ { \"$numberInt\" : \"83\" } ] ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"5f788a535fea626c05ca1148\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f788a5e5fea626c05ca1149\" }, \"appName\" : \"QQ\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f788baf5fea626c05ca114a\" }, \"appName\" : \"ApplicationFrameHost\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f78947a5fea626c05ca114b\" }, \"appName\" : \"DesktopMgr64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f789e035fea626c05ca114c\" }, \"appName\" : \"Photoshop\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f79b8bd5fea626c05ca114d\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f7a1d9a5fea626c05ca114e\" }, \"appName\" : \"SearchUI\" } ]",
+      "email": "a95752015@gmail.com",
+      "password": "cd57f5e00dc008dc946f5013c09b5f32"
+    },
+    {
+      "_id": "5f8ab87f5fea626c05ca1152",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab8a05fea626c05ca1153\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab8ba5fea626c05ca1154\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab8d05fea626c05ca1155\" }, \"appName\" : \"YoudaoNote\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab8e45fea626c05ca1156\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab8ee5fea626c05ca1157\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab90e5fea626c05ca1158\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab9185fea626c05ca1159\" }, \"appName\" : \"YoudaoDict\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab91e5fea626c05ca115a\" }, \"appName\" : \"HipsMain\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab9235fea626c05ca115c\" }, \"appName\" : \"IDMan\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab9275fea626c05ca115e\" }, \"appName\" : \"v2rayN\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab9385fea626c05ca1160\" }, \"appName\" : \"mspaint\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ab9435fea626c05ca1162\" }, \"appName\" : \"sublime_text\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ec9bf5fea626c05ca1166\" }, \"appName\" : \"SearchUI\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f8ec9c75fea626c05ca1167\" }, \"appName\" : \"wegame\" } ]",
+      "email": "stephen_read@163.com",
+      "password": "1885e4de1e22fee5c8def92dcbeae6f4"
+    },
+    {
+      "_id": "5f9786085fea626c05ca1169",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f97861f5fea626c05ca116a\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f98c33f5fea626c05ca116b\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f98c3435fea626c05ca116c\" }, \"appName\" : \"Joplin\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f98c3435fea626c05ca116d\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "cjxxd@163.com",
+      "password": "99976a7747583f3638cb85020ed24ac9"
+    },
+    {
+      "_id": "5f9d4cd45fea626c05ca116f",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f9d4ce35fea626c05ca1170\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f9d4dfc5fea626c05ca1171\" }, \"appName\" : \"Photoshop\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5f9d4e055fea626c05ca1172\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fa49b7c5fea626c05ca1174\" }, \"appName\" : \"ApplicationFrameHost\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fa49b9d5fea626c05ca1175\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fa8cfbb5fea626c05ca1176\" }, \"appName\" : \"chrome\" } ]",
+      "email": "weimingchy@qq.com",
+      "password": "a01fa05dd9413f18c8d21284e1a6cc05"
+    },
+    {
+      "_id": "5fb434025fea626c05ca117a",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb4340e5fea626c05ca117b\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb4341e5fea626c05ca117c\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb434795fea626c05ca117d\" }, \"appName\" : \"sublime_text\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb4348d5fea626c05ca117e\" }, \"appName\" : \"PotPlayerMini64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb434905fea626c05ca117f\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb454565fea626c05ca1180\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fb454735fea626c05ca1181\" }, \"appName\" : \"Thunder\" } ]",
+      "email": "2190622137@qq.com",
+      "password": "1c63129ae9db9c60c3e8aa94d3e00495"
+    },
+    {
+      "_id": "5fcdd1855fea626c05ca1188",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fcdd1955fea626c05ca1189\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fcdd1b15fea626c05ca118a\" }, \"appName\" : \"idea64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fcdd1b35fea626c05ca118b\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fcdd1d25fea626c05ca118c\" }, \"appName\" : \"notepad++\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fcdd1e15fea626c05ca118d\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fcdd1ec5fea626c05ca118e\" }, \"appName\" : \"QQ\" } ]",
+      "email": "1249217495@qq.com",
+      "password": "32b751d7b28193a272597b102928cc5e"
+    },
+    {
+      "_id": "5fd9e2495fea626c05ca118f",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ { \"id\" : \"21836cb0-3f8a-11eb-a25d-99957c817f9f\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5fd9e27e5fea626c05ca1190\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fd9e29e5fea626c05ca1191\" }, \"appName\" : \"QxDesktop64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fd9e2a25fea626c05ca1193\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "2760284808@qq.com",
+      "password": "dd58f297e7be28ae6481f61b3e57a6a8"
+    },
+    {
+      "_id": "5fdc4a7d5fea626c05ca1194",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fdc4a875fea626c05ca1195\" }, \"appName\" : \"YoudaoNote\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fdc4ac75fea626c05ca1196\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fdc4ad25fea626c05ca1197\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fdc4b7c5fea626c05ca1198\" }, \"appName\" : \"idea64\" }, { \"appData\" : [ { \"id\" : \"75a99cb0-40cf-11eb-ae87-418bd21face3\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"78bf1a10-40cf-11eb-ae87-418bd21face3\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"79a3d4c0-40cf-11eb-ae87-418bd21face3\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"79ca4880-40cf-11eb-ae87-418bd21face3\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"79e54a90-40cf-11eb-ae87-418bd21face3\", \"moduleName\" : \"\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"5fdc4ba35fea626c05ca1199\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fdc745e5fea626c05ca119a\" }, \"appName\" : \"explorer\" } ]",
+      "email": "wyswydx@gmail.com",
+      "password": "25d55ad283aa400af464c76d713c07ad"
+    },
+    {
+      "_id": "5fe598005fea626c05ca119b",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"5fe598185fea626c05ca119c\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "16894013@qq.com",
+      "password": "7483442645d25a7948008d7ff022f281"
+    },
+    {
+      "_id": "5ffc7cf15fea626c05ca119f",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "1285787300@qq.com",
+      "password": "bd9bb296627d4f1ff635e829ac9b9a9a"
+    },
+    {
+      "_id": "600b82515fea626c05ca11a0",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "840089901@qq.com",
+      "password": "c088c8c775221acbc1c44604e8374d8a"
+    },
+    {
+      "_id": "600fb5fe5fea626c05ca11a2",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"600fb64f5fea626c05ca11a3\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"600fb6835fea626c05ca11a4\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"600fb68a5fea626c05ca11a5\" }, \"appName\" : \"Code - Insiders\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"600fb8a95fea626c05ca11a6\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"600fb8a95fea626c05ca11a7\" }, \"appName\" : \"SCM\" } ]",
+      "email": "zhengyongtech@163.com",
+      "password": "5163954d89a0f08a3bdc2923b37dddbe"
+    },
+    {
+      "_id": "601a386d5fea626c05ca11ab",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601a38aa5fea626c05ca11ac\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601a38ae5fea626c05ca11ad\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601a38b15fea626c05ca11ae\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601a38c65fea626c05ca11af\" }, \"appName\" : \"HearthstoneDeckTracker\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601a39265fea626c05ca11b1\" }, \"appName\" : \"CredentialUIBroker\" }, { \"appData\" : [ { \"id\" : \"2a6fde30-65e6-11eb-8feb-d56d5dcc09cb\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"601a3e255fea626c05ca11b3\" }, \"appName\" : \"dopus\" }, { \"appData\" : [ { \"id\" : \"cdcab880-66e9-11eb-9bac-1b7e2b9e130b\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"601a3e355fea626c05ca11b5\" }, \"appName\" : \"DesktopMgr64\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601bf19a5fea626c05ca11ba\" }, \"appName\" : \"HSDisconnector\" } ]",
+      "email": "505315435@qq.com",
+      "password": "5ef9fc6320ba0deeb79d9d17c700d1ca"
+    },
+    {
+      "_id": "601bb9815fea626c05ca11b6",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "liuchengarcher@163.com",
+      "password": "6eef52a0c34b6a833808fcf5c41391fe"
+    },
+    {
+      "_id": "601dfd0d5fea626c05ca11bc",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601dfd1b5fea626c05ca11bd\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601dfd265fea626c05ca11be\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601dfd285fea626c05ca11bf\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"601dfd695fea626c05ca11c0\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "1849795346@qq.com",
+      "password": "43f561f817a867d58bbd608fc025d159"
+    },
+    {
+      "_id": "603703f25fea626c05ca11c1",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ { \"id\" : \"d7d140a0-770c-11eb-a32c-ff869aaa9fe2\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"6037041f5fea626c05ca11c2\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "liucl0208@outlook.com",
+      "password": "5bd6d53128cfb53c14ad1c3298eb492d"
+    },
+    {
+      "_id": "60374c9d5fea626c05ca11c3",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60374cd75fea626c05ca11c4\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60374d065fea626c05ca11c5\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60374d0a5fea626c05ca11c6\" }, \"appName\" : \"WeChat\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60374d145fea626c05ca11c7\" }, \"appName\" : \"mailmaster\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60374d195fea626c05ca11c9\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60374d5d5fea626c05ca11ca\" }, \"appName\" : \"zotero\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60374d8a5fea626c05ca11cc\" }, \"appName\" : \"Feishu\" } ]",
+      "email": "zhbery@126.com",
+      "password": "80d02e895bbd851dfba03c085f9fcc86"
+    },
+    {
+      "_id": "604454555fea626c05ca11cf",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ { \"id\" : \"c94fdf60-7efe-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"模块\", \"items\" : [ { \"id\" : \"ccfc1e80-7efe-11eb-b6e7-d37aba30a407\", \"use\" : \"DittoHotKey\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"192\" } ] ], \"info\" : { } }, { \"id\" : \"dede0fa0-7efe-11eb-b6e7-d37aba30a407\", \"use\" : \"Hide Taskbar\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"27\" } ] ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"604454605fea626c05ca11d0\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6044548f5fea626c05ca11d1\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ { \"id\" : \"ef8d7430-7efe-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"模块\", \"items\" : [ { \"id\" : \"ffcf22d0-7efe-11eb-b6e7-d37aba30a407\", \"use\" : \"创建新页面\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"78\" } ] ], \"info\" : { } }, { \"id\" : \"07cb0d00-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"打开一个新的 Notion 窗口\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"78\" } ] ], \"info\" : { } }, { \"id\" : \"0f6d6580-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"快速查找页面（可用于快速跳转到其他页面）\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"80\" } ] ], \"info\" : { } }, { \"id\" : \"171b08a0-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"返回上一页\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"219\" } ] ], \"info\" : { } }, { \"id\" : \"1cad45d0-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"进入下一页\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"221\" } ] ], \"info\" : { } }, { \"id\" : \"22ebefa0-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"转到父页面\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"85\" } ] ], \"info\" : { } }, { \"id\" : \"298081a0-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"切换黑暗模式\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"76\" } ] ], \"info\" : { } }, { \"id\" : \"2f58ef90-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"打开 / 关闭侧边栏\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"220\" } ] ], \"info\" : { } }, { \"id\" : \"389bffc0-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"用于选择添加页面的位置\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"80\" } ] ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"604454925fea626c05ca11d2\" }, \"appName\" : \"Notion\" }, { \"appData\" : [ { \"id\" : \"623f54d0-7eff-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"通用\", \"items\" : [ { \"id\" : \"0b088f50-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"新建文档\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"78\" } ] ], \"info\" : { } }, { \"id\" : \"14d31f00-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"打开文档\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"79\" } ] ], \"info\" : { } }, { \"id\" : \"1b1216f0-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"打印文档\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"80\" } ] ], \"info\" : { } }, { \"id\" : \"315c6b40-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"关闭文档\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"87\" } ] ], \"info\" : { } }, { \"id\" : \"a34aadc0-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"文档切换\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"8bcbdba0-7f01-11eb-b6e7-d37aba30a407\", \"use\" : \"截图\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"88\" } ] ], \"info\" : { } } ] }, { \"id\" : \"4bda3aa0-7f01-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"文字\", \"items\" : [ { \"id\" : \"05148310-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"左对齐\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"76\" } ] ], \"info\" : { } }, { \"id\" : \"21a98f20-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"右对齐\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"82\" } ] ], \"info\" : { } }, { \"id\" : \"c842e6c0-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"字体\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"68\" } ] ], \"info\" : { } }, { \"id\" : \"840304d0-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"增大字号\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"221\" } ] ], \"info\" : { } }, { \"id\" : \"8af19db0-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"减小字号\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"219\" } ] ], \"info\" : { } }, { \"id\" : \"f57aad30-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"两端对齐\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"74\" } ] ], \"info\" : { } }, { \"id\" : \"2a7636d0-7f00-11eb-b6e7-d37aba30a407\", \"use\" : \"下划线\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"85\" } ] ], \"info\" : { } }, { \"id\" : \"f069d500-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"倾斜\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"73\" } ] ], \"info\" : { } }, { \"id\" : \"bb258290-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"全选\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"65\" } ] ], \"info\" : { } }, { \"id\" : \"ea384a90-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"替换\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"72\" } ] ], \"info\" : { } }, { \"id\" : \"e4105d10-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"定位\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"71\" } ] ], \"info\" : { } }, { \"id\" : \"d3f0dc70-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"查找\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"70\" } ] ], \"info\" : { } }, { \"id\" : \"c1d67630-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"加粗\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"66\" } ] ], \"info\" : { } }, { \"id\" : \"ce914800-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"居中\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"69\" } ] ], \"info\" : { } }, { \"id\" : \"fd633670-7eff-11eb-b6e7-d37aba30a407\", \"use\" : \"超链接\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"75\" } ] ], \"info\" : { } }, { \"id\" : \"254a2390-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到左侧的一个字符\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"37\" } ] ], \"info\" : { } }, { \"id\" : \"2f335ed0-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到右侧的一个字符\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"39\" } ] ], \"info\" : { } }, { \"id\" : \"403c2e00-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到上一行\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"38\" } ] ], \"info\" : { } }, { \"id\" : \"46d68c60-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到下一行\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"40\" } ] ], \"info\" : { } }, { \"id\" : \"507a3320-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到段首\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"38\" } ] ], \"info\" : { } }, { \"id\" : \"58345960-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到段尾\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"40\" } ] ], \"info\" : { } } ] }, { \"id\" : \"69325320-7f02-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"表格\", \"items\" : [ { \"id\" : \"7aa61920-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"向下填充\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"68\" } ] ], \"info\" : { } }, { \"id\" : \"874302b0-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"向右填充\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"82\" } ] ], \"info\" : { } }, { \"id\" : \"8eaac330-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"定义名称\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"114\" } ] ], \"info\" : { } }, { \"id\" : \"94905080-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"插入超链接\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"75\" } ] ], \"info\" : { } }, { \"id\" : \"9b3c3b10-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"键入当前日期\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"186\" } ] ], \"info\" : { } }, { \"id\" : \"a208f410-7f02-11eb-b6e7-d37aba30a407\", \"use\" : \"键入当前时间\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"186\" } ] ], \"info\" : { } }, { \"id\" : \"2ce70860-7f03-11eb-b6e7-d37aba30a407\", \"use\" : \"向右选取单元格\", \"keys\" : [ [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"38ae2b60-7f03-11eb-b6e7-d37aba30a407\", \"use\" : \"向左选取单元格\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"591b8fa0-7f03-11eb-b6e7-d37aba30a407\", \"use\" : \"显示清单的当前列中的数值下拉列表\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"40\" } ] ], \"info\" : { } }, { \"id\" : \"74c21d00-7f03-11eb-b6e7-d37aba30a407\", \"use\" : \"合并居中\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"77\" } ] ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"604454a45fea626c05ca11d4\" }, \"appName\" : \"et\" }, { \"appData\" : [ { \"id\" : \"38e83a40-7f1b-11eb-a5a2-67984688d759\", \"moduleName\" : \"模块\", \"items\" : [ { \"id\" : \"3ba51050-7f1b-11eb-a5a2-67984688d759\", \"use\" : \"DittoHotKey\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"192\" } ] ], \"info\" : { } }, { \"id\" : \"429b9870-7f1b-11eb-a5a2-67984688d759\", \"use\" : \"Hide Taskbar\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"27\" } ] ], \"info\" : { } }, { \"id\" : \"f707d5b0-7f27-11eb-9850-81c076aa253f\", \"use\" : \"Everything\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"32\" } ] ], \"info\" : { } } ] } ], \"_id\" : { \"$oid\" : \"604454b05fea626c05ca11d5\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"604455df5fea626c05ca11d6\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"604481885fea626c05ca11d7\" }, \"appName\" : \"wpsoffice\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60f625275fea626c05ca120d\" }, \"appName\" : \"BitDesk\" } ]",
+      "email": "543200216@qq.com",
+      "password": "57f0f75ec4cba4433a72933976d36098"
+    },
+    {
+      "_id": "604da62e5fea626c05ca11da",
+      "__v": "0",
+      "data": "[ ]",
+      "email": "863232864@qq.com",
+      "password": "1d7b7f9dfeddc811185e26c0ef4ce9b9"
+    },
+    {
+      "_id": "604da7c35fea626c05ca11db",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"604da8165fea626c05ca11dc\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"604da8205fea626c05ca11dd\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"604dae4c5fea626c05ca11de\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"604dae615fea626c05ca11df\" }, \"appName\" : \"喜马拉雅\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"604dae8d5fea626c05ca11e1\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"604dcfa25fea626c05ca11e2\" }, \"appName\" : \"Listen1\" } ]",
+      "email": "L863232864@outlook.com",
+      "password": "fe90d825fbb7ca266e4b25da6d9676c7"
+    },
+    {
+      "_id": "60588f355fea626c05ca11e4",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60588f495fea626c05ca11e5\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60588faf5fea626c05ca11e6\" }, \"appName\" : \"chrome\" } ]",
+      "email": "Keith.yip.kt@gmail.com",
+      "password": "07cdea161e59c3079a63e6926452e06b"
+    },
+    {
+      "_id": "605899e05fea626c05ca11e8",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"605899eb5fea626c05ca11e9\" }, \"appName\" : \"acad\" }, { \"appData\" : [ { \"id\" : \"8d25d710-8b1a-11eb-8f92-19fc021ffcb8\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"605899f55fea626c05ca11ea\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60589a235fea626c05ca11eb\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60589a595fea626c05ca11ec\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6058a8e25fea626c05ca11ed\" }, \"appName\" : \"QQ\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6058a8e65fea626c05ca11ee\" }, \"appName\" : \"Foxmail\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6058a8ea5fea626c05ca11f0\" }, \"appName\" : \"WeChat\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6058afdc5fea626c05ca11f1\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6058afdf5fea626c05ca11f2\" }, \"appName\" : \"wpsdesktop\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"605aac855fea626c05ca11f3\" }, \"appName\" : \"Photoshop\" } ]",
+      "email": "keith.yip.kt@gmail.com",
+      "password": "07cdea161e59c3079a63e6926452e06b"
+    },
+    {
+      "_id": "605adba95fea626c05ca11f4",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"605adbc55fea626c05ca11f5\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"605adbe85fea626c05ca11f6\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ { \"id\" : \"5a2a8490-8c6a-11eb-a2f7-47e136362bed\", \"moduleName\" : \"模块\", \"items\" : [ ] } ], \"_id\" : { \"$oid\" : \"605adc615fea626c05ca11f7\" }, \"appName\" : \"studio64\" } ]",
+      "email": "hbdmq2pq@linshiyouxiang.net",
+      "password": "6a10321f069a6859597a2724a79f0c6e"
+    },
+    {
+      "_id": "606142a65fea626c05ca11f8",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"606142c15fea626c05ca11f9\" }, \"appName\" : \"idea64\" } ]",
+      "email": "jiayan810@sina.com",
+      "password": "655abd29114887308bb4654d1f695ba6"
+    },
+    {
+      "_id": "60877f245fea626c05ca11fb",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"608780125fea626c05ca11fc\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6087801a5fea626c05ca11fd\" }, \"appName\" : \"ShortCutHelper\" } ]",
+      "email": "zhugeyuan.er@gmail.com",
+      "password": "6f99c99adce427333a3fac800664fef6"
+    },
+    {
+      "_id": "608780735fea626c05ca11fe",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"608780815fea626c05ca11ff\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"608780825fea626c05ca1200\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"608780855fea626c05ca1201\" }, \"appName\" : \"explorer\" } ]",
+      "email": "zhugeyuan,er@gmail.com",
+      "password": "6f99c99adce427333a3fac800664fef6"
+    },
+    {
+      "_id": "60e13cc05fea626c05ca1203",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60e13cfa5fea626c05ca1204\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60e13d2a5fea626c05ca1205\" }, \"appName\" : \"msedge\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60e13d2c5fea626c05ca1206\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60e13dfa5fea626c05ca1207\" }, \"appName\" : \"Photoshop\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60e13e095fea626c05ca1208\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60e13e125fea626c05ca1209\" }, \"appName\" : \"notepad\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60e1956e5fea626c05ca120b\" }, \"appName\" : \"TIM\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"60e1960a5fea626c05ca120c\" }, \"appName\" : \"XMind\" } ]",
+      "email": "‘or' = 'or'",
+      "password": "6df7aa1c1b18238693cf564f601c29e7"
+    },
+    {
+      "_id": "615f6ad65fea626c05ca1210",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"615f6ae35fea626c05ca1211\" }, \"appName\" : \"快捷键助手\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"615f6ae55fea626c05ca1212\" }, \"appName\" : \"Photoshop\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"615f6ae75fea626c05ca1213\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"615f6b005fea626c05ca1214\" }, \"appName\" : \"chrome\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"615f6b375fea626c05ca1215\" }, \"appName\" : \"explorer\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"615f6bb55fea626c05ca1216\" }, \"appName\" : \"WINWORD.EXE\" } ]",
+      "email": "358954581@qq.com",
+      "password": "d4b852d6511c06bdf366560b25192378"
+    },
+    {
+      "_id": "6170bb765fea626c05ca1217",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6170bb9a5fea626c05ca1218\" }, \"appName\" : \"acad\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"6170bc655fea626c05ca1219\" }, \"appName\" : \"ShortCutHelper\" }, { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"617132615fea626c05ca121a\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "745277@qq.com",
+      "password": "fd39f1a260c417f83c7aa5cadc63a154"
+    },
+    {
+      "_id": "618a57455fea626c05ca121b",
+      "__v": "0",
+      "data": "[ { \"appData\" : [ ], \"_id\" : { \"$oid\" : \"618a580a5fea626c05ca121c\" }, \"appName\" : \"快捷键助手\" } ]",
+      "email": "903079021@qq.com",
+      "password": "6f7cb5371b37f7d6ddf9e5d9b6066423"
+    }
+  ]
+}

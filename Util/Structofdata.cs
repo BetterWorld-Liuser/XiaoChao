@@ -15,7 +15,7 @@ namespace xiaochao
 
         //------------------------------- 属性 -----------------------------
 
-        private KeyValueAssembleList[] _keyValueAssemblesListArray;
+        private KeyValueAssembleList[] _keyValueAssemblesListArray { get; set; } = new KeyValueAssembleList[4];
         private string _bigtitle = "无标题";
         private string _bigtitle2 = "没找到";
 

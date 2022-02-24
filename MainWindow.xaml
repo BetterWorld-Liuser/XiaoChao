@@ -69,8 +69,8 @@
                                                     <ItemsControl.ItemTemplate>
                                                         <DataTemplate>
                                                             <StackPanel Width="250" Height="{Binding ElementName=Main, Path=Normal_data_height}" Orientation="Horizontal">
-                                                                <TextBlock Width="100" FontSize="11" Text="{Binding Path=Key}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" VerticalAlignment="Center"></TextBlock>
-                                                                <TextBlock Width="150" FontSize="12" Text="{Binding Path=Value}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" VerticalAlignment="Center"></TextBlock>
+                                                                <TextBlock ToolTip="{Binding Path=Key}" Width="100" FontSize="11" Text="{Binding Path=Key}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" VerticalAlignment="Center"></TextBlock>
+                                                                <TextBlock ToolTip="{Binding Path=Value}" Width="150" FontSize="12" Text="{Binding Path=Value}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" VerticalAlignment="Center"></TextBlock>
                                                             </StackPanel>
                                                         </DataTemplate>
                                                     </ItemsControl.ItemTemplate>

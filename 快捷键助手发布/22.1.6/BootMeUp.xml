@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BootMeUp</name>
+    </assembly>
+    <members>
+        <member name="T:WK.Libraries.BootMeUpNS.BootMeUp">
+            <summary>
+            A library that provides automatic startup for applications at system 
+            boot time while providing additional startup management options.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.#ctor">
+            <summary>
+            Creates a new <see cref="T:WK.Libraries.BootMeUpNS.BootMeUp"/> instance.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new <see cref="T:WK.Libraries.BootMeUpNS.BootMeUp"/> instance.
+            </summary>
+            <param name="container">
+            The container control that will host the component.
+            </param>
+        </member>
+        <member name="T:WK.Libraries.BootMeUpNS.BootMeUp.BootAreas">
+            <summary>
+            Provides a list of supported application-booting areas.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.BootMeUpNS.BootMeUp.BootAreas.Registry">
+            <summary>
+            Uses the System Registry as the booting area.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.BootMeUpNS.BootMeUp.BootAreas.StartupFolder">
+            <summary>
+            Uses the Startup folder as the booting area.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers">
+            <summary>
+            Provides the two standard user options supported 
+            when registering an application for booting.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers.CurrentUser">
+            <summary>
+            Registers the application to launch 
+            whenever the current user is logged-in.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers.AllUsers">
+            <summary>
+            Registers the application to launch 
+            whenever any user is logged-in. Please 
+            note that this may require you to have 
+            the necessary Administrative privileges 
+            to successfully complete registering the 
+            application for startup with all users.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.Enabled">
+            <summary>
+            Gets or sets a value indicating whether automatic 
+            booting of the application is enabled.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.UseAlternativeOnFail">
+            <summary>
+            Gets or sets the alternative booting area will 
+            be used when the default booting area fails in 
+            registering the application.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.Parameters">
+            <summary>
+            Gets or sets the launch parameter(s)  
+            used when booting the application.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.BootArea">
+            <summary>
+            Gets or sets the boot area where the application 
+            will be registered for startup/booting.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.TargetUser">
+            <summary>
+            Gets or sets the target user to be used when
+            registering the application for startup. Please 
+            note that setting the option <see cref="F:WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers.AllUsers"/> 
+            may require you to have the necessary Administrative privileges 
+            to successfully complete registering the application 
+            for startup with all users.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.Tag">
+            <summary>
+            Gets or sets the object that contains programmer-
+            supplied data associated with the component.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.IsEnabledFromAnywhere">
+            <summary>
+            This determines whether automatic booting 
+            of the application is enabled in any of the 
+            supported booting areas within the system.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.Successful">
+            <summary>
+            Gets a value indicating whether booting 
+            for the application was enabled or disabled successfully.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.RunWhenDebugging">
+            <summary>
+            Gets or sets a value indicating whether booting 
+            will be enabled or disabled when debugging.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.AdminMode">
+            <summary>
+            Determines whether the application is being 
+            run with Administrative privileges.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.ShortcutPath">
+            <summary>
+            Gets the path to the application shortcut created 
+            either when the Registry fails or when the default 
+            <see cref="P:WK.Libraries.BootMeUpNS.BootMeUp.BootArea"/> is set to 
+            <see cref="F:WK.Libraries.BootMeUpNS.BootMeUp.BootAreas.StartupFolder"/>.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.Exception">
+            <summary>
+            Gets the exception that was thrown during the 
+            application's boot registering or unregistering process.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.ParentForm">
+            <summary>
+            Gets or sets the parent form.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.ContainerControl">
+            <summary>
+            Gets or sets the container control within the parent form.
+            In most cases, this refers and results to the parent form.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.BootMeUp.Site">
+            <summary>
+            Overrides the ISite functionality, getting the main or parent
+            container control in the Form. This is overriden to get the
+            component's host or parent form.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.Register">
+            <summary>
+            Registers the application based on 
+            the default provided settings.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.Unregister">
+            <summary>
+            Unregisters the application from the default 
+            provided <see cref="P:WK.Libraries.BootMeUpNS.BootMeUp.TargetUser"/>.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.Register(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Registers the application in any 
+            specified target user.
+            </summary>
+            <param name="targetUser">
+            The target user to register with.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.Unregister(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Unregisters the application from 
+            any specified target user.
+            </summary>
+            <param name="targetUser">
+            The target user to unregister with.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.KeyExists">
+            <summary>
+            Checks whether the application has a startup 
+            key created in the System Registry as per the 
+            <see cref="P:WK.Libraries.BootMeUpNS.BootMeUp.TargetUser"/> specified.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.KeyExists(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Checks whether the application has a startup 
+            key created in the System Registry.
+            </summary>
+            <param name="targetUser">
+            The user registry to check.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.KeyVaries">
+            <summary>
+            Checks whether the application has a startup 
+            key that varies with its current location in 
+            the System Registry as per the 
+            <see cref="P:WK.Libraries.BootMeUpNS.BootMeUp.TargetUser"/> specified.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.KeyVaries(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Checks whether the application has a startup 
+            key that varies with its current location in 
+            the System Registry.
+            </summary>
+            <param name="targetUser">
+            The target user to check.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.CreateShortcut">
+            <summary>
+            Creates a shortcut for the application 
+            in the default provided <see cref="P:WK.Libraries.BootMeUpNS.BootMeUp.TargetUser"/>.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.CreateShortcut(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Creates a shortcut for the application 
+            in any specified target user.
+            </summary>
+            <param name="targetUser">
+            The target user to register with.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.DeleteShortcut">
+            <summary>
+            Deletes any shortcut created for the application.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.DeleteShortcut(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Deletes any shortcut created for the 
+            application from any specified target user.
+            </summary>
+            <param name="targetUser">
+            The target user to unregister with.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.ShortcutExists">
+            <summary>
+            Checks whether the application has an active 
+            shortcut link created in the Startup folder.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.ShortcutExists(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Checks whether the application has an active 
+            shortcut link created in the Startup folder.
+            </summary>
+            <param name="targetUser">
+            The target user to check with.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.ShortcutVaries">
+            <summary>
+            Determines whether the available application shortcut 
+            points to the current application's location.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.ShortcutVaries(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Determines whether the available application shortcut 
+            points to the current application's location.
+            </summary>
+            <param name="targetUser">
+            The target user to check with.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.Update">
+            <summary>
+            Updates the boot area selected 
+            with the the current settings.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.SetDefaults">
+            <summary>
+            Applies the library-default settings.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.GetAppName">
+            <summary>
+            Gets the application's name.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.GetAppPath">
+            <summary>
+            Gets the application's path.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.GetShortcutPath(WK.Libraries.BootMeUpNS.BootMeUp.TargetUsers)">
+            <summary>
+            Gets the application's path.
+            </summary>
+            <param name="targetUser">
+            The target user to check with.
+            </param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.GetShortcutTarget">
+            <summary>
+            Checks the target process launched  
+            by the available application's shortcut.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.GetShortcutTarget(System.String)">
+            <summary>
+            Gets the target process launched  
+            by a specific shortcut file.
+            </summary>
+            <param name="shortcutFile">A valid path to the shortcut file link.</param>
+            <returns></returns>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.Run(System.Boolean)">
+            <summary>
+            Parses and applies the user-provided 
+            booting options for the application.
+            </summary>
+            <param name="formLoading">
+            Is the method being called in the 
+            parent form's Load event.
+            </param>
+        </member>
+        <member name="T:WK.Libraries.BootMeUpNS.BootMeUp.WKDesigner">
+            <summary>
+            Provides <see cref="T:WK.Libraries.BootMeUpNS.BootMeUp"/> design-time features.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.WKDesigner.#ctor">
+            <summary>
+            Provides <see cref="T:WK.Libraries.BootMeUpNS.BootMeUp"/> design-time features.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.BootMeUpNS.BootMeUp.WKComponentActionList">
+            <summary>
+            Initializes a new instance of the <see cref="T:WK.Libraries.BootMeUpNS.BootMeUp.WKComponentActionList"/> class.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.WKComponentActionList.GetSortedActionItems">
+            <summary>
+            Implementation of this abstract method creates Smart Tag items,
+            associates their targets, and collects them into a list.
+            </summary>
+        </member>
+        <member name="F:WK.Libraries.BootMeUpNS.BootMeUp.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WK.Libraries.BootMeUpNS.BootMeUp.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WK.Libraries.BootMeUpNS.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WK.Libraries.BootMeUpNS.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

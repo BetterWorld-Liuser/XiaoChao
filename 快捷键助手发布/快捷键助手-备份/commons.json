@@ -1,0 +1,907 @@
+{
+  "RECORDS": [
+    {
+      "_id": "5ebfb515400e861204de1602",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1\", \"moduleName\" : \"暂存\", \"items\" : [ { \"use\" : \"\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"17\" } ] } ] } ]",
+      "appName": "Code",
+      "updateTime": "6/10/2021, 11:15:19 AM"
+    },
+    {
+      "_id": "5ec0bb33b1076b5bb4f4e555",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1\", \"moduleName\" : \"暂存\", \"items\" : [ { \"use\" : \"\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"17\" } ] }, { \"id\" : \"96a8d070-4eac-11ec-95ec-db5797d58324\", \"use\" : \"粘贴搜索\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"76\" } ], \"info\" : { } } ] } ]",
+      "appName": "快捷键助手",
+      "updateTime": "11/26/2021, 7:33:26 PM"
+    },
+    {
+      "_id": "5ec0bbc9b1076b5bb4f4e556",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1\", \"moduleName\" : \"页面操作\", \"items\" : [ { \"id\" : \"d87e8490-9805-11ea-81c0-2db848c907bc\", \"use\" : \"恢复关闭的页面\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"84\" } ] ], \"info\" : { } }, { \"id\" : \"0e88f0b0-9a78-11ea-af19-c95893692b48\", \"use\" : \"打开新的标签页\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"84\" } ] ], \"info\" : { } }, { \"id\" : \"353aa410-9a78-11ea-af19-c95893692b48\", \"use\" : \"打开隐私浏览模式\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"78\" } ] ], \"info\" : { } }, { \"id\" : \"541fbaa0-9a78-11ea-af19-c95893692b48\", \"use\" : \"切换标签页\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"9fa6e750-9a78-11ea-af19-c95893692b48\", \"use\" : \"清除缓存\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"46\" } ] ], \"info\" : { } }, { \"id\" : \"b9d4b870-4eac-11ec-95ec-db5797d58324\", \"use\" : \"1\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"76\" } ], \"info\" : { } } ] }, { \"id\" : \"68e18da0-981c-11ea-9872-e78c6b1622b5\", \"moduleName\" : \"快速操作\", \"items\" : [ { \"id\" : \"eb1f8a80-9a77-11ea-af19-c95893692b48\", \"use\" : \"关闭当前窗口\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"115\" } ] ], \"info\" : { } }, { \"id\" : \"df703540-9a77-11ea-af19-c95893692b48\", \"use\" : \"关闭所有窗口\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"115\" } ] ], \"info\" : { } }, { \"id\" : \"24ac3500-9a78-11ea-af19-c95893692b48\", \"use\" : \"打开新的窗口\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"78\" } ] ], \"info\" : { } }, { \"id\" : \"85acd170-9a78-11ea-af19-c95893692b48\", \"use\" : \"前进/后退历史\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"37\" } ], [ { \"$numberInt\" : \"39\" } ] ], \"info\" : { } } ] }, { \"id\" : \"f5a664b0-985b-11ea-bd50-7b471ae2cebe\", \"moduleName\" : \"知乎\", \"items\" : [ { \"id\" : \"88448fe0-98a2-11ea-a9cd-e19e3d35331f\", \"use\" : \"上一个\", \"keys\" : [ { \"$numberInt\" : \"75\" } ], \"info\" : { } }, { \"id\" : \"8343e450-98a2-11ea-a9cd-e19e3d35331f\", \"use\" : \"下一个\", \"keys\" : [ { \"$numberInt\" : \"74\" } ], \"info\" : { } }, { \"id\" : \"9d173850-98a2-11ea-a9cd-e19e3d35331f\", \"use\" : \"喜欢\", \"keys\" : [ { \"$numberInt\" : \"76\" } ], \"info\" : { } }, { \"id\" : \"bbe45a10-98a2-11ea-a9cd-e19e3d35331f\", \"use\" : \"赞同\", \"keys\" : [ { \"$numberInt\" : \"86\" } ], \"info\" : { } }, { \"id\" : \"dede3590-98a2-11ea-a9cd-e19e3d35331f\", \"use\" : \"展开/收起回答\", \"keys\" : [ { \"$numberInt\" : \"79\" } ], \"info\" : { } }, { \"id\" : \"c705ee40-98a2-11ea-a9cd-e19e3d35331f\", \"use\" : \"打开评论\", \"keys\" : [ { \"$numberInt\" : \"67\" } ], \"info\" : { } } ] }, { \"id\" : \"444297e0-7efe-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"46069470-65e3-11eb-8feb-d56d5dcc09cb\", \"moduleName\" : \"\", \"items\" : [ ] }, { \"id\" : \"036a8d00-a21c-11ea-a190-236c94d03477\", \"moduleName\" : \"\", \"items\" : [ ] }, { \"id\" : \"03c60cc0-bcf2-11ea-9b5e-fbd1e939aa4f\", \"moduleName\" : \"\", \"items\" : [ ] }, { \"id\" : \"73a707c0-65e3-11eb-8feb-d56d5dcc09cb\", \"moduleName\" : \"\", \"items\" : [ ] }, { \"id\" : \"6a1013b0-fb52-11ea-8dd0-05c0caa917f8\", \"moduleName\" : \"\", \"items\" : [ ] }, { \"id\" : \"79efc3b0-65e3-11eb-8feb-d56d5dcc09cb\", \"moduleName\" : \"\", \"items\" : [ ] }, { \"id\" : \"b33b0e90-dcb7-11eb-9771-8dc19f9ac74f\", \"moduleName\" : \"\", \"items\" : [ ] } ]",
+      "appName": "msedge",
+      "updateTime": "11/26/2021, 7:39:02 PM"
+    },
+    {
+      "_id": "5ec0c139b1076b5bb4f4e557",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1\", \"moduleName\" : \"页面操作\", \"items\" : [ { \"id\" : \"d87e8490-9805-11ea-81c0-2db848c907bc\", \"use\" : \"恢复关闭的页面\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"84\" } ] ], \"info\" : { } } ] } ]",
+      "appName": "electron",
+      "updateTime": "5/17/2020, 9:19:43 PM"
+    },
+    {
+      "_id": "5ec0c15cb1076b5bb4f4e558",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "MongoDBCompassCommunity",
+      "updateTime": "5/20/2020, 4:52:12 PM"
+    },
+    {
+      "_id": "5ec13879447ce01164088810",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"a93f3240-989d-11ea-b9f1-8fc67d25a5e6\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"b3401430-989d-11ea-b9f1-8fc67d25a5e6\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"622d2430-66c8-11eb-8540-538368f32559\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"f725e500-4eac-11ec-95ec-db5797d58324\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "explorer",
+      "updateTime": "11/26/2021, 7:35:35 PM"
+    },
+    {
+      "_id": "5ec13b81447ce01164088812",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1\", \"moduleName\" : \"暂存\", \"items\" : [ { \"id\" : \"cf643ac0-46b5-11ec-a75d-ff9fa37e624f\", \"use\" : \"复制\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"67\" } ], \"info\" : { } } ] }, { \"id\" : \"f52212d0-2c8b-11ec-82ef-7d1414110639\", \"moduleName\" : \"模块\", \"items\" : [ { \"use\" : \"\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"17\" } ] } ] }, { \"id\" : \"222861d0-2cb4-11ec-82ef-7d1414110639\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"b8279730-46b5-11ec-a75d-ff9fa37e624f\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"b8ac3080-46b5-11ec-a75d-ff9fa37e624f\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "ShortCutHelper",
+      "updateTime": "11/26/2021, 7:40:17 PM"
+    },
+    {
+      "_id": "5ec13b85447ce01164088813",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"0e9794e0-9842-11ea-8aba-b152770985a2\", \"moduleName\" : \"截图\", \"items\" : [ { \"id\" : \"17975a80-9842-11ea-8aba-b152770985a2\", \"use\" : \"屏幕截图\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"65\" } ] ], \"info\" : { } }, { \"id\" : \"2bf2fe30-9842-11ea-8aba-b152770985a2\", \"use\" : \"屏幕识图\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"79\" } ] ], \"info\" : { } }, { \"id\" : \"37d4d520-9842-11ea-8aba-b152770985a2\", \"use\" : \"屏幕录制\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"83\" } ] ], \"info\" : { } } ] } ]",
+      "appName": "QQ",
+      "updateTime": "3/22/2021, 10:25:38 PM"
+    },
+    {
+      "_id": "5ec13c3e447ce01164088816",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "obs64",
+      "updateTime": "5/17/2020, 9:29:34 PM"
+    },
+    {
+      "_id": "5ec13c47447ce01164088818",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1ddd10e0-0248-11eb-b4b0-8d3b10fd144d\", \"moduleName\" : \"\", \"items\" : [ ] } ]",
+      "appName": "ApplicationFrameHost",
+      "updateTime": "3/22/2021, 11:02:17 PM"
+    },
+    {
+      "_id": "5ec13c57447ce0116408881a",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "TickTick",
+      "updateTime": "5/17/2020, 9:29:59 PM"
+    },
+    {
+      "_id": "5ec16067447ce0116408881d",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"e1080f80-9857-11ea-9632-9bd76d374b90\", \"moduleName\" : \"全局操作\", \"items\" : [ { \"id\" : \"ac743970-d2d0-11ea-9232-edee7e47b0ee\", \"use\" : \"关闭当前窗口\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"115\" } ] ], \"info\" : { } }, { \"id\" : \"657dad10-0644-11eb-a55e-2b308a903300\", \"use\" : \"打开新窗口\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"78\" } ], \"info\" : { } }, { \"id\" : \"de39c560-d2d0-11ea-9232-edee7e47b0ee\", \"use\" : \"切换到下一个标签页\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"86\" } ], [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"e7579a50-d2d0-11ea-9232-edee7e47b0ee\", \"use\" : \"切换到上一个标签页\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"88db5ea0-f268-11ea-a967-e17873edad44\", \"use\" : \"锁定你的电脑。\", \"keys\" : [ [ { \"$numberInt\" : \"91\" } ], [ { \"$numberInt\" : \"76\" } ] ], \"info\" : { } }, { \"id\" : \"9c282a60-f268-11ea-a967-e17873edad44\", \"use\" : \"重命名所选项目。\", \"keys\" : [ [ { \"$numberInt\" : \"113\" } ] ], \"info\" : { } }, { \"id\" : \"10ca0100-a0b9-11eb-bc79-91c2b29cd60b\", \"use\" : \"显示 / 隐藏【书签栏】\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"66\" } ], \"info\" : { } } ] }, { \"id\" : \"b3ad2b40-9908-11ea-a3a7-b7e090ce1700\", \"moduleName\" : \"Excel\", \"items\" : [ ] }, { \"id\" : \"1e1592d0-9899-11ea-afea-291b2961bc83\", \"moduleName\" : \"常用\", \"items\" : [ { \"id\" : \"ecbbf820-224d-11eb-80c8-a7d3ec14b6c8\", \"use\" : \"打开新标签\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"84\" } ] ], \"info\" : { } }, { \"id\" : \"5a065510-224e-11eb-80c8-a7d3ec14b6c8\", \"use\" : \"关闭当前标签\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"87\" } ] ], \"info\" : { } } ] }, { \"id\" : \"99d267c0-2914-11eb-b9ba-a3052455ac99\", \"moduleName\" : \"测试\", \"items\" : [ { \"id\" : \"8ec0d920-2914-11eb-b9ba-a3052455ac99\", \"use\" : \"打开新标签\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"84\" } ], \"info\" : { } } ] }, { \"id\" : \"107942a0-40b6-11eb-981a-974118e2b11b\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"6a4e8bc0-478f-11eb-8176-cf7f2b42cbfd\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"69a8aed0-478f-11eb-8176-cf7f2b42cbfd\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"db3eeae0-92bd-11eb-b1bf-87a465ed620a\", \"moduleName\" : \"\", \"items\" : [ ] }, { \"id\" : \"049e5920-92be-11eb-b1bf-87a465ed620a\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"04e30340-92be-11eb-b1bf-87a465ed620a\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"0501fcf0-92be-11eb-b1bf-87a465ed620a\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"051b2a40-92be-11eb-b1bf-87a465ed620a\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"0556aca0-92be-11eb-b1bf-87a465ed620a\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"056fd9f0-92be-11eb-b1bf-87a465ed620a\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"05869640-92be-11eb-b1bf-87a465ed620a\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "chrome",
+      "updateTime": "10/21/2021, 8:57:53 AM"
+    },
+    {
+      "_id": "5ec160c6447ce01164088822",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "fdm",
+      "updateTime": "5/18/2020, 12:05:26 AM"
+    },
+    {
+      "_id": "5ec160d1447ce01164088823",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"07ac2e50-9858-11ea-a8f8-ab84bd02549d\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"08132d80-9858-11ea-a8f8-ab84bd02549d\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "TIM",
+      "updateTime": "7/4/2021, 7:03:10 PM"
+    },
+    {
+      "_id": "5ec160fb447ce01164088824",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Everything",
+      "updateTime": "5/18/2020, 12:11:27 AM"
+    },
+    {
+      "_id": "5ec168ef447ce0116408882e",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"eced0170-985c-11ea-9076-67f3c0d68255\", \"moduleName\" : \"快捷键\", \"items\" : [ { \"id\" : \"049a4120-985d-11ea-9076-67f3c0d68255\", \"use\" : \"倍速播放+\", \"keys\" : [ { \"$numberInt\" : \"67\" } ] }, { \"id\" : \"0c4c9f30-985d-11ea-9076-67f3c0d68255\", \"use\" : \"倍速播放-\", \"keys\" : [ { \"$numberInt\" : \"88\" } ] }, { \"id\" : \"27632190-985d-11ea-9076-67f3c0d68255\", \"use\" : \"重置倍速播放\", \"keys\" : [ { \"$numberInt\" : \"90\" } ], \"info\" : { } } ] } ]",
+      "appName": "PotPlayerMini64",
+      "updateTime": "11/18/2020, 6:53:44 AM"
+    },
+    {
+      "_id": "5ec16a0c447ce01164088831",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"9f9b3170-985d-11ea-9953-df5f0959620d\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "googledrivesync",
+      "updateTime": "9/5/2020, 6:45:18 PM"
+    },
+    {
+      "_id": "5ec16ac2447ce01164088834",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "BaiduNetdisk",
+      "updateTime": "5/18/2020, 12:48:02 AM"
+    },
+    {
+      "_id": "5ec1d517447ce0116408883f",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "txupd",
+      "updateTime": "5/18/2020, 8:21:43 AM"
+    },
+    {
+      "_id": "5ec1d576447ce01164088842",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"a93f3240-989d-11ea-b9f1-8fc67d25a5e6\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"b3401430-989d-11ea-b9f1-8fc67d25a5e6\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "WeChat",
+      "updateTime": "8/17/2021, 3:25:25 PM"
+    },
+    {
+      "_id": "5ec1d88f447ce01164088849",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"9f105090-989f-11ea-9f18-1546bf51a70b\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"9f9e38b0-989f-11ea-9f18-1546bf51a70b\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "et",
+      "updateTime": "3/7/2021, 3:32:09 PM"
+    },
+    {
+      "_id": "5ec1d8fb447ce0116408884c",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"34615e70-1724-11eb-a98f-b7335281cd23\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "DingTalk",
+      "updateTime": "10/26/2020, 8:43:16 AM"
+    },
+    {
+      "_id": "5ec1e6cd447ce0116408885f",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1f941da0-fb1f-11ea-b7c9-0b5228128c96\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"9358f4e0-fb1f-11ea-b7c9-0b5228128c96\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"dfcd5430-0a27-11eb-b31c-53ea9e443364\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "WINWORD.EXE",
+      "updateTime": "10/8/2021, 5:50:45 AM"
+    },
+    {
+      "_id": "5ec1e6df447ce01164088861",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"8b87dd80-9972-11ea-a154-6d65e97d78bf\", \"moduleName\" : \"Excel\", \"items\" : [ { \"id\" : \"938cef70-9972-11ea-a154-6d65e97d78bf\", \"use\" : \"保存 \", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"83\" } ], \"info\" : { } } ] } ]",
+      "appName": "EXCEL.EXE",
+      "updateTime": "2/26/2021, 2:15:00 PM"
+    },
+    {
+      "_id": "5ec1edfb447ce01164088866",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "twinkstar",
+      "updateTime": "6/7/2020, 12:58:42 PM"
+    },
+    {
+      "_id": "5ec26e04447ce01164088871",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1\", \"moduleName\" : \"暂存\", \"items\" : [ { \"use\" : \"1\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"17\" } ] }, { \"id\" : \"8438a1c0-98e8-11ea-831d-89a9100318f2\", \"use\" : \"4\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"18\" }, { \"$numberInt\" : \"53\" } ] } ] } ]",
+      "appName": "TianruoOCR64",
+      "updateTime": "5/18/2020, 7:14:12 PM"
+    },
+    {
+      "_id": "5ec27f01447ce01164088874",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "TOTALCMD64.EXE",
+      "updateTime": "5/18/2020, 8:26:41 PM"
+    },
+    {
+      "_id": "5ec27ff3447ce01164088875",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "SearchUI",
+      "updateTime": "10/20/2020, 7:27:59 PM"
+    },
+    {
+      "_id": "5ec2a8e7447ce0116408887a",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"22236360-991c-11ea-9239-ab6d23927231\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"2292c700-991c-11ea-9239-ab6d23927231\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"ee19b3d0-991b-11ea-9239-ab6d23927231\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"22ba2520-991c-11ea-9239-ab6d23927231\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"df84cad0-991b-11ea-9239-ab6d23927231\", \"moduleName\" : \"\", \"items\" : [ ] } ]",
+      "appName": "onmyoji",
+      "updateTime": "5/18/2020, 11:28:51 PM"
+    },
+    {
+      "_id": "5ec2c7e6447ce0116408887e",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"8ec04b60-9c13-11ea-8a8f-15b65f42ac76\", \"moduleName\" : \"操作\", \"items\" : [ { \"id\" : \"9f181a10-9c13-11ea-8a8f-15b65f42ac76\", \"use\" : \"拖动复制\", \"keys\" : [ { \"$numberInt\" : \"17\" } ], \"info\" : { } } ] } ]",
+      "appName": "POWERPNT.EXE",
+      "updateTime": "5/22/2020, 6:04:29 PM"
+    },
+    {
+      "_id": "5ec32390447ce0116408887f",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "TXEDU",
+      "updateTime": "5/19/2020, 8:08:53 AM"
+    },
+    {
+      "_id": "5ec324fb447ce01164088881",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"e7e6c070-bb62-11ea-8bd0-bbf72a56c0db\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "360DesktopLite64",
+      "updateTime": "11/26/2021, 7:40:13 PM"
+    },
+    {
+      "_id": "5ec344ff447ce01164088885",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "360zip",
+      "updateTime": "5/19/2020, 10:31:27 AM"
+    },
+    {
+      "_id": "5ec38844447ce0116408888a",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "devenv",
+      "updateTime": "5/19/2020, 3:18:28 PM"
+    },
+    {
+      "_id": "5ec3d52e447ce0116408888c",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"c6565200-99ce-11ea-b7c8-39f2eb8b5479\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "cloudmusic",
+      "updateTime": "9/14/2020, 1:52:35 PM"
+    },
+    {
+      "_id": "5ec4aee5447ce0116408888d",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"4d158aa0-9a50-11ea-8bd2-0f442e0165fa\", \"moduleName\" : \"文件操作\", \"items\" : [ { \"id\" : \"6bc70e10-9a50-11ea-8bd2-0f442e0165fa\", \"use\" : \"保存\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"83\" } ] }, { \"id\" : \"9dd6e970-9a50-11ea-8bd2-0f442e0165fa\", \"use\" : \"撤销\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"90\" } ], \"info\" : { } }, { \"id\" : \"a33f3070-9a50-11ea-8bd2-0f442e0165fa\", \"use\" : \"恢复\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"89\" } ], \"info\" : { } }, { \"id\" : \"85050d10-49ae-11eb-aeeb-17cc4b4faed5\", \"use\" : \"复制\", \"keys\" : [ { \"$numberInt\" : \"188\" } ], \"info\" : { } }, { \"id\" : \"931b0210-49ae-11eb-aeeb-17cc4b4faed5\", \"use\" : \"粘贴\", \"keys\" : [ { \"$numberInt\" : \"190\" } ], \"info\" : { } } ] }, { \"id\" : \"a4758d90-9a50-11ea-8bd2-0f442e0165fa\", \"moduleName\" : \"编辑操作\", \"items\" : [ { \"id\" : \"b6de8900-9a50-11ea-8bd2-0f442e0165fa\", \"use\" : \"复制\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"67\" } ], \"info\" : { } }, { \"id\" : \"aea9b7b0-9a54-11ea-8f6e-477a46305c61\", \"use\" : \"移至下一工作表\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"34\" } ], \"info\" : { } }, { \"id\" : \"7a2f0f20-9a5a-11ea-8f6e-477a46305c61\", \"use\" : \"移至上一工作表\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"33\" } ], \"info\" : { } } ] }, { \"id\" : \"cd3b6d10-a0b5-11ea-889e-d559a2b6327e\", \"moduleName\" : \"显示操作\", \"items\" : [ { \"id\" : \"e57ed240-a0b5-11ea-889e-d559a2b6327e\", \"use\" : \"显示快捷键\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"65\" } ] ], \"info\" : { } } ] }, { \"id\" : \"342773b0-49ae-11eb-aeeb-17cc4b4faed5\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "wps",
+      "updateTime": "9/17/2021, 10:01:41 AM"
+    },
+    {
+      "_id": "5ec4c06e447ce01164088895",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"6e4d1d40-ba7c-11ea-a1a3-299012d91028\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "360chrome",
+      "updateTime": "10/4/2020, 11:53:29 AM"
+    },
+    {
+      "_id": "5ec7735b447ce0116408889c",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "photolaunch",
+      "updateTime": "5/22/2020, 2:38:19 PM"
+    },
+    {
+      "_id": "5ed0dfc6447ce011640888a4",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "ClassIn",
+      "updateTime": "5/29/2020, 6:11:18 PM"
+    },
+    {
+      "_id": "5ed5e5f4447ce011640888a9",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"53bec360-a493-11ea-8980-7928dd3a9eb3\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "Flash",
+      "updateTime": "6/2/2020, 1:39:08 PM"
+    },
+    {
+      "_id": "5ed8433a447ce011640888ad",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"092d3240-a5fc-11ea-bb9f-cb86a935382f\", \"moduleName\" : \"快捷键\", \"items\" : [ { \"id\" : \"1e7a13c0-a5fc-11ea-bb9f-cb86a935382f\", \"use\" : \"加入生词本\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"87\" } ] ] } ] } ]",
+      "appName": "eudic",
+      "updateTime": "6/4/2020, 8:41:30 AM"
+    },
+    {
+      "_id": "5ed89fa0447ce011640888ae",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "JDSoft_SurfMill8_X64_Pro",
+      "updateTime": "6/4/2020, 3:15:44 PM"
+    },
+    {
+      "_id": "5edc4c93447ce011640888af",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Taskmgr",
+      "updateTime": "1/14/2021, 10:54:21 AM"
+    },
+    {
+      "_id": "5edc73b8447ce011640888b0",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Horloger",
+      "updateTime": "6/7/2020, 12:57:28 PM"
+    },
+    {
+      "_id": "5edd8cd8447ce011640888b1",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"be4afc40-f267-11ea-a967-e17873edad44\", \"moduleName\" : \"idea\", \"items\" : [ { \"id\" : \"cb9f62c0-000c-11eb-aaf6-37dfd38f9072\", \"use\" : \"保存\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"83\" } ], \"info\" : { } }, { \"id\" : \"dfeab2c0-000c-11eb-aaf6-37dfd38f9072\", \"use\" : \"删除本行\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"89\" } ], \"info\" : { } }, { \"id\" : \"162265e0-000d-11eb-aaf6-37dfd38f9072\", \"use\" : \"单行注释\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"191\" } ], \"info\" : { } }, { \"id\" : \"3978b940-000d-11eb-aaf6-37dfd38f9072\", \"use\" : \"跳转到定义处\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"66\" } ], \"info\" : { } }, { \"id\" : \"62fc0b10-40b7-11eb-a6fc-f58a2f1ed5be\", \"use\" : \"折叠代码\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"189\" } ], \"info\" : { } }, { \"id\" : \"6f60cda0-40b7-11eb-a6fc-f58a2f1ed5be\", \"use\" : \"展开代码\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"187\" } ], \"info\" : { } }, { \"id\" : \"b43cac00-40b7-11eb-a6fc-f58a2f1ed5be\", \"use\" : \"最近文件\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"9\" } ], \"info\" : { } }, { \"id\" : \"1d4392e0-40b8-11eb-b25d-2bd56e96f7c6\", \"use\" : \"方法尾部\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"35\" } ], \"info\" : { } }, { \"id\" : \"30967920-40b8-11eb-b25d-2bd56e96f7c6\", \"use\" : \"方法头部\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"36\" } ], \"info\" : { } }, { \"id\" : \"55d38de0-40b8-11eb-b25d-2bd56e96f7c6\", \"use\" : \"关闭当前文档\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"115\" } ], \"info\" : { } }, { \"id\" : \"c56f7bf0-40b8-11eb-b25d-2bd56e96f7c6\", \"use\" : \"快速查看光标所在的方法 或 类的定义\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"73\" } ], \"info\" : { } } ] }, { \"id\" : \"c74afcc0-000c-11eb-aaf6-37dfd38f9072\", \"moduleName\" : \"\", \"items\" : [ ] } ]",
+      "appName": "idea64",
+      "updateTime": "5/17/2021, 2:42:32 PM"
+    },
+    {
+      "_id": "5ee04e36447ce011640888b7",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"9997b9b0-ba7c-11ea-a1a3-299012d91028\", \"moduleName\" : \"快捷工具\", \"items\" : [ { \"id\" : \"a93dbe60-ba99-11ea-b137-b7a36aae3cc8\", \"use\" : \"移动工具\", \"keys\" : [ { \"$numberInt\" : \"86\" } ], \"info\" : { } }, { \"id\" : \"bc38e7b0-ba99-11ea-b137-b7a36aae3cc8\", \"use\" : \"矩形选框工具\", \"keys\" : [ { \"$numberInt\" : \"77\" } ], \"info\" : { } }, { \"id\" : \"cb90d290-ba99-11ea-b137-b7a36aae3cc8\", \"use\" : \"多边形套索工具\", \"keys\" : [ { \"$numberInt\" : \"76\" } ], \"info\" : { } }, { \"id\" : \"d8b5d7e0-ba99-11ea-b137-b7a36aae3cc8\", \"use\" : \"魔棒工具\", \"keys\" : [ { \"$numberInt\" : \"87\" } ], \"info\" : { } }, { \"id\" : \"e2d27f30-ba99-11ea-b137-b7a36aae3cc8\", \"use\" : \"裁剪工具\", \"keys\" : [ { \"$numberInt\" : \"67\" } ], \"info\" : { } }, { \"id\" : \"ed723930-ba99-11ea-b137-b7a36aae3cc8\", \"use\" : \"吸管工具\", \"keys\" : [ { \"$numberInt\" : \"73\" } ], \"info\" : { } }, { \"id\" : \"fe58da60-ba99-11ea-b137-b7a36aae3cc8\", \"use\" : \"污点修复画笔工具\", \"keys\" : [ { \"$numberInt\" : \"74\" } ], \"info\" : { } }, { \"id\" : \"0cec63d0-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"画笔工具\", \"keys\" : [ { \"$numberInt\" : \"66\" } ], \"info\" : { } }, { \"id\" : \"32ac3d20-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"仿制图章工具\", \"keys\" : [ { \"$numberInt\" : \"83\" } ], \"info\" : { } }, { \"id\" : \"492f7bc0-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"历史记录画笔工具\", \"keys\" : [ { \"$numberInt\" : \"89\" } ], \"info\" : { } }, { \"id\" : \"52c036c0-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"橡皮擦工具\", \"keys\" : [ { \"$numberInt\" : \"69\" } ], \"info\" : { } }, { \"id\" : \"5dafbe70-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"渐变工具\", \"keys\" : [ { \"$numberInt\" : \"74\" } ], \"info\" : { } }, { \"id\" : \"6a7d2de0-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"颜色减淡工具\", \"keys\" : [ { \"$numberInt\" : \"79\" } ], \"info\" : { } }, { \"id\" : \"73e663b0-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"钢笔工具\", \"keys\" : [ { \"$numberInt\" : \"80\" } ], \"info\" : { } }, { \"id\" : \"83a15620-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"文字选择工具\", \"keys\" : [ { \"$numberInt\" : \"84\" } ], \"info\" : { } }, { \"id\" : \"90813c20-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"选择路径工具\", \"keys\" : [ { \"$numberInt\" : \"65\" } ], \"info\" : { } }, { \"id\" : \"c4795f80-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"直线工具\", \"keys\" : [ { \"$numberInt\" : \"85\" } ], \"info\" : { } }, { \"id\" : \"d1958b30-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"手抓工具\", \"keys\" : [ { \"$numberInt\" : \"72\" } ], \"info\" : { } }, { \"id\" : \"d7b69ae0-ba9a-11ea-b137-b7a36aae3cc8\", \"use\" : \"放大工具\", \"keys\" : [ { \"$numberInt\" : \"90\" } ], \"info\" : { } } ] }, { \"id\" : \"81f39b90-ba99-11ea-b137-b7a36aae3cc8\", \"moduleName\" : \"文件\", \"items\" : [ { \"id\" : \"b1fa8dc0-ba7c-11ea-a1a3-299012d91028\", \"use\" : \"打开\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"79\" } ], \"info\" : { } }, { \"id\" : \"a13caa40-ba7c-11ea-a1a3-299012d91028\", \"use\" : \"新建\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"78\" } ], \"info\" : { } } ] }, { \"id\" : \"0e1f9fa0-1b71-11eb-84cc-8db4cab237dd\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"3ce59e00-2573-11eb-b177-3fad73effc7d\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"17f4c890-2a15-11eb-a93f-3f8e0706847c\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"189cef70-2a15-11eb-a93f-3f8e0706847c\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"196b14e0-2a15-11eb-a93f-3f8e0706847c\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"19a5fb00-2a15-11eb-a93f-3f8e0706847c\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "Photoshop",
+      "updateTime": "10/8/2021, 5:48:50 AM"
+    },
+    {
+      "_id": "5ee87d5b447ce011640888b9",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "baidunetdisk",
+      "updateTime": "6/16/2020, 4:07:40 PM"
+    },
+    {
+      "_id": "5ee87f84447ce011640888c0",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "MarkdownPad2",
+      "updateTime": "6/16/2020, 4:15:16 PM"
+    },
+    {
+      "_id": "5ee9b4fc447ce011640888c9",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Rainmeter",
+      "updateTime": "6/17/2020, 2:15:24 PM"
+    },
+    {
+      "_id": "5eea1283447ce011640888ca",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1\", \"moduleName\" : \"暂存\", \"items\" : [ { \"use\" : \"\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"17\" } ] } ] }, { \"id\" : \"3919fcc0-b535-11ea-82e4-6b5fdb9a398f\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "VISIO.EXE",
+      "updateTime": "6/23/2020, 5:40:43 PM"
+    },
+    {
+      "_id": "5ef582db447ce011640888d1",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Honeyview",
+      "updateTime": "6/26/2020, 1:08:43 PM"
+    },
+    {
+      "_id": "5efaaae5447ce011640888da",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"e29a1ad0-ba7d-11ea-bf2e-f325afb75f48\", \"moduleName\" : \"文件\", \"items\" : [ { \"id\" : \"f9003480-ba7d-11ea-bf2e-f325afb75f48\", \"use\" : \"新建\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"78\" } ], \"info\" : { } }, { \"id\" : \"1abbc3a0-ba7e-11ea-bf2e-f325afb75f48\", \"use\" : \"新建标签页\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"84\" } ], \"info\" : { } }, { \"id\" : \"40269f20-ba7e-11ea-bf2e-f325afb75f48\", \"use\" : \"文件另存为\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"18\" }, { \"$numberInt\" : \"83\" } ], \"info\" : { } }, { \"id\" : \"cea9edb0-ba7e-11ea-b4bf-e9d602dbd12a\", \"use\" : \"主题（之前）\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"13\" } ], \"info\" : { } } ] }, { \"id\" : \"9ed905d0-ba7e-11ea-b4bf-e9d602dbd12a\", \"moduleName\" : \"编辑\", \"items\" : [ { \"id\" : \"a8a76610-ba7e-11ea-b4bf-e9d602dbd12a\", \"use\" : \"子主题\", \"keys\" : [ { \"$numberInt\" : \"9\" } ], \"info\" : { } }, { \"id\" : \"b940aa90-ba7e-11ea-b4bf-e9d602dbd12a\", \"use\" : \"主题（之后）\", \"keys\" : [ { \"$numberInt\" : \"13\" } ], \"info\" : { } }, { \"id\" : \"d8bcf810-ba7e-11ea-b4bf-e9d602dbd12a\", \"use\" : \"父主题\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"13\" } ], \"info\" : { } }, { \"id\" : \"df12d360-ba7e-11ea-b4bf-e9d602dbd12a\", \"use\" : \"联系\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"76\" } ], \"info\" : { } }, { \"id\" : \"e6a6acf0-ba7e-11ea-b4bf-e9d602dbd12a\", \"use\" : \"外框\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"66\" } ], \"info\" : { } }, { \"id\" : \"f225f180-ba7e-11ea-b4bf-e9d602dbd12a\", \"use\" : \"笔记\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"78\" } ], \"info\" : { } } ] }, { \"id\" : \"ffef2610-ba7e-11ea-b4bf-e9d602dbd12a\", \"moduleName\" : \"查看\", \"items\" : [ { \"id\" : \"0db3edd0-ba7f-11ea-b4bf-e9d602dbd12a\", \"use\" : \"放大\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"187\" } ], \"info\" : { } }, { \"id\" : \"1c647520-ba7f-11ea-b4bf-e9d602dbd12a\", \"use\" : \"缩小\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"189\" } ], \"info\" : { } }, { \"id\" : \"24da4a40-ba7f-11ea-b4bf-e9d602dbd12a\", \"use\" : \"实际大小\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"48\" } ], \"info\" : { } }, { \"id\" : \"2efc21b0-ba7f-11ea-b4bf-e9d602dbd12a\", \"use\" : \"ZEN模式\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"18\" }, { \"$numberInt\" : \"70\" } ], \"info\" : { } }, { \"id\" : \"40106290-ba7f-11ea-b4bf-e9d602dbd12a\", \"use\" : \"显示标签页栏\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"84\" } ], \"info\" : { } }, { \"id\" : \"4b2154f0-ba7f-11ea-b4bf-e9d602dbd12a\", \"use\" : \"显示格式版面\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"73\" } ], \"info\" : { } } ] }, { \"id\" : \"58bb3c20-ba7f-11ea-b4bf-e9d602dbd12a\", \"moduleName\" : \"\", \"items\" : [ ] }, { \"id\" : \"8aec51c0-ba98-11ea-839f-d3f42b48d667\", \"moduleName\" : \"\", \"items\" : [ ] } ]",
+      "appName": "XMind",
+      "updateTime": "7/4/2021, 7:17:04 PM"
+    },
+    {
+      "_id": "5efc2bf0447ce011640888db",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "notepad++",
+      "updateTime": "12/7/2020, 2:55:17 PM"
+    },
+    {
+      "_id": "5f072283663c900a7923830e",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "taskmgr",
+      "updateTime": "7/9/2020, 10:00:52 PM"
+    },
+    {
+      "_id": "5f07de91663c900a79238310",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Obsidian",
+      "updateTime": "7/10/2020, 11:20:49 AM"
+    },
+    {
+      "_id": "5f07de9a663c900a79238311",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"ecc9cb70-ecf2-11ea-8ada-c5927e59c90b\", \"moduleName\" : \"电脑\", \"items\" : [ { \"id\" : \"33f984e0-ecf3-11ea-8ada-c5927e59c90b\", \"use\" : \"dxdiag 查询电脑配置\", \"keys\" : [ [ { \"$numberInt\" : \"91\" } ], [ { \"$numberInt\" : \"82\" } ] ], \"info\" : { } } ] } ]",
+      "appName": "firefox",
+      "updateTime": "1/25/2021, 4:15:58 PM"
+    },
+    {
+      "_id": "5f16aa89663c900a7923831b",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"2cccbe00-320a-11ec-93c2-f13791da599d\", \"moduleName\" : \"模块啊啊\", \"items\" : [ ] } ]",
+      "appName": "acad",
+      "updateTime": "10/21/2021, 9:12:59 AM"
+    },
+    {
+      "_id": "5f171530663c900a79238322",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"fa7ec7a0-ece5-11ea-8ada-c5927e59c90b\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"cf928030-66e9-11eb-9bac-1b7e2b9e130b\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"fb4ced10-ece5-11ea-8ada-c5927e59c90b\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "DesktopMgr64",
+      "updateTime": "2/4/2021, 9:07:48 PM"
+    },
+    {
+      "_id": "5f17159e663c900a79238325",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Thunder",
+      "updateTime": "12/26/2020, 11:32:55 PM"
+    },
+    {
+      "_id": "5f23756f5fea626c05ca10de",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "xplorer2_64",
+      "updateTime": "7/31/2020, 9:49:46 AM"
+    },
+    {
+      "_id": "5f2377385fea626c05ca10e0",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Bandizip",
+      "updateTime": "7/31/2020, 9:43:20 AM"
+    },
+    {
+      "_id": "5f237bc55fea626c05ca10e6",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"f03897e0-d2d1-11ea-9232-edee7e47b0ee\", \"moduleName\" : \"代码操作\", \"items\" : [ { \"id\" : \"fbba2660-d2d1-11ea-9232-edee7e47b0ee\", \"use\" : \"上下移动代码\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"38\" } ], [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"40\" } ] ], \"info\" : { } }, { \"id\" : \"7e58b7d0-d2d2-11ea-9232-edee7e47b0ee\", \"use\" : \"复制选中行文本\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"40\" } ] ], \"info\" : { } }, { \"id\" : \"8e60b8d0-d2d2-11ea-9232-edee7e47b0ee\", \"use\" : \"格式化当前代码\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"70\" } ], \"info\" : { } }, { \"id\" : \"c29792e0-d2d2-11ea-9232-edee7e47b0ee\", \"use\" : \"重命名\", \"keys\" : [ { \"$numberInt\" : \"18\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"82\" } ], \"info\" : { } }, { \"id\" : \"f72fc6d0-d2d2-11ea-9232-edee7e47b0ee\", \"use\" : \"显示当前文件的结构\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"79\" } ], \"info\" : { } }, { \"id\" : \"543f04d0-d2d3-11ea-9232-edee7e47b0ee\", \"use\" : \"移动光标到行首\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"37\" } ], \"info\" : { } }, { \"id\" : \"59ee3fe0-d2d3-11ea-9232-edee7e47b0ee\", \"use\" : \"移动光标到行末\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"39\" } ], \"info\" : { } }, { \"id\" : \"69b2f650-d2d3-11ea-9232-edee7e47b0ee\", \"use\" : \"定位到某一行\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"76\" } ], \"info\" : { } }, { \"id\" : \"788ed360-d2d3-11ea-9232-edee7e47b0ee\", \"use\" : \"导包、清除无效包引用\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"79\" } ], \"info\" : { } }, { \"id\" : \"8d46a0d0-d2d3-11ea-9232-edee7e47b0ee\", \"use\" : \"大小写转换\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"88\" } ], [ { \"$numberInt\" : \"89\" } ] ], \"info\" : { } }, { \"id\" : \"20d04040-d2d4-11ea-9232-edee7e47b0ee\", \"use\" : \"折叠/展开全部代码\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"189\" } ], [ { \"$numberInt\" : \"187\" } ] ], \"info\" : { } }, { \"id\" : \"61bfc940-d2d4-11ea-9232-edee7e47b0ee\", \"use\" : \"折叠/展开整个方法\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"189\" } ], [ { \"$numberInt\" : \"187\" } ] ], \"info\" : { } }, { \"id\" : \"988b09d0-d2d4-11ea-9232-edee7e47b0ee\", \"use\" : \"折叠/展开当前代码块\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"189\" } ], [ { \"$numberInt\" : \"187\" } ] ], \"info\" : { } } ] } ]",
+      "appName": "studio64",
+      "updateTime": "3/24/2021, 2:30:00 PM"
+    },
+    {
+      "_id": "5f28aa895fea626c05ca10e9",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "幕布",
+      "updateTime": "8/4/2020, 8:23:37 AM"
+    },
+    {
+      "_id": "5f2918d05fea626c05ca10ef",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "QQPlayer",
+      "updateTime": "8/4/2020, 4:50:15 PM"
+    },
+    {
+      "_id": "5f2919645fea626c05ca10f1",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"a4ee90d0-d62a-11ea-a1a9-678ea1c2fe85\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"b15f1330-d62a-11ea-a1a9-678ea1c2fe85\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "HuoChat",
+      "updateTime": "10/27/2020, 2:30:35 PM"
+    },
+    {
+      "_id": "5f2919855fea626c05ca10f3",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"1\", \"moduleName\" : \"电脑\", \"items\" : [ { \"use\" : \"\", \"keys\" : [ { \"$numberInt\" : \"16\" }, { \"$numberInt\" : \"17\" } ] }, { \"id\" : \"64efd7d0-d627-11ea-932b-dfa992a0aa98\", \"use\" : \"全选\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"65\" } ], \"info\" : { } }, { \"id\" : \"91e73170-ecf2-11ea-8ada-c5927e59c90b\", \"use\" : \"dxdiag 查询电脑配置\", \"keys\" : [ [ { \"$numberInt\" : \"91\" } ], [ { \"$numberInt\" : \"82\" } ] ], \"info\" : { } } ] }, { \"id\" : \"498b0e60-d627-11ea-932b-dfa992a0aa98\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"537e0da0-d627-11ea-932b-dfa992a0aa98\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"493f1ab0-40b6-11eb-981a-974118e2b11b\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "YoudaoNote",
+      "updateTime": "2/26/2021, 2:34:22 PM"
+    },
+    {
+      "_id": "5f2919fb5fea626c05ca10f5",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"045616b0-d62b-11ea-a1a9-678ea1c2fe85\", \"moduleName\" : \"常用模块\", \"items\" : [ { \"id\" : \"403786a0-d62b-11ea-a1a9-678ea1c2fe85\", \"use\" : \"源码模式切换\", \"keys\" : [ { \"$numberInt\" : \"17\" }, { \"$numberInt\" : \"191\" } ], \"info\" : { } } ] } ]",
+      "appName": "Typora",
+      "updateTime": "9/14/2020, 8:48:53 AM"
+    },
+    {
+      "_id": "5f29fd4f5fea626c05ca10f9",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Clash for Windows - Dler Cloud",
+      "updateTime": "8/5/2020, 8:29:03 AM"
+    },
+    {
+      "_id": "5f2d3cf25fea626c05ca10fc",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Clash for Windows",
+      "updateTime": "8/7/2020, 7:37:33 PM"
+    },
+    {
+      "_id": "5f2d3d2d5fea626c05ca1101",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Code - Insiders",
+      "updateTime": "1/26/2021, 2:28:26 PM"
+    },
+    {
+      "_id": "5f4369985fea626c05ca1105",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "上课投屏",
+      "updateTime": "8/26/2020, 5:14:17 PM"
+    },
+    {
+      "_id": "5f4f53965fea626c05ca110b",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "YoudaoDict",
+      "updateTime": "11/18/2020, 7:53:23 PM"
+    },
+    {
+      "_id": "5f4f53e65fea626c05ca110c",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "ONENOTE.EXE",
+      "updateTime": "9/2/2020, 4:12:22 PM"
+    },
+    {
+      "_id": "5f532f475fea626c05ca1110",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "XZDesktop64",
+      "updateTime": "9/5/2020, 2:29:55 PM"
+    },
+    {
+      "_id": "5f53306b5fea626c05ca1116",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "CorelDRW",
+      "updateTime": "9/5/2020, 2:30:13 PM"
+    },
+    {
+      "_id": "5f57673f5fea626c05ca111c",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Xshell",
+      "updateTime": "2/4/2021, 5:19:45 PM"
+    },
+    {
+      "_id": "5f58e06b5fea626c05ca1120",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"2e5c0690-f2a5-11ea-99ac-2f13bf5cf3fc\", \"moduleName\" : \"\", \"items\" : [ ] } ]",
+      "appName": "ali213Pk",
+      "updateTime": "9/9/2020, 10:10:51 PM"
+    },
+    {
+      "_id": "5f58e0b85fea626c05ca1122",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "360se",
+      "updateTime": "9/9/2020, 10:04:37 PM"
+    },
+    {
+      "_id": "5f5f05205fea626c05ca112a",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "OnlineCS",
+      "updateTime": "9/14/2020, 1:52:32 PM"
+    },
+    {
+      "_id": "5f71936b5fea626c05ca1133",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "WinRAR",
+      "updateTime": "9/28/2020, 3:40:27 PM"
+    },
+    {
+      "_id": "5f73335d5fea626c05ca1141",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "GeePlayer",
+      "updateTime": "9/29/2020, 9:15:09 PM"
+    },
+    {
+      "_id": "5f8941cb5fea626c05ca1150",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"4f92d8f0-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"503f4590-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"50821af0-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"509cf5f0-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"50b55ff0-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"50cb58f0-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"50e3c2f0-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"50fc2cf0-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"511496f0-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] }, { \"id\" : \"512bc870-0f7b-11eb-a603-ff381ee76aaf\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "XMind ZEN",
+      "updateTime": "10/16/2020, 2:46:37 PM"
+    },
+    {
+      "_id": "5f8941e55fea626c05ca1151",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "pycharm64",
+      "updateTime": "10/16/2020, 2:47:37 PM"
+    },
+    {
+      "_id": "5f8ab91e5fea626c05ca115b",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "HipsMain",
+      "updateTime": "10/17/2020, 5:27:58 PM"
+    },
+    {
+      "_id": "5f8ab9235fea626c05ca115d",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "IDMan",
+      "updateTime": "2/26/2021, 2:33:57 PM"
+    },
+    {
+      "_id": "5f8ab9275fea626c05ca115f",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "v2rayN",
+      "updateTime": "10/17/2020, 5:28:11 PM"
+    },
+    {
+      "_id": "5f8ab9385fea626c05ca1161",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "mspaint",
+      "updateTime": "10/17/2020, 5:28:24 PM"
+    },
+    {
+      "_id": "5f8ab9435fea626c05ca1163",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "sublime_text",
+      "updateTime": "11/18/2020, 4:37:13 AM"
+    },
+    {
+      "_id": "5f8c34975fea626c05ca1165",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Shadowverse",
+      "updateTime": "10/18/2020, 8:27:03 PM"
+    },
+    {
+      "_id": "5f8ec9c75fea626c05ca1168",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "wegame",
+      "updateTime": "10/20/2020, 7:28:07 PM"
+    },
+    {
+      "_id": "5f98c3515fea626c05ca116e",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"574e2e90-18b9-11eb-935f-279f2fbd7a4f\", \"moduleName\" : \"模块\", \"items\" : [ ] } ]",
+      "appName": "Joplin",
+      "updateTime": "10/28/2020, 9:03:13 AM"
+    },
+    {
+      "_id": "5fa037f15fea626c05ca1173",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "NemuPlayer",
+      "updateTime": "11/3/2020, 12:46:41 AM"
+    },
+    {
+      "_id": "5fae1cb95fea626c05ca1178",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Dimension",
+      "updateTime": "11/13/2020, 1:49:05 PM"
+    },
+    {
+      "_id": "5fae1e8c5fea626c05ca1179",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "X2.EXE",
+      "updateTime": "11/13/2020, 1:50:11 PM"
+    },
+    {
+      "_id": "5fc8337e5fea626c05ca1184",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "QQMusic",
+      "updateTime": "12/3/2020, 8:38:22 AM"
+    },
+    {
+      "_id": "5fc833855fea626c05ca1185",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "sesvc",
+      "updateTime": "12/3/2020, 8:38:29 AM"
+    },
+    {
+      "_id": "5fcc75725fea626c05ca1186",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "YuanShen",
+      "updateTime": "12/6/2020, 2:08:50 PM"
+    },
+    {
+      "_id": "5fcc75cd5fea626c05ca1187",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "GamePP",
+      "updateTime": "12/6/2020, 2:10:21 PM"
+    },
+    {
+      "_id": "5fd9e29e5fea626c05ca1192",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "QxDesktop64",
+      "updateTime": "12/16/2020, 6:34:06 PM"
+    },
+    {
+      "_id": "5fe757765fea626c05ca119d",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "myeclipse",
+      "updateTime": "12/26/2020, 11:32:38 PM"
+    },
+    {
+      "_id": "5fe757895fea626c05ca119e",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "EVPlayer",
+      "updateTime": "12/26/2020, 11:32:25 PM"
+    },
+    {
+      "_id": "600e7eb25fea626c05ca11a1",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "webstorm64",
+      "updateTime": "1/25/2021, 4:18:00 PM"
+    },
+    {
+      "_id": "600fb8a95fea626c05ca11a8",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "SCM",
+      "updateTime": "1/26/2021, 2:37:29 PM"
+    },
+    {
+      "_id": "600fb8a95fea626c05ca11a9",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "SCM",
+      "updateTime": "1/26/2021, 2:37:29 PM"
+    },
+    {
+      "_id": "601251225fea626c05ca11aa",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"651994d0-612d-11eb-aa13-298adb4c8ab4\", \"moduleName\" : \"模块\", \"items\" : [ { \"id\" : \"668029b0-612d-11eb-aa13-298adb4c8ab4\", \"use\" : \"c1\", \"keys\" : [ { \"$numberInt\" : \"112\" } ], \"info\" : { } } ] } ]",
+      "appName": "HtmlLauncher",
+      "updateTime": "1/28/2021, 1:55:56 PM"
+    },
+    {
+      "_id": "601a38c65fea626c05ca11b0",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "HearthstoneDeckTracker",
+      "updateTime": "2/3/2021, 2:07:51 PM"
+    },
+    {
+      "_id": "601a39265fea626c05ca11b2",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "CredentialUIBroker",
+      "updateTime": "2/3/2021, 1:48:22 PM"
+    },
+    {
+      "_id": "601a3e255fea626c05ca11b4",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "dopus",
+      "updateTime": "2/3/2021, 2:09:41 PM"
+    },
+    {
+      "_id": "601bb9ac5fea626c05ca11b7",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "navicat",
+      "updateTime": "2/4/2021, 5:09:00 PM"
+    },
+    {
+      "_id": "601bb9b55fea626c05ca11b8",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "zeal",
+      "updateTime": "2/4/2021, 5:09:09 PM"
+    },
+    {
+      "_id": "601be5bb5fea626c05ca11b9",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Kindle",
+      "updateTime": "2/4/2021, 8:16:59 PM"
+    },
+    {
+      "_id": "601bf19a5fea626c05ca11bb",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "HSDisconnector",
+      "updateTime": "2/4/2021, 9:07:38 PM"
+    },
+    {
+      "_id": "60374d155fea626c05ca11c8",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "mailmaster",
+      "updateTime": "2/25/2021, 3:09:31 PM"
+    },
+    {
+      "_id": "60374d5d5fea626c05ca11cb",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "zotero",
+      "updateTime": "2/25/2021, 3:16:23 PM"
+    },
+    {
+      "_id": "60374d8a5fea626c05ca11cd",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Feishu",
+      "updateTime": "2/25/2021, 3:11:06 PM"
+    },
+    {
+      "_id": "603b534b5fea626c05ca11ce",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Flicker List",
+      "updateTime": "2/28/2021, 4:24:43 PM"
+    },
+    {
+      "_id": "604454925fea626c05ca11d3",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Notion",
+      "updateTime": "5/11/2021, 10:03:10 PM"
+    },
+    {
+      "_id": "604481885fea626c05ca11d8",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"49da22e0-7f17-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"通用\", \"items\" : [ { \"id\" : \"9743f240-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"全选\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"65\" } ] ], \"info\" : { } }, { \"id\" : \"f838a7d0-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"打印文件\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"80\" } ] ], \"info\" : { } }, { \"id\" : \"0a0a1e30-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"关闭文档\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"87\" } ] ], \"info\" : { } }, { \"id\" : \"2aaf3440-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"截图\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"88\" } ] ], \"info\" : { } }, { \"id\" : \"dfa0e110-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"超链接\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"75\" } ] ], \"info\" : { } }, { \"id\" : \"320ae6d0-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"文档切换\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"5d99c2c0-7f19-11eb-b6e7-d37aba30a407\", \"use\" : \"另存为\", \"keys\" : [ [ { \"$numberInt\" : \"123\" } ] ], \"info\" : { } } ] }, { \"id\" : \"4a2ef9a0-7f17-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"文字\", \"items\" : [ { \"id\" : \"a113d920-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"加粗\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"66\" } ] ], \"info\" : { } }, { \"id\" : \"aaa6de10-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"字体\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"68\" } ] ], \"info\" : { } }, { \"id\" : \"af6e5130-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"居中\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"69\" } ] ], \"info\" : { } }, { \"id\" : \"b6bbabe0-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"合并居中\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"77\" } ] ], \"info\" : { } }, { \"id\" : \"bb903e60-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"查找\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"70\" } ] ], \"info\" : { } }, { \"id\" : \"c0fb4480-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"定位\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"71\" } ] ], \"info\" : { } }, { \"id\" : \"c56b48d0-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"替换\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"72\" } ] ], \"info\" : { } }, { \"id\" : \"cc081830-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"倾斜\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"73\" } ] ], \"info\" : { } }, { \"id\" : \"d3c96a60-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"两端对齐\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"74\" } ] ], \"info\" : { } }, { \"id\" : \"e737a0d0-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"左对齐\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"76\" } ] ], \"info\" : { } }, { \"id\" : \"ec16baa0-7f17-11eb-b6e7-d37aba30a407\", \"use\" : \"右对齐\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"82\" } ] ], \"info\" : { } }, { \"id\" : \"01fbbd70-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"下划线\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"85\" } ] ], \"info\" : { } }, { \"id\" : \"122f8960-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"增大字号\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"221\" } ] ], \"info\" : { } }, { \"id\" : \"1a375a70-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"减小字号\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"219\" } ] ], \"info\" : { } }, { \"id\" : \"3a6ee1a0-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到左侧的一个字符\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"37\" } ] ], \"info\" : { } }, { \"id\" : \"41b8b9e0-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到右侧的一个字符\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"39\" } ] ], \"info\" : { } }, { \"id\" : \"4750c370-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到上一行\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"38\" } ] ], \"info\" : { } }, { \"id\" : \"4e4772a0-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到下一行\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"40\" } ] ], \"info\" : { } }, { \"id\" : \"55c68bb0-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"选定到段首\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"38\" } ] ], \"info\" : { } }, { \"id\" : \"7ad6a790-7f19-11eb-b6e7-d37aba30a407\", \"use\" : \"编辑状态/插入新页\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"13\" } ] ], \"info\" : { } } ] }, { \"id\" : \"4a77c270-7f17-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"表格\", \"items\" : [ { \"id\" : \"a7e27170-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"向下填充\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"68\" } ] ], \"info\" : { } }, { \"id\" : \"ad41ded0-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"向右填充\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"82\" } ] ], \"info\" : { } }, { \"id\" : \"b46a4c60-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"定义名称\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"114\" } ] ], \"info\" : { } }, { \"id\" : \"c013d540-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"键入当前日期\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"186\" } ] ], \"info\" : { } }, { \"id\" : \"c5ad8c80-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"键入当前时间\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"186\" } ] ], \"info\" : { } }, { \"id\" : \"dd30d600-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"向右选下个单元格\", \"keys\" : [ [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"e72ef8d0-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"向左选上个单元格\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"9\" } ] ], \"info\" : { } }, { \"id\" : \"f07f4f70-7f18-11eb-b6e7-d37aba30a407\", \"use\" : \"显示清单的当前列中的数值下拉列表\", \"keys\" : [ [ { \"$numberInt\" : \"18\" } ], [ { \"$numberInt\" : \"40\" } ] ], \"info\" : { } }, { \"id\" : \"343f0f70-7f19-11eb-b6e7-d37aba30a407\", \"use\" : \"智能填充\", \"keys\" : [ [ { \"$numberInt\" : \"17\" } ], [ { \"$numberInt\" : \"69\" } ] ], \"info\" : { } }, { \"id\" : \"baece790-7f19-11eb-b6e7-d37aba30a407\", \"use\" : \"插入新sheet\", \"keys\" : [ [ { \"$numberInt\" : \"16\" } ], [ { \"$numberInt\" : \"122\" } ] ], \"info\" : { } } ] }, { \"id\" : \"7ffab9a0-7f19-11eb-b6e7-d37aba30a407\", \"moduleName\" : \"PPT\", \"items\" : [ { \"id\" : \"8bec20f0-7f19-11eb-b6e7-d37aba30a407\", \"use\" : \"当前页面播放\", \"keys\" : [ [ { \"$numberInt\" : \"116\" } ] ], \"info\" : { } }, { \"id\" : \"90f1fca0-7f19-11eb-b6e7-d37aba30a407\", \"use\" : \"退出演示播放\", \"keys\" : [ [ { \"$numberInt\" : \"27\" } ] ], \"info\" : { } } ] } ]",
+      "appName": "wpsoffice",
+      "updateTime": "3/7/2021, 4:09:09 PM"
+    },
+    {
+      "_id": "60481ff85fea626c05ca11d9",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "shortcuthelp",
+      "updateTime": "3/10/2021, 9:25:12 AM"
+    },
+    {
+      "_id": "604dae615fea626c05ca11e0",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "喜马拉雅",
+      "updateTime": "3/14/2021, 2:34:09 PM"
+    },
+    {
+      "_id": "604dcfa25fea626c05ca11e3",
+      "__v": "0",
+      "appData": "[ { \"id\" : \"9d38bc60-84aa-11eb-8f39-c51bef7bde35\", \"moduleName\" : \"全部\", \"items\" : [ { \"id\" : \"afcf5780-84aa-11eb-8f39-c51bef7bde35\", \"use\" : \"显示/隐藏快捷键列表\", \"keys\" : [ { \"$numberInt\" : \"191\" } ], \"info\" : { } }, { \"id\" : \"ba9f4940-84aa-11eb-8f39-c51bef7bde35\", \"use\" : \"播放/暂停\", \"keys\" : [ { \"$numberInt\" : \"80\" } ], \"info\" : { } }, { \"id\" : \"c4279fd0-84aa-11eb-8f39-c51bef7bde35\", \"use\" : \"播放/暂停\", \"keys\" : [ { \"$numberInt\" : \"32\" } ], \"info\" : { } }, { \"id\" : \"cc482900-84aa-11eb-8f39-c51bef7bde35\", \"use\" : \"上一首\", \"keys\" : [ { \"$numberInt\" : \"219\" } ], \"info\" : { } }, { \"id\" : \"d307c2a0-84aa-11eb-8f39-c51bef7bde35\", \"use\" : \"下一首\", \"keys\" : [ { \"$numberInt\" : \"221\" } ], \"info\" : { } }, { \"id\" : \"dc276c50-84aa-11eb-8f39-c51bef7bde35\", \"use\" : \"静音/取消静音\", \"keys\" : [ { \"$numberInt\" : \"77\" } ], \"info\" : { } }, { \"id\" : \"e6105970-84aa-11eb-8f39-c51bef7bde35\", \"use\" : \"打开/关闭播放列表\", \"keys\" : [ { \"$numberInt\" : \"76\" } ], \"info\" : { } }, { \"id\" : \"fd7d82e0-84aa-11eb-8f39-c51bef7bde35\", \"use\" : \"切换播放模式（顺序/随机/单曲循环）\", \"keys\" : [ { \"$numberInt\" : \"83\" } ], \"info\" : { } }, { \"id\" : \"0ebf1550-84ab-11eb-8f39-c51bef7bde35\", \"use\" : \"音量增加\", \"keys\" : [ { \"$numberInt\" : \"85\" } ], \"info\" : { } }, { \"id\" : \"2fe82870-84ab-11eb-8f39-c51bef7bde35\", \"use\" : \"音量减少\", \"keys\" : [ { \"$numberInt\" : \"68\" } ], \"info\" : { } }, { \"id\" : \"3608ea00-84ab-11eb-8f39-c51bef7bde35\", \"use\" : \"快速搜索\", \"keys\" : [ { \"$numberInt\" : \"70\" } ], \"info\" : { } } ] } ]",
+      "appName": "Listen1",
+      "updateTime": "3/14/2021, 5:58:58 PM"
+    },
+    {
+      "_id": "605890245fea626c05ca11e7",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "wpsdesktop",
+      "updateTime": "3/24/2021, 3:27:58 PM"
+    },
+    {
+      "_id": "6058a8e65fea626c05ca11ef",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "Foxmail",
+      "updateTime": "3/22/2021, 10:25:42 PM"
+    },
+    {
+      "_id": "60867ff05fea626c05ca11fa",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "CNEXT",
+      "updateTime": "4/26/2021, 6:48:18 PM"
+    },
+    {
+      "_id": "609b3c835fea626c05ca1202",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "有道云笔记Beta版",
+      "updateTime": "5/12/2021, 10:25:07 AM"
+    },
+    {
+      "_id": "60e13e125fea626c05ca120a",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "notepad",
+      "updateTime": "7/4/2021, 12:50:26 PM"
+    },
+    {
+      "_id": "60f625275fea626c05ca120e",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "BitDesk",
+      "updateTime": "7/20/2021, 9:21:43 AM"
+    },
+    {
+      "_id": "61395f785fea626c05ca120f",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "mydesk",
+      "updateTime": "9/9/2021, 9:12:24 AM"
+    },
+    {
+      "_id": "619240775fea626c05ca121d",
+      "__v": "0",
+      "appData": "[ ]",
+      "appName": "SH366003 Internal PC_20210920",
+      "updateTime": "11/15/2021, 7:11:51 PM"
+    }
+  ]
+}
