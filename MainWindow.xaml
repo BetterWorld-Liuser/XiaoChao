@@ -14,6 +14,8 @@
         x:Name="Main" Foreground="{x:Null}"
         >
     <Window.Resources>
+        
+        <!--button的样式定义-->
         <ControlTemplate x:Key="button_style" TargetType="Button">
             <Grid>
                 <Border x:Name="button_border" Background="{TemplateBinding Background}" CornerRadius="5"/>
@@ -26,11 +28,51 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
 
+        <!--key和value的样式-->
         <DataTemplate x:Key="key_value">
             <StackPanel Orientation="Horizontal" Width="300">
                 <TextBlock Width="100" Text="{Binding Path=Key}"></TextBlock>
                 <TextBlock Width="160" Margin="40 0 0 0" Text="{Binding Path=Value}"></TextBlock>
             </StackPanel>
+        </DataTemplate>
+
+        
+
+        <DataTemplate x:Key="放置assemble">
+            <ItemsControl 
+                ItemsSource="{Binding Path=KeyValueAssemblesListInstance}"
+                >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Width="250" Margin="12.5 0 12.5 0" Orientation="Vertical"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate >
+                        <StackPanel Width="250"  Orientation="Vertical">
+                            <Grid Height="{Binding ElementName=Main, Path=Bigtitle_data_height}" Width="250">
+                                <TextBlock  VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="15"  Text="{Binding Path=SmallTitle}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontWeight="Bold"></TextBlock>
+                            </Grid>
+                            <ItemsControl Name="放置key_value的" ItemsSource="{Binding Path=KeyValues}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Width="250"></StackPanel>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="250" Height="{Binding ElementName=Main, Path=Normal_data_height}" Orientation="Horizontal">
+                                            <TextBlock ToolTip="{Binding Path=Key}" Width="100" FontSize="11" Text="{Binding Path=Key}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" VerticalAlignment="Center"></TextBlock>
+                                            <TextBlock ToolTip="{Binding Path=Value}" Width="150" FontSize="12" Text="{Binding Path=Value}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" VerticalAlignment="Center"></TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
         </DataTemplate>
         
     </Window.Resources>
@@ -38,55 +80,19 @@
     <Border Width="1200" Height="700" Background="{Binding ElementName=Main,Path=ConfigManagerInstance.Background_color}" Opacity="{Binding ElementName=Main, Path=ConfigManagerInstance.Background_opacity}" CornerRadius="9,9,9,9">
         <Grid>
             <Grid Name="contentField" Margin="0,0,0,65">
-                <ScrollViewer VerticalScrollBarVisibility="Hidden" Width="1100" Height="600" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}">
-                    <ItemsControl Name="放置四个Array的"  ItemsSource="{Binding ElementName=Main,Path=Data.KeyValueAssemblesListArray}">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden" Width="1100" Height="600" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <ItemsControl  ItemsSource="{Binding ElementName=Main,Path=Data.KeyValueAssemblesListArray}" ItemTemplate="{StaticResource ResourceKey=放置assemble}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <StackPanel Width="1100"  Orientation="Horizontal"  />
                             </ItemsPanelTemplate>
                         </ItemsControl.ItemsPanel>
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-
-                                <ItemsControl Name="放置assemble的" ItemsSource="{Binding Path=KeyValueAssemblesListInstance}">
-                                    <ItemsControl.ItemsPanel>
-                                        <ItemsPanelTemplate>
-                                            <StackPanel Width="250" Margin="12.5 0 12.5 0" Orientation="Vertical"></StackPanel>
-                                        </ItemsPanelTemplate>
-                                    </ItemsControl.ItemsPanel>
-                                    <ItemsControl.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackPanel Width="250" Name="放置smalltitile和keyvalue的" Orientation="Vertical">
-                                                <Grid Height="{Binding ElementName=Main, Path=Bigtitle_data_height}" Width="250">
-                                                    <TextBlock  VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="15"  Text="{Binding Path=SmallTitle}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontWeight="Bold"></TextBlock>
-                                                </Grid>
-                                                <ItemsControl Name="放置key_value的" ItemsSource="{Binding Path=KeyValues}">
-                                                    <ItemsControl.ItemsPanel>
-                                                        <ItemsPanelTemplate>
-                                                            <StackPanel Width="250"></StackPanel>
-                                                        </ItemsPanelTemplate>
-                                                    </ItemsControl.ItemsPanel>
-                                                    <ItemsControl.ItemTemplate>
-                                                        <DataTemplate>
-                                                            <StackPanel Width="250" Height="{Binding ElementName=Main, Path=Normal_data_height}" Orientation="Horizontal">
-                                                                <TextBlock ToolTip="{Binding Path=Key}" Width="100" FontSize="11" Text="{Binding Path=Key}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" VerticalAlignment="Center"></TextBlock>
-                                                                <TextBlock ToolTip="{Binding Path=Value}" Width="150" FontSize="12" Text="{Binding Path=Value}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" VerticalAlignment="Center"></TextBlock>
-                                                            </StackPanel>
-                                                        </DataTemplate>
-                                                    </ItemsControl.ItemTemplate>
-                                                </ItemsControl>
-                                            </StackPanel>
-                                        </DataTemplate>
-                                    </ItemsControl.ItemTemplate>
-                                </ItemsControl>
-
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
                     </ItemsControl>
 
                 </ScrollViewer>
                 
             </Grid>
+            <!--put tool button-->
             <Grid Name="toolField" Margin="0,640,0,0" ForceCursor="True">
                     <StackPanel Margin="30 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="auto" Orientation="Horizontal">
                         <TextBlock Text="{Binding ElementName=Main, Path=Data.Bigtitle}"  TextAlignment="Center" Background="{x:Null}" FontSize="15" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"   FontFamily="Segoe UI Semibold"  Width="auto"></TextBlock>

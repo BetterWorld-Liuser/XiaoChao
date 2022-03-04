@@ -188,8 +188,8 @@ namespace xiaochao
                                 KeyValue keyValue = new KeyValue
                                 {
                                     Height = Normal_data_height,
-                                    Key = key_value[0],
-                                    Value = key_value[1]
+                                    Key = key_value[0].Replace('+',' '),
+                                    Value = key_value[1].Replace('+', ' ')
                                 };
                                 keyValue.Height = Normal_data_height;
                                 if (key_value.Length >= 3)

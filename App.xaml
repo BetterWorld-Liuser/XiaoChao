@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:xiaochao"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
+        </Style>
+        <Style TargetType="Grid">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
+        </Style>
+        <Style TargetType="ItemsControl">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
