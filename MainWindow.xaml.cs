@@ -40,7 +40,8 @@ namespace xiaochao
 
 
         public ConfigManager ConfigManagerInstance { get; set; } = ConfigManager.GetInstance();
-        public int Normal_data_height { get; set; } = 20;
+        //一条键与值的高度
+        public int Normal_data_height { get; set; } = 27;
         public int Bigtitle_data_height { get; set; } = 30;
         public int Column_count { get; set; } = 4;
         public string Version { get; set; } = Assembly.GetExecutingAssembly().GetName().Version.ToString();
@@ -185,10 +186,11 @@ namespace xiaochao
                             {
                                 //正常数据
                                 string[] key_value = line_clean.Split(' ');
+                                if (key_value.Length < 2) break;
                                 KeyValue keyValue = new KeyValue
                                 {
                                     Height = Normal_data_height,
-                                    Key = key_value[0].Replace('+',' '),
+                                    Key = new KeyList(key_value[0]),
                                     Value = key_value[1].Replace('+', ' ')
                                 };
                                 keyValue.Height = Normal_data_height;

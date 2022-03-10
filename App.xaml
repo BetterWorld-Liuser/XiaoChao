@@ -13,5 +13,8 @@
         <Style TargetType="ItemsControl">
             <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
         </Style>
+        <Style TargetType="ScrollViewer">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

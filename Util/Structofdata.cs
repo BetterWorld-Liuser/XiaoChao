@@ -129,9 +129,19 @@ namespace xiaochao
 
     //--------------------- 类型定义 -----------------------
 
+    public class KeyList
+    {
+        public List<string> Keys { get; set; } = new List<string>();
+        public KeyList(string keyString)
+        {
+            Keys = keyString.Split('+').ToList();
+            Keys.Reverse();
+        }
+    }
+
     public class KeyValue
     {
-        public string Key { get; set; } = "";
+        public KeyList Key { get; set; } = new KeyList("");
         public string Value { get; set; } = "";
         public string Url { get; set; } = "";
         public int Height { get; set; } = 0;
