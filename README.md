@@ -69,17 +69,15 @@ https://github.com/BetterWorld-Liuser/XiaoChao
 当前捐赠人数：3 人
 当前捐赠总额：270 元
 
+
+**数字人民币**：0021128401398080
+| 微信| 支付宝 | QQ |
+| ---------- | ----------------------------- | --------------------- |
+| ![微信二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%875.jpg) |  ![支付宝二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%876.png) | ![QQ收款码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/QQ收款码.png) |
+
 | 捐赠人代称  | 金额 |
 | ----------- | ---- |
 | Keith       | 200  |
 | lingchuanbo | 50   |
 | shuangmy    | 20   |
 
-
-
-
-
-
-| 微信                                                                                                      | 支付宝                                                                                                      |
-| --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| ![微信二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%875.jpg) | ![支付宝二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%876.png) |
