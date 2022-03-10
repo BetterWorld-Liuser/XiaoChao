@@ -72,8 +72,8 @@ https://github.com/BetterWorld-Liuser/XiaoChao
 
 **数字人民币**：0021128401398080
 | 微信| 支付宝 | QQ |
-| ---------- | ----------------------------- | --------------------- |
-| ![微信二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%875.jpg) |  ![支付宝二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/%E5%9B%BE%E7%89%876.png) | ![QQ收款码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/QQ收款码.png) |
+| ---------- | ---------- |---------- |
+| ![微信二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/微信收款.png) |  ![支付宝二维码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/支付宝收款.jpg) | ![QQ收款码](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/QQ收款码.png) |
 
 | 捐赠人代称  | 金额 |
 | ----------- | ---- |
