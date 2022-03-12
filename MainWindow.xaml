@@ -3,37 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xiaochao ="clr-namespace:xiaochao"
         mc:Ignorable="d"
         Title="小抄" 
         Height="700" 
         Width="1200"
         AllowsTransparency="True"
         WindowStyle="None"
-        Background="{x:Null}" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" WindowState="Normal"
+        Background="{x:Null}" 
+        ShowInTaskbar="False" 
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Normal"
         x:Name="Main" Foreground="{x:Null}"
+        
         >
     <Window.Resources>
 
-
+        
+         <!--定义字体样式:开始-->
         <Style x:Key="TextStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="{Binding ElementName=Main,Path=ConfigManagerInstance.Font_size}"/>
             <Setter Property="Foreground" Value="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"/>
-            
         </Style>
+        <!--定义字体样式:结束-->
         
-        <!--button的样式定义-->
-        <ControlTemplate x:Key="button_style" TargetType="Button">
-            <Grid>
-                <Border x:Name="button_border" Background="{TemplateBinding Background}" CornerRadius="5"/>
-                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-            </Grid>
-            <ControlTemplate.Triggers>
-                <Trigger Property="IsMouseOver" Value="true">
-                    <Setter Property="Background" TargetName="button_border" Value="{Binding ElementName=Main, Path=ConfigManagerInstance.Decoration_color}"/>
-                </Trigger>
-            </ControlTemplate.Triggers>
-        </ControlTemplate>
-
         <DataTemplate x:Key="键">
             <Border BorderThickness="1" 
                     CornerRadius="2" 
@@ -76,6 +69,7 @@
                                                  VerticalAlignment="Center"></TextBlock>
             </StackPanel>
         </DataTemplate>
+        
         <DataTemplate x:Key="列表元素">
             <StackPanel Width="250"  Orientation="Vertical">
 
@@ -108,6 +102,7 @@
                 </ItemsControl>
             </StackPanel>
         </DataTemplate>
+        
         <DataTemplate x:Key="列表">
             <ItemsControl 
                 Name="列表"
@@ -124,7 +119,11 @@
         
     </Window.Resources>
 
-    <Border Width="1200" Height="700" Background="{Binding ElementName=Main,Path=ConfigManagerInstance.Background_color}" Opacity="{Binding ElementName=Main, Path=ConfigManagerInstance.Background_opacity}" CornerRadius="9,9,9,9">
+    
+        
+        <Grid>
+        <Border Width="1200" Height="700" Background="{Binding ElementName=Main,Path=ConfigManagerInstance.Background_color}" Opacity="{Binding ElementName=Main, Path=ConfigManagerInstance.Background_opacity}" CornerRadius="9,9,9,9">
+        </Border>
         <Grid>
             <Grid Name="ContentField" Margin="0,0,0,65">
                 <ScrollViewer VerticalScrollBarVisibility="Hidden" Width="1100" Height="600" HorizontalAlignment="Center" VerticalAlignment="Center" >
@@ -140,19 +139,20 @@
                     </ItemsControl>
 
                 </ScrollViewer>
-                
+
             </Grid>
             <!--put tool button-->
             <Grid Name="toolField" Margin="0,640,0,0" ForceCursor="True">
-                    <StackPanel Margin="30 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="auto" Orientation="Horizontal">
-                        <TextBlock Text="{Binding ElementName=Main, Path=Data.Bigtitle}"  TextAlignment="Center" Background="{x:Null}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"   FontFamily="Segoe UI Semibold"  Width="auto"></TextBlock>
+                <StackPanel Margin="30 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="auto" Orientation="Horizontal">
+                    <TextBlock Text="{Binding ElementName=Main, Path=Data.Bigtitle}"  TextAlignment="Center" Background="{x:Null}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"   FontFamily="Segoe UI Semibold"  Width="auto"></TextBlock>
                     <TextBlock  Text="{Binding ElementName=Main, Path=Data.Bigtitle2}" Margin="20 0 0 0" TextAlignment="Center" Background="{x:Null}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"   FontFamily="Segoe UI Semibold"  Width="auto"></TextBlock>
-                    </StackPanel>
+                </StackPanel>
                 <Button Template="{StaticResource button_style}" Cursor="Hand" Width="70" Height="30" Margin="0 0 180 0" VerticalAlignment="Center" HorizontalAlignment="Right"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Data_Click">添加数据</Button>
                 <Button Template="{StaticResource button_style}" Cursor="Hand" Width="70" Height="30" Margin="0 0 95 0" VerticalAlignment="Center" HorizontalAlignment="Right"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Setting_Click">设置</Button>
                 <Button Template="{StaticResource button_style}" Cursor="Hand" Width="70" Height="30" Margin="0 0 20 0" VerticalAlignment="Center" HorizontalAlignment="Right"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Quit_Click">退出</Button>
                 <TextBlock Text="{Binding ElementName=Main,Path=Version}" Width="30" Height="10" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_of_version}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"></TextBlock>
             </Grid>
         </Grid>
-    </Border>
+    </Grid>
+    
 </Window>
