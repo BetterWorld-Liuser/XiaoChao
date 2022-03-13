@@ -63,8 +63,8 @@ namespace xiaochao
             string config_file_path = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "设置.md");
             if (File.Exists(config_file_path))
             {
-                string color_pattern = "^#[a-fA-F0-9]{6}$";
-                string opacity_pattern = "[0-9]{1,3}";
+                //string color_pattern = "^#[a-fA-F0-9]{6}$";
+                //string opacity_pattern = "[0-9]{1,3}";
                 //开始：循环遍历每一行元素，将其加入字典中
                 foreach (string line in File.ReadLines(config_file_path))
                 {

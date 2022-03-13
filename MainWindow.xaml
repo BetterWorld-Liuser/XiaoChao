@@ -28,7 +28,8 @@
         <!--定义字体样式:结束-->
         
         <DataTemplate x:Key="键">
-            <Border BorderThickness="1" 
+            <Border 
+                BorderThickness="1" 
                     CornerRadius="2" 
                     Margin="1 0 3 0"
                     BorderBrush="{Binding ElementName=Main, Path=ConfigManagerInstance.Decoration_color}"
@@ -40,7 +41,6 @@
 
         <DataTemplate x:Key="键与值">
             <StackPanel 
-                              Width="250" 
                               Height="{Binding ElementName=Main, Path=Normal_data_height}" 
                               Orientation="Horizontal">
 
@@ -53,25 +53,25 @@
                             <StackPanel
                                 Height="20"
                                 VerticalAlignment="Center"
-                                            FlowDirection="RightToLeft"
-                                            Orientation="Horizontal"
-                                            Width="125"
+                                FlowDirection="RightToLeft"
+                                Orientation="Horizontal"
+                                Width="166"
                                             />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
                 </ItemsControl>
 
-                <TextBlock 
-                    
-                                                Style="{StaticResource TextStyle}"
-                                                Width="125" 
-                                                Text="{Binding Path=Value}" 
-                                                 VerticalAlignment="Center"></TextBlock>
+                <TextBlock
+                    Style="{StaticResource TextStyle}"
+                    Width="200" 
+                    Text="{Binding Path=Value}" 
+                    VerticalAlignment="Center">
+                </TextBlock>
             </StackPanel>
         </DataTemplate>
         
         <DataTemplate x:Key="列表元素">
-            <StackPanel Width="250"  Orientation="Vertical">
+            <StackPanel  Orientation="Vertical">
 
                 <Border 
                                 CornerRadius="0,0,0,0" 
@@ -95,7 +95,7 @@
                                 >
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <StackPanel Width="250"></StackPanel>
+                            <StackPanel Width="366"></StackPanel>
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
 
@@ -111,7 +111,7 @@
                 >
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <StackPanel Width="250" Margin="12.5 0 12.5 0" Orientation="Vertical"></StackPanel>
+                        <StackPanel Width="366" Margin="12.5 0 12.5 0" Orientation="Vertical"></StackPanel>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>

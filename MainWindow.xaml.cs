@@ -27,7 +27,7 @@ namespace xiaochao
     public partial class MainWindow : Window
     {
         #region ----------固定变量定义----------------
-        const int HOTKEY_id = 1015;
+        const int HOTKEY_id = 6666;
 
 
         #endregion ----------固定变量定义-----------
@@ -325,7 +325,7 @@ namespace xiaochao
         private IntPtr HotKeyHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
             const int WM_HOTKEY = 0x0312;
-            if (wParam.ToInt32() == HOTKEY_id && msg == WM_HOTKEY)
+            if (wParam== (IntPtr)HOTKEY_id && msg == WM_HOTKEY)
             {
                 Switchwindow();
                 handled = true;

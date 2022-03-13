@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>小抄</name>
+    </assembly>
+    <members>
+        <member name="T:xiaochao.SettingWindow">
+            <summary>
+            SettingWindow.xaml 的交互逻辑
+            </summary>
+            <summary>
+            SettingWindow
+            </summary>
+        </member>
+        <member name="M:xiaochao.SettingWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:xiaochao.HotkeyConverter.Convert(System.String)">
+            <summary>
+            将字符串的快捷键转化为系统的快捷键
+            </summary>
+            <param name="hotkey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:xiaochao.WindowsManager.GetWindowModuleFileName(System.IntPtr,System.Text.StringBuilder,System.UInt32)">
+            <summary>
+            获取window的标题
+            </summary>
+            <param name="hWnd"></param>
+            <param name="text"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:xiaochao.WindowsManager.GetFrontWindowText">
+            <summary>
+            获取窗口的标题
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:xiaochao.WindowsManager.GethWnd">
+            <summary>
+            获取hWnd
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:xiaochao.WindowsManager.GetWindowProcessName">
+            <summary>
+            获取窗口归属的exe
+            </summary>
+            <param name="hwnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:xiaochao.WindowsManager.Set_window_frontByName(System.String)">
+            <summary>
+            将对应名称的窗口放置在前台
+            </summary>
+            <param name="windowName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:xiaochao.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:xiaochao.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:xiaochao.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="M:xiaochao.ConfigManager.LoadConfig">
+            <summary>
+            导入配置文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:xiaochao.ConfigManager.InitSetting(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            初始化设置的各种值
+            </summary>
+            <param name="config_dictionary"></param>
+        </member>
+        <member name="P:xiaochao.Structofdata.KeyValueAssemblesListArray">
+            <summary>
+            关于快捷键的全部数据
+            </summary>
+        </member>
+        <member name="P:xiaochao.Structofdata.Bigtitle">
+            <summary>
+            大标题
+            </summary>
+        </member>
+        <member name="M:xiaochao.Structofdata.#ctor(xiaochao.KeyValueAssembleList[],System.String,System.String)">
+            <summary>
+            构造函数,页面中的全部数据
+            </summary>
+            <param name="keyValueAssemblesListArray"></param>
+            <param name="bigtitle"></param>
+        </member>
+        <member name="M:xiaochao.Structofdata.InitInstance(xiaochao.KeyValueAssembleList[],System.String,System.String)">
+            <summary>
+            单例模式获取对象实例的接口
+            </summary>
+            <param name="keyValueAssemblesArray"></param>
+            <param name="bigtitle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:xiaochao.Structofdata.OnPropertyChanged(System.String)">
+            <summary>
+            属性改变触发方法
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="T:xiaochao.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:xiaochao.MainWindow.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:xiaochao.MainWindow.RetrieveData">
+            <summary>
+            获取关于目前前台应用的数据
+            </summary>
+        </member>
+        <member name="M:xiaochao.MainWindow.MessageShow(System.Int32)">
+            <summary>
+            给予用户提示
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:xiaochao.MainWindow.Switchwindow">
+            <summary>
+            切换窗口显示状态
+            </summary>
+        </member>
+        <member name="M:xiaochao.MainWindow.Register">
+            <summary>
+            注册快捷键
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:xiaochao.MainWindow.RegisterWPF">
+            <summary>
+            注册WPF内部的快捷键
+            </summary>
+        </member>
+        <member name="M:xiaochao.MainWindow.HotKeyHook(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)">
+            <summary>
+            快捷键触发的处理方法
+            </summary>
+            <param name="hwnd"></param>
+            <param name="msg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <param name="handled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:xiaochao.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:xiaochao.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:xiaochao.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:xiaochao.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
