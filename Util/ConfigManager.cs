@@ -35,7 +35,7 @@ namespace xiaochao
             get => Font_size - 7 ;
         }
 
-        //开始：ConfigManager初始化函数
+        #region ConfigManager初始化函数
         private ConfigManager()
         {
             
@@ -44,7 +44,7 @@ namespace xiaochao
             InitSetting(config_dictionary);
 
         }
-        //结束：ConfigManager初始化函数
+        #endregion ConfigManager初始化函数
 
         static public ConfigManager GetInstance()
         {
@@ -58,7 +58,7 @@ namespace xiaochao
         /// <returns></returns>
         public Dictionary<string, string> LoadConfig()
         {
-            //开始：找到配置文件并导入
+            #region：找到配置文件并导入
             Dictionary<string, string> config_dictionary = new Dictionary<string, string>();
             string config_file_path = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, "设置.md");
             if (File.Exists(config_file_path))
@@ -77,7 +77,7 @@ namespace xiaochao
 
                 }//结束：循环遍历每一行元素，将其加入字典中
             }
-            //结束：找到配置文件并导入
+            #endregion 找到配置文件并导入
             return config_dictionary;
          }
 

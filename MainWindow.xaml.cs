@@ -13,12 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
-using NHotkey.Wpf;
-using NHotkey;
 using Path = System.IO.Path;
 using System.Reflection;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Windows.Interop;
 
 namespace xiaochao
 {
@@ -27,8 +26,15 @@ namespace xiaochao
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region ----------固定变量定义----------------
+        const int HOTKEY_id = 1015;
 
-        //-------------------------- 属性定义↓ --------------------------
+
+        #endregion ----------固定变量定义-----------
+
+
+
+        #region-------------------------- 属性定义 --------------------------
         public Structofdata Data { get; set; } = Structofdata.InitInstance();
 
         private static string BaseDir = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
@@ -38,20 +44,19 @@ namespace xiaochao
         //local文件夹地址
         private readonly string _local_directory = Path.Combine(BaseDir, "local");
 
-
         public ConfigManager ConfigManagerInstance { get; set; } = ConfigManager.GetInstance();
         //一条键与值的高度
         public int Normal_data_height { get; set; } = 27;
         public int Bigtitle_data_height { get; set; } = 30;
-        public int Column_count { get; set; } = 4;
+        public int Column_count { get; set; } = 3;
         public string Version { get; set; } = Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
-        //-------------------------- 属性定义↑ ------------------------
+        #endregion -------------------------- 属性定义 ------------------------
 
 
 
 
-        //-------------------------- 构造函数👇-----------------------
+        #region --------------------------构造函数-----------------------------
         /// <summary>
         /// 构造函数
         /// </summary>
@@ -63,36 +68,10 @@ namespace xiaochao
 
             Check_Directory_Exist();
 
-            //绑定快捷键
-            Hotkey hotkey = HotkeyConverter.Convert(ConfigManagerInstance.Shortcut);
-            HotkeyManager.Current.AddOrReplace("SwitchShow", hotkey.KeyCode, hotkey.Modifiers, HotkeyPressed);
+            
 
+            
 
-            //设置开机启动.旧代码
-            //if (ConfigManagerInstance.Start_Up)
-            //{
-            //    var bootMeUp = new BootMeUp
-            //    {
-            //        UseAlternativeOnFail = true,
-            //        BootArea = BootMeUp.BootAreas.StartupFolder,
-            //        TargetUser = BootMeUp.TargetUsers.CurrentUser,
-
-            //        // Enable auto-booting.
-            //        Enabled = true
-            //    };
-            //}
-            //else
-            //{
-            //    var bootMeUp = new BootMeUp
-            //    {
-            //        UseAlternativeOnFail = true,
-            //        BootArea = BootMeUp.BootAreas.StartupFolder,
-            //        TargetUser = BootMeUp.TargetUsers.CurrentUser,
-
-            //        // Enable auto-booting.
-            //        Enabled = false
-            //    };
-            //}
 
 
             //设置开机启动.新代码2022年2月24日
@@ -110,11 +89,23 @@ namespace xiaochao
 
         }
 
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+            //绑定快捷键
+            Register();
+        }
 
 
 
+        #endregion --------------------------构造函数-----------------------------
 
-        //-------------------------- 构造函数👆 --------------------------
+
+        protected override void OnClosed(EventArgs e) {
+            //取消注册快捷键
+            NativeMethods.UnregisterHotKey(WindowsManager.GethWnd(), HOTKEY_id);
+            base.OnClosed(e); 
+        }
 
         /// <summary>
         /// 获取关于目前前台应用的数据
@@ -277,23 +268,70 @@ namespace xiaochao
             }
         }
 
+
         /// <summary>
-        /// 快捷键按下的处理函数
+        /// 注册快捷键
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void HotkeyPressed(object sender, HotkeyEventArgs e)
+        private void Register()
         {
-            if (e.Name == "SwitchShow")
+            IntPtr hWnd = new WindowInteropHelper(this).Handle;
+            //HotkeyManager.Current.AddOrReplace("SwitchShow", hotkey.KeyCode, hotkey.Modifiers, HotkeyPressed);
+            Hotkey hotkey = HotkeyConverter.Convert(ConfigManagerInstance.Shortcut);
+            int _key = KeyInterop.VirtualKeyFromKey(hotkey.KeyCode);
+            
+            bool success = NativeMethods.RegisterHotKey(hWnd, HOTKEY_id, (uint)hotkey.Modifiers, (uint)_key);
+            if (!success)
             {
-
-                Switchwindow();
+                System.Windows.MessageBox.Show("快捷键注册失效，请重新设置");
+                Close();
             }
 
-
+            HwndSource _source = HwndSource.FromHwnd(hWnd);
+            _source.AddHook(HotKeyHook);
 
         }
 
+
+        /// <summary>
+        /// 注册WPF内部的快捷键
+        /// </summary>
+        public void RegisterWPF()
+        {
+            Hotkey hotkey = HotkeyConverter.Convert(ConfigManagerInstance.Shortcut);
+            KeyGesture CloseCmdKeyGesture = new KeyGesture(hotkey.KeyCode, hotkey.Modifiers);
+            
+            RoutedCommand myCommand = new RoutedCommand();
+            myCommand.InputGestures.Add(CloseCmdKeyGesture);
+
+            var bind = new CommandBinding { Command = myCommand };
+            bind.Executed += new ExecutedRoutedEventHandler((sender, e) => {
+                Switchwindow();
+            });
+            CommandBindings.Add(bind);
+
+            }
+
+        /// <summary>
+        /// 快捷键触发的处理方法
+        /// </summary>
+        /// <param name="hwnd"></param>
+        /// <param name="msg"></param>
+        /// <param name="wParam"></param>
+        /// <param name="lParam"></param>
+        /// <param name="handled"></param>
+        /// <returns></returns>
+        private IntPtr HotKeyHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        {
+            const int WM_HOTKEY = 0x0312;
+            if (wParam.ToInt32() == HOTKEY_id && msg == WM_HOTKEY)
+            {
+                Switchwindow();
+                handled = true;
+            }
+            return IntPtr.Zero;
+        }
 
 
 

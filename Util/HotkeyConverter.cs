@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -14,9 +13,11 @@ namespace xiaochao
 
         
 
-        // Summary:
-        //     [Special] Converts a hotkey string to its variant WK.Libraries.HotkeyListenerNS.Hotkey
-        //     object.
+        /// <summary>
+        /// 将字符串的快捷键转化为系统的快捷键
+        /// </summary>
+        /// <param name="hotkey"></param>
+        /// <returns></returns>
         public static Hotkey Convert(string hotkey)
         {
             Key keys = Key.None;
@@ -60,21 +61,13 @@ namespace xiaochao
         //
         // Summary:
         //     Gets or sets the hotkey's keyboard code.
-        public Key KeyCode
-        {
-            get;
-            set;
-        }
+        public Key KeyCode {get;set;}
 
         //
         // Summary:
         //     Gets or sets the hotkey's modifier flags. The flags indicate which combination
         //     of CTRL, SHIFT, and ALT keys will be detected.
-        public ModifierKeys Modifiers
-        {
-            get;
-            set;
-        }
+        public ModifierKeys Modifiers {get;set;}
 
 
         public Hotkey(Key keycode , ModifierKeys modifiers)
@@ -83,4 +76,13 @@ namespace xiaochao
             Modifiers = modifiers;
         }
     }
+
+
+    public static class NativeMethods
+    {
+        [DllImport("user32.dll")] public static extern bool RegisterHotKey(IntPtr hWnd, int id, uint key, uint modifier); 
+        [DllImport("user32.dll")] public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+    }
+
+
 }

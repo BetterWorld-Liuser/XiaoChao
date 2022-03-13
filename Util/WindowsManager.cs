@@ -39,6 +39,15 @@ namespace xiaochao
             IntPtr hWnd = GetForegroundWindow();
             return GetTitle(hWnd);
         }
+        /// <summary>
+        /// 获取hWnd
+        /// </summary>
+        /// <returns></returns>
+        public static IntPtr GethWnd()
+        {
+            return GetForegroundWindow();
+        }
+        
 
         /// <summary>
         /// 获取窗口归属的exe
