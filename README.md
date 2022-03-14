@@ -1,3 +1,10 @@
+<p align="center">
+ <img width="100px" src="https://github.com/BetterWorld-Liuser/XiaoChao/tree/master/resources/document.ico" align="center" alt="XiaoChao" />
+ <h2 align="center">XiaoChao</h2>
+ <p align="center">根据使用的应用提示快捷键</p>
+</p>
+
+
 ## 一句简介
 
 小抄是一款快捷键提示工具, 它会根据你目前正在使用的窗口来调整自己显示的内容. 目前比较常见的使用方式就是快捷键提示.
