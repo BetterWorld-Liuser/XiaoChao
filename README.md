@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="https://github.com/BetterWorld-Liuser/XiaoChao/tree/master/resources/document.ico" align="center" alt="XiaoChao" />
+ <img width="100px" src="https://raw.githubusercontent.com/BetterWorld-Liuser/XiaoChao/master/resources/document.ico" align="center" alt="XiaoChao" />
  <h2 align="center">XiaoChao</h2>
  <p align="center">根据使用的应用提示快捷键</p>
 </p>
