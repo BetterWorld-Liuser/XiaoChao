@@ -55,7 +55,7 @@
                                 VerticalAlignment="Center"
                                 FlowDirection="RightToLeft"
                                 Orientation="Horizontal"
-                                Width="166"
+                                Width="150"
                                             />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
@@ -63,7 +63,7 @@
 
                 <TextBlock
                     Style="{StaticResource TextStyle}"
-                    Width="200" 
+                    Width="216" 
                     Text="{Binding Path=Value}" 
                     VerticalAlignment="Center">
                 </TextBlock>
