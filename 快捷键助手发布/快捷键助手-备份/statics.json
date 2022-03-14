@@ -1,0 +1,13 @@
+{
+  "RECORDS": [
+    {
+      "_id": "5ebfc23e400a084b80169e6a",
+      "__v": "0",
+      "name": "default",
+      "todayCounter": "7256",
+      "totalCounter": "9069",
+      "updatePlace": "",
+      "version": "1.0.0"
+    }
+  ]
+}
