@@ -4,6 +4,11 @@
  <p align="center">根据使用的应用提示快捷键</p>
 </p>
 
+![下载量](https://img.shields.io/github/downloads/BetterWorld-Liuser/XiaoChao/total?color=%23722ED1&label=%E6%80%BB%E4%B8%8B%E8%BD%BD%E9%87%8F&style=for-the-badge)
+
+![图1](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/白天模式.png)
+
+![图2](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/黑夜模式.png)
 
 ## 一句简介
 
@@ -13,10 +18,6 @@
 
 我们使用的电脑软件越来越多 CAD、Vistual Studio、OneNote、Word、WPS、QQ、Mathpix、utools、VSCode、Blender、Solidworks、PS、AI 等等软件的各个项目的记忆混杂在一起很难记忆。
 小白在学习新软件的时候也总要花费很长时间来记忆快捷键，加上在我最初入坑 MacOS 的时候就被上面类似的软件”CheatSheet”深深吸引了。而 Windows 上没有相应的软件, 所以我决定自己开发一款.
-![图1](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/白天模式.png)
-
-![图2](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/黑夜模式.png)
-
 它不仅仅能提示快捷键, 当你在学习一们编程语言的时候, 或者剪辑, 又或者写小说的时候, 你可以将对应条目的信息加载上去, 同时[小抄]可以根据你正在使用的软件来自动地切换它本身的内容, 不再需要你手动打开一个个文档来自己查找.
 
 所以就本软件就诞生啦。
