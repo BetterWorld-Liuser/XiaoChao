@@ -26,15 +26,15 @@ namespace xiaochao
     /// </summary>
     public partial class MainWindow : Window
     {
-        #region ----------固定变量定义----------------
+        #region 固定变量定义
         const int HOTKEY_id = 6666;
 
 
-        #endregion ----------固定变量定义-----------
+        #endregion 固定变量定义
 
 
 
-        #region-------------------------- 属性定义 --------------------------
+        #region 属性定义
         public Structofdata Data { get; set; } = Structofdata.InitInstance();
 
         private static string BaseDir = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
@@ -47,8 +47,20 @@ namespace xiaochao
         public ConfigManager ConfigManagerInstance { get; set; } = ConfigManager.GetInstance();
         //一条键与值的高度
         public int Normal_data_height { get; set; } = 27;
+        //大标题的高度
         public int Bigtitle_data_height { get; set; } = 30;
+        //列的数量
         public int Column_count { get; set; } = 3;
+
+        //窗口的长度
+        public int Window_Height { get; set; } = 750;
+        //窗口的高度
+        public int Window_Width { get; set; } = 1200;
+        //列宽
+        public int Column_Width { get; set; }
+
+        //每个元素的宽度
+        public int Colum_Item_Width { get; set; }
         public string Version { get; set; } = Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
         #endregion -------------------------- 属性定义 ------------------------
@@ -62,36 +74,35 @@ namespace xiaochao
         /// </summary>
         public MainWindow()
         {
+            //每一列的宽度
+            Column_Width = (Window_Width - 40) / Column_count;
+
+            //每个元素的宽度
+            Colum_Item_Width = Column_Width - 20;
             InitializeComponent();
-
+            
+            InitHwnd();
             Hide();
-
             Check_Directory_Exist();
 
-            
-
-            
-
-
-
-            //设置开机启动.新代码2022年2月24日
+            //设置开机启动 2022年2月24日
             StartUp(ConfigManagerInstance.Start_Up);
-
-
+            RetrieveData();
             //如果不是开机启动，初始化数据
             string[] args = Environment.GetCommandLineArgs();
-            RetrieveData();
             if (!args.Contains("--autostart"))
             {
                 Show();
             }
             
 
+
         }
 
         protected override void OnSourceInitialized(EventArgs e)
         {
             base.OnSourceInitialized(e);
+            //InitHwnd();
             //绑定快捷键
             Register();
         }
@@ -118,8 +129,7 @@ namespace xiaochao
             //初始化exe标题
             string bigtitle_exe = WindowsManager.GetWindowProcessName();
 
-
-            //初始化数据array
+            //初始化数据array，自定义Column的数量
             KeyValueAssembleList[] keyValueAssemblesArray = new KeyValueAssembleList[Column_count];
 
             //判断是否有data文件夹
@@ -171,23 +181,20 @@ namespace xiaochao
                                 //添加标题
                                 tempkeyValueAssembles.Last().SmallTitle = line_clean.Substring(1).Trim();
                                 tempkeyValueAssembles.Last().Height += Bigtitle_data_height;
-
                             }
                             else
                             {
                                 //正常数据
                                 string[] key_value = line_clean.Split(' ');
                                 if (key_value.Length < 2) break;
-                                KeyValue keyValue = new KeyValue
-                                {
-                                    Height = Normal_data_height,
-                                    Key = new KeyList(key_value[0]),
-                                    Value = key_value[1].Replace('+', ' ')
-                                };
+                                KeyValue keyValue = new KeyValue();
                                 keyValue.Height = Normal_data_height;
+                                keyValue.Key = new KeyList(key_value[0]);
+                                keyValue.Value = key_value[1].Replace('+', ' ');
                                 if (key_value.Length >= 3)
                                 {
                                     keyValue.Url = key_value[2];
+                                    tempkeyValueAssembles.Last().Ftype = FunctionType.ContainURl;
                                 }
                                 tempkeyValueAssembles.Last().KeyValues.Add(keyValue);
                                 tempkeyValueAssembles.Last().Height += Normal_data_height;
@@ -202,27 +209,36 @@ namespace xiaochao
 
 
 
-            //先初始化四个List
+            //init some Lists
             for (int i = 0; i < Column_count; i++)
             {
                 keyValueAssemblesArray[i] = new KeyValueAssembleList();
             }
 
-            //循环插入数据,判别哪个List最短插入哪个
+            //循环插入数据,判别哪个List最短插入哪个,并把最后一行空出来放带有URI的数据
             foreach (KeyValueAssemble keyValueAssemble in tempkeyValueAssembles)
             {
-                int min_length_index = 0;
-                int temp_min_length_index = 0;
-                for (int i = 0; i < Column_count; i++)
+                switch (keyValueAssemble.Ftype)
                 {
-                    if (keyValueAssemblesArray[i].height < keyValueAssemblesArray[temp_min_length_index].height)
-                    {
-                        min_length_index = i;
-                        temp_min_length_index = i;
-                    }
+                    case FunctionType.Normal:
+                        int min_length_index = 0;
+                        int temp_min_length_index = 0;
+                        for (int i = 0; i < Column_count - 1; i++)
+                        {
+                            if (keyValueAssemblesArray[i].height < keyValueAssemblesArray[temp_min_length_index].height)
+                            {
+                                min_length_index = i;
+                                temp_min_length_index = i;
+                            }
+                        }
+                        keyValueAssemblesArray[min_length_index].KeyValueAssemblesListInstance.Add(keyValueAssemble);
+                        keyValueAssemblesArray[min_length_index].height += keyValueAssemble.Height;
+                        break;
+                    case FunctionType.ContainURl:
+                        keyValueAssemblesArray[keyValueAssemblesArray.Length - 1 ].KeyValueAssemblesListInstance.Add(keyValueAssemble);
+                        keyValueAssemblesArray[keyValueAssemblesArray.Length - 1].height += keyValueAssemble.Height;
+                        break;
                 }
-                keyValueAssemblesArray[min_length_index].KeyValueAssemblesListInstance.Add(keyValueAssemble);
-                keyValueAssemblesArray[min_length_index].height += keyValueAssemble.Height;
             }
             Data = Structofdata.InitInstance(keyValueAssemblesArray, bigtitle, bigtitle_exe);
 
@@ -253,10 +269,10 @@ namespace xiaochao
             if (IsVisible)
             {
                 Hide();
+                
             }
             else
             {
-                
                 Screen screen = Screen.FromPoint(System.Windows.Forms.Cursor.Position);
                 var scaleRatio = Math.Max(VisualTreeHelper.GetDpi(this).DpiScaleX, VisualTreeHelper.GetDpi(this).DpiScaleY);
 
@@ -265,6 +281,7 @@ namespace xiaochao
                 RetrieveData();
                 Show();
                 Activate();
+                Focus();
             }
         }
 
@@ -316,12 +333,6 @@ namespace xiaochao
         /// <summary>
         /// 快捷键触发的处理方法
         /// </summary>
-        /// <param name="hwnd"></param>
-        /// <param name="msg"></param>
-        /// <param name="wParam"></param>
-        /// <param name="lParam"></param>
-        /// <param name="handled"></param>
-        /// <returns></returns>
         private IntPtr HotKeyHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
             const int WM_HOTKEY = 0x0312;
@@ -349,6 +360,7 @@ namespace xiaochao
                 System.Windows.MessageBox.Show("请自行创建 {设置.md} 文件");
                 System.Diagnostics.Process.Start("Explorer.exe", Directory.GetCurrentDirectory());
             }
+            Hide();
 
         }
 
@@ -370,9 +382,17 @@ namespace xiaochao
         {
 
             System.Diagnostics.Process.Start("Explorer.exe", Path.Combine(BaseDir, "local"));
-
+            Hide();
         }
 
+        /// <summary>
+        /// 确保窗口有Hwnd
+        /// </summary>
+        public void InitHwnd()
+        {
+            var helper = new WindowInteropHelper(this);
+            helper.EnsureHandle();
+        }
 
         //startUp
         private void StartUp(bool start)
@@ -383,7 +403,7 @@ namespace xiaochao
                 {
                     Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
                     Assembly curAssembly = Assembly.GetExecutingAssembly();
-                    key.SetValue(curAssembly.GetName().Name, "\""+AppDir+"\""+" --autostart");
+                    key.SetValue(curAssembly.GetName().Name, AppDir+" --autostart");
                 }
                 catch { }
             }
@@ -404,8 +424,31 @@ namespace xiaochao
             Close();
         }
 
+        //url被点击
+        private void Url_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Controls.Button bt = (System.Windows.Controls.Button)sender;
+            var dataContext = (KeyValue)bt.DataContext;
+            string url = dataContext.Url;
+            if(url != "")
+            {
+                System.Diagnostics.Process.Start(url);
+                Hide();
+            }
+            
+        }
 
 
+        //当窗口失去焦点时自动隐藏
+        private void Main_Deactivated(object sender, EventArgs e)
+        {
+            Hide();
+        }
 
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/BetterWorld-Liuser/XiaoChao");
+            Hide();
+        }
     }
 }

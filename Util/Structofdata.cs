@@ -135,7 +135,7 @@ namespace xiaochao
         public KeyList(string keyString)
         {
             Keys = keyString.Split('+').ToList();
-            Keys.Reverse();
+            //Keys.Reverse();
         }
     }
 
@@ -152,6 +152,7 @@ namespace xiaochao
         public List<KeyValue> KeyValues { get; set; } = new List<KeyValue>();
         public string SmallTitle { get; set; } = "";
         public int Height { get; set; } = 0;
+        public FunctionType Ftype { get; set; } = FunctionType.Normal;
     }
 
 
@@ -161,4 +162,14 @@ namespace xiaochao
         public int height = 0;
         
     }
+
+
+    public enum FunctionType
+    {
+        ContainURl,
+        Normal
+    }
 }
+
+
+    

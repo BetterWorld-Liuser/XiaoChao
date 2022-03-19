@@ -30,5 +30,14 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
 <!--#Endregion 定义button-->
+
+
+        <!--#region 定义text-->
+        <ControlTemplate x:Key="text_clickable" TargetType="Button">
+            <Grid Cursor="Hand">
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+        </ControlTemplate>
+        <!--#Endregion 定义text-->
     </Application.Resources>
 </Application>

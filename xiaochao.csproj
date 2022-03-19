@@ -57,15 +57,15 @@
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
-    <ErrorReport>none</ErrorReport>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
     <WarningLevel>2</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <DocumentationFile>bin\Release\小抄.xml</DocumentationFile>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
     <DebugSymbols>false</DebugSymbols>
     <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
   </PropertyGroup>

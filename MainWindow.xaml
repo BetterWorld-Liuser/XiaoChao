@@ -6,8 +6,8 @@
         xmlns:xiaochao ="clr-namespace:xiaochao"
         mc:Ignorable="d"
         Title="小抄" 
-        Height="700" 
-        Width="1200"
+        Height="{Binding ElementName=Main, Path=Window_Height}" 
+        Width="{Binding ElementName=Main, Path=Window_Width}"
         AllowsTransparency="True"
         WindowStyle="None"
         Background="{x:Null}" 
@@ -15,12 +15,12 @@
         WindowStartupLocation="CenterScreen" 
         WindowState="Normal"
         x:Name="Main" Foreground="{x:Null}"
-        
+        Deactivated="Main_Deactivated"
+        Topmost="True"
         >
     <Window.Resources>
 
-        
-         <!--定义字体样式:开始-->
+        <!--定义字体样式:开始-->
         <Style x:Key="TextStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="{Binding ElementName=Main,Path=ConfigManagerInstance.Font_size}"/>
             <Setter Property="Foreground" Value="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"/>
@@ -31,7 +31,7 @@
             <Border 
                 BorderThickness="1" 
                     CornerRadius="2" 
-                    Margin="1 0 3 0"
+                    Margin="2 0 2 0"
                     BorderBrush="{Binding ElementName=Main, Path=ConfigManagerInstance.Decoration_color}"
                     Background="{Binding ElementName=Main, Path=ConfigManagerInstance.Decoration_color}"
                     >
@@ -40,49 +40,52 @@
         </DataTemplate>
 
         <DataTemplate x:Key="键与值">
-            <StackPanel 
-                              Height="{Binding ElementName=Main, Path=Normal_data_height}" 
-                              Orientation="Horizontal">
-
+            <Grid Height="{Binding ElementName=Main, Path=Bigtitle_data_height}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
                 <ItemsControl Name="键的集合" 
                                     ItemsSource="{Binding Path = Key.Keys}"
                                     ItemTemplate="{StaticResource 键}"
+                                    Grid.Column="0"
                               >
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <StackPanel
-                                Height="20"
                                 VerticalAlignment="Center"
-                                FlowDirection="RightToLeft"
+                                HorizontalAlignment="Right"
+                                
                                 Orientation="Horizontal"
-                                Width="150"
+
                                             />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
                 </ItemsControl>
-
-                <TextBlock
+                <Button Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Template="{StaticResource ResourceKey=text_clickable}" Click="Url_Click" >
+                    <TextBlock
+                    Name="键的提示信息"
                     Style="{StaticResource TextStyle}"
-                    Width="216" 
                     Text="{Binding Path=Value}" 
-                    VerticalAlignment="Center">
-                </TextBlock>
-            </StackPanel>
+                    VerticalAlignment="Center" Cursor="Hand">
+                    </TextBlock>
+                </Button>
+            </Grid>
         </DataTemplate>
         
-        <DataTemplate x:Key="列表元素">
-            <StackPanel  Orientation="Vertical">
-
+        <DataTemplate x:Key="元素">
+            <StackPanel  Orientation="Vertical" Margin="10,0,10,0">
                 <Border 
                                 CornerRadius="0,0,0,0" 
                                 BorderThickness="4,0,0,0" 
                                 BorderBrush="{Binding ElementName=Main, Path=ConfigManagerInstance.Decoration_color}" 
-                                Height="30" 
+                                Height="{Binding ElementName=Main, Path=Bigtitle_data_height}" 
                                 Margin="-5 0 0 0">
                     <TextBlock Name="小标题"
                                     Margin="5 0 0 0" 
                                     VerticalAlignment="Center" 
-                                    HorizontalAlignment="Left" 
+                                    HorizontalAlignment="Left"
+                                    
                                     FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_assemble}"  
                                     Text="{Binding Path=SmallTitle}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" 
                                     FontWeight="Bold" TextDecorations="{x:Null}"/>
@@ -95,7 +98,7 @@
                                 >
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <StackPanel Width="366"></StackPanel>
+                            <StackPanel Width="{Binding ElementName=Main, Path=Colum_Item_Width}" ></StackPanel>
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
 
@@ -105,13 +108,13 @@
         
         <DataTemplate x:Key="列表">
             <ItemsControl 
-                Name="列表"
+                Name="元素集合"
                 ItemsSource="{Binding KeyValueAssemblesListInstance}"
-                ItemTemplate="{StaticResource 列表元素}"
+                ItemTemplate="{StaticResource 元素}"
                 >
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <StackPanel Width="366" Margin="12.5 0 12.5 0" Orientation="Vertical"></StackPanel>
+                        <StackPanel Width="{Binding ElementName=Main, Path=Column_Width }" Orientation="Vertical"></StackPanel>
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
@@ -122,18 +125,22 @@
     
         
         <Grid>
-        <Border Width="1200" Height="700" Background="{Binding ElementName=Main,Path=ConfigManagerInstance.Background_color}" Opacity="{Binding ElementName=Main, Path=ConfigManagerInstance.Background_opacity}" CornerRadius="9,9,9,9">
+        <Border Width="{Binding ElementName=Main, Path=Window_Width}" Height="{Binding ElementName=Main, Path=Window_Height}" Background="{Binding ElementName=Main,Path=ConfigManagerInstance.Background_color}" Opacity="{Binding ElementName=Main, Path=ConfigManagerInstance.Background_opacity}" CornerRadius="9,9,9,9">
         </Border>
-        <Grid>
-            <Grid Name="ContentField" Margin="0,0,0,65">
-                <ScrollViewer VerticalScrollBarVisibility="Hidden" Width="1100" Height="600" HorizontalAlignment="Center" VerticalAlignment="Center" >
-                    <ItemsControl  
+        <Grid Margin="0,30,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0"  Name="ContentList">
+                <ScrollViewer Margin="20,0,20,0" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Top" >
+                    <ItemsControl
                         Name="列表集合"
                         ItemsSource="{Binding ElementName=Main,Path=Data.KeyValueAssemblesListArray}" 
                         ItemTemplate="{StaticResource ResourceKey=列表}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
-                                <StackPanel Width="1100"  Orientation="Horizontal"  />
+                                <StackPanel  Orientation="Horizontal"  />
                             </ItemsPanelTemplate>
                         </ItemsControl.ItemsPanel>
                     </ItemsControl>
@@ -142,15 +149,24 @@
 
             </Grid>
             <!--put tool button-->
-            <Grid Name="toolField" Margin="0,640,0,0" ForceCursor="True">
-                <StackPanel Margin="30 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="auto" Orientation="Horizontal">
-                    <TextBlock Text="{Binding ElementName=Main, Path=Data.Bigtitle}"  TextAlignment="Center" Background="{x:Null}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"   FontFamily="Segoe UI Semibold"  Width="auto"></TextBlock>
-                    <TextBlock  Text="{Binding ElementName=Main, Path=Data.Bigtitle2}" Margin="20 0 0 0" TextAlignment="Center" Background="{x:Null}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"   FontFamily="Segoe UI Semibold"  Width="auto"></TextBlock>
-                </StackPanel>
-                <Button Template="{StaticResource button_style}" Cursor="Hand" Width="70" Height="30" Margin="0 0 180 0" VerticalAlignment="Center" HorizontalAlignment="Right"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Data_Click">添加数据</Button>
-                <Button Template="{StaticResource button_style}" Cursor="Hand" Width="70" Height="30" Margin="0 0 95 0" VerticalAlignment="Center" HorizontalAlignment="Right"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Setting_Click">设置</Button>
-                <Button Template="{StaticResource button_style}" Cursor="Hand" Width="70" Height="30" Margin="0 0 20 0" VerticalAlignment="Center" HorizontalAlignment="Right"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Quit_Click">退出</Button>
-                <TextBlock Text="{Binding ElementName=Main,Path=Version}" Width="30" Height="10" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_of_version}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"></TextBlock>
+            <Grid Grid.Row="1" Name="Tool" ForceCursor="True" Margin="20,0,20,0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"   VerticalAlignment="Center" Text="{Binding ElementName=Main, Path=Data.Bigtitle}"   Background="{x:Null}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"  ></TextBlock>
+                <TextBlock Grid.Column="1"   VerticalAlignment="Center" Text="{Binding ElementName=Main, Path=Data.Bigtitle2}" Background="{x:Null}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"  ></TextBlock>
+                <Button Grid.Column="2"  Template="{StaticResource button_style}" Cursor="Hand"  Height="30"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Update_Click" >更新</Button>
+                <Button Grid.Column="3"  Template="{StaticResource button_style}" Cursor="Hand"  Height="30"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Data_Click">添加数据</Button>
+                <Button Grid.Column="4"  Template="{StaticResource button_style}" Cursor="Hand"  Height="30"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Setting_Click">设置</Button>
+                <Button Grid.Column="5"  Template="{StaticResource button_style}" Cursor="Hand"  Height="30"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_in_Toolbar}" Click="Quit_Click">退出</Button>
+                    <TextBlock Grid.Column="6"  Text="{Binding ElementName=Main,Path=Version}" Width="30" Height="10" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_size_Title_of_version}" Foreground="{Binding ElementName=Main, Path=ConfigManagerInstance.Font_color}"></TextBlock>
             </Grid>
         </Grid>
     </Grid>
