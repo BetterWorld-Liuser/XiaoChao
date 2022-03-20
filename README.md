@@ -7,6 +7,8 @@
 ![下载量](https://img.shields.io/github/downloads/BetterWorld-Liuser/XiaoChao/total?color=%23722ED1&label=%E6%80%BB%E4%B8%8B%E8%BD%BD%E9%87%8F&style=for-the-badge)
 
 ![图1](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/白天模式.png)
+![image](https://user-images.githubusercontent.com/37199800/159149444-4e676e3b-32e2-45c8-aea4-1d6353fd4554.png)
+
 
 ![图2](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/黑夜模式.png)
 
