@@ -15,6 +15,7 @@
 ## 一句简介
 
 小抄是一款快捷键提示工具, 它会根据你目前正在使用的窗口来调整自己显示的内容. 目前比较常见的使用方式就是快捷键提示.
+I have met that some foreign friends viewed my project, Please issue without hesitation if you have any problem.
 
 ## 应用简介
 
