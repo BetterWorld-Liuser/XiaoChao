@@ -7,12 +7,15 @@
 ![下载量](https://img.shields.io/github/downloads/BetterWorld-Liuser/XiaoChao/total?color=%23722ED1&label=%E6%80%BB%E4%B8%8B%E8%BD%BD%E9%87%8F&style=for-the-badge)
 
 ![图1](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/白天模式.png)
+![image](https://user-images.githubusercontent.com/37199800/159149444-4e676e3b-32e2-45c8-aea4-1d6353fd4554.png)
+
 
 ![图2](https://github.com/BetterWorld-Liuser/XiaoChao/blob/master/picture/黑夜模式.png)
 
 ## 一句简介
 
 小抄是一款快捷键提示工具, 它会根据你目前正在使用的窗口来调整自己显示的内容. 目前比较常见的使用方式就是快捷键提示.
+I have met that some foreign friends viewed my project, Please issue without hesitation if you have any problem.
 
 ## 应用简介
 
@@ -36,19 +39,13 @@
 2. 本软件没有识别不同软件快捷的黑科技，所有快捷键数据都需要人工填写，不过，会逐渐预置快捷键。
 3. 目前支持的设置选项如下:
 
-开机启动 是/否
-
-背景色 #??????
-
-字体颜色 #??????
-
-装饰色 #??????
-
-快捷键 alt+s
-
-透明度 0-100
-
-基准大小 15
+- 开机启动 是/否
+- 背景色 #??????
+- 字体颜色 #??????
+- 装饰色 #??????
+- 快捷键 alt+s
+- 透明度 0-100
+- 基准大小 15
 
 ## 视频教程
 
@@ -75,8 +72,8 @@ https://github.com/BetterWorld-Liuser/XiaoChao
 
 如果你想快一点实现自己的需求，可以找作者定制。如果你用爽了也能捐赠给作者，啦啦啦~
 请备注自己的联系方式哟~
-当前捐赠人数：3 人
-当前捐赠总额：270 元
+当前捐赠人数：4 人
+当前捐赠总额：300 元
 
 
 **数字人民币**：0021128401398080
@@ -88,5 +85,7 @@ https://github.com/BetterWorld-Liuser/XiaoChao
 | ----------- | ---- |
 | Keith       | 200  |
 | lingchuanbo | 50   |
+| uulaile     | 30   | 
 | shuangmy    | 20   |
+
 
