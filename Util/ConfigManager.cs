@@ -89,40 +89,34 @@ namespace xiaochao
         public void InitSetting(Dictionary<string, string> config_dictionary)
         {
             //设置开机启动
-            string start_up;
-            if (config_dictionary.TryGetValue("开机启动", out start_up))
+            
+            if (config_dictionary.TryGetValue("开机启动", out string start_up))
             {
                 if (start_up == "否") Start_Up = false;
             }
 
             //设置快捷键
-            string shortcut;
-            if (config_dictionary.TryGetValue("快捷键", out shortcut)) Shortcut = shortcut;
+            if (config_dictionary.TryGetValue("快捷键", out string shortcut)) Shortcut = shortcut;
 
 
             //设置背景色
-            string backgroundcolor;
-            if (config_dictionary.TryGetValue("背景色", out backgroundcolor)) Background_color = backgroundcolor;
+            if (config_dictionary.TryGetValue("背景色", out string backgroundcolor)) Background_color = backgroundcolor;
 
             //设置透明度
-            string opacity;
-            if (config_dictionary.TryGetValue("透明度", out opacity))
+            if (config_dictionary.TryGetValue("透明度", out string opacity))
             {
                 double temp = double.Parse(opacity);
                 if (temp > 0 & temp < 100) Background_opacity = temp / 100;
             }
 
             //设置字体颜色
-            string font_color;
-            if (config_dictionary.TryGetValue("字体颜色", out font_color)) Font_color = font_color;
+            if (config_dictionary.TryGetValue("字体颜色", out string font_color)) Font_color = font_color;
 
             //设置装饰色
-            string decorationcolor;
-            if (config_dictionary.TryGetValue("装饰色", out decorationcolor)) Decoration_color = decorationcolor;
+            if (config_dictionary.TryGetValue("装饰色", out string decorationcolor)) Decoration_color = decorationcolor;
 
             //设置基准大小
-            string basesize;
-            if (config_dictionary.TryGetValue("基准大小", out basesize))
+            if (config_dictionary.TryGetValue("基准大小", out string basesize))
             {
                 Font_size = int.Parse(basesize);
             }

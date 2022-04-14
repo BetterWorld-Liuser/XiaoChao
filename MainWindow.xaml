@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:xiaochao ="clr-namespace:xiaochao"
         mc:Ignorable="d"
-        Title="小抄" 
+        Title="XiaoChao"
         Height="{Binding ElementName=Main, Path=Window_Height}" 
         Width="{Binding ElementName=Main, Path=Window_Width}"
         AllowsTransparency="True"
@@ -153,7 +153,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="10*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
                     <ColumnDefinition Width="1*"></ColumnDefinition>

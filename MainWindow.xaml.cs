@@ -18,6 +18,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Windows.Interop;
+using xiaochao.Util;
 
 namespace xiaochao
 {
@@ -38,11 +39,14 @@ namespace xiaochao
         public Structofdata Data { get; set; } = Structofdata.InitInstance();
 
         private static string BaseDir = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-        private static string AppDir = Path.Combine(BaseDir, "小抄.exe");
+        private static string AppDir = Path.Combine(BaseDir, "XiaoChao.exe");
         //data文件夹地址
         private readonly string _sub_directory = Path.Combine(BaseDir, "data");
         //local文件夹地址
         private readonly string _local_directory = Path.Combine(BaseDir, "local");
+
+        //用于全局按键的hooker，完成类似双击等操作的捕捉
+        private static WindowHooker _hooker;
 
         public ConfigManager ConfigManagerInstance { get; set; } = ConfigManager.GetInstance();
         //一条键与值的高度
@@ -79,23 +83,29 @@ namespace xiaochao
 
             //每个元素的宽度
             Colum_Item_Width = Column_Width - 20;
-            InitializeComponent();
-            
-            InitHwnd();
-            Hide();
-            Check_Directory_Exist();
 
-            //设置开机启动 2022年2月24日
+            //父类的方法
+            InitializeComponent();
+
+            InitHwnd();
+
+            Hide();
+
+            Check_Directory_Exist();
+            
+            //设置开机启动
+            //record:2022年2月24日
             StartUp(ConfigManagerInstance.Start_Up);
+
             RetrieveData();
-            //如果不是开机启动，初始化数据
+            //如果开机启动则不自动显示
             string[] args = Environment.GetCommandLineArgs();
             if (!args.Contains("--autostart"))
             {
                 Show();
             }
-            
 
+            
 
         }
 
@@ -103,8 +113,10 @@ namespace xiaochao
         {
             base.OnSourceInitialized(e);
             //InitHwnd();
-            //绑定快捷键
+            //绑定快捷键，因为只有在这个时候快捷键绑定才是有效的
             Register();
+            //HwndSource source = PresentationSource.FromVisual(this) as HwndSource;
+            //source.AddHook(WndProc);
         }
 
 
@@ -112,10 +124,11 @@ namespace xiaochao
         #endregion --------------------------构造函数-----------------------------
 
 
-        protected override void OnClosed(EventArgs e) {
+        protected override void OnClosed(EventArgs e)
+        {
             //取消注册快捷键
             NativeMethods.UnregisterHotKey(WindowsManager.GethWnd(), HOTKEY_id);
-            base.OnClosed(e); 
+            base.OnClosed(e);
         }
 
         /// <summary>
@@ -135,7 +148,7 @@ namespace xiaochao
             //判断是否有data文件夹
             bool data_exist = Directory.Exists(Path.Combine(BaseDir, "data"));
             bool local_exist = Directory.Exists(Path.Combine(BaseDir, "local"));
-            if ((!data_exist)&&(!local_exist)) return;
+            if ((!data_exist) && (!local_exist)) return;
 
 
             //搜索文件List
@@ -143,7 +156,7 @@ namespace xiaochao
             string[] local_fileArray = Directory.GetFiles(Path.Combine(BaseDir, "local"), "*.*", SearchOption.TopDirectoryOnly);
 
             //连接两个文件List
-            string[] fileArray = new string[data_fileArray.Length+local_fileArray.Length];
+            string[] fileArray = new string[data_fileArray.Length + local_fileArray.Length];
             Array.Copy(data_fileArray, fileArray, data_fileArray.Length);
             Array.Copy(local_fileArray, 0, fileArray, data_fileArray.Length, local_fileArray.Length);
 
@@ -235,7 +248,7 @@ namespace xiaochao
                         keyValueAssemblesArray[min_length_index].height += keyValueAssemble.Height;
                         break;
                     case FunctionType.ContainURl:
-                        keyValueAssemblesArray[keyValueAssemblesArray.Length - 1 ].KeyValueAssemblesListInstance.Add(keyValueAssemble);
+                        keyValueAssemblesArray[keyValueAssemblesArray.Length - 1].KeyValueAssemblesListInstance.Add(keyValueAssemble);
                         keyValueAssemblesArray[keyValueAssemblesArray.Length - 1].height += keyValueAssemble.Height;
                         break;
                 }
@@ -269,7 +282,7 @@ namespace xiaochao
             if (IsVisible)
             {
                 Hide();
-                
+
             }
             else
             {
@@ -287,7 +300,7 @@ namespace xiaochao
 
 
         /// <summary>
-        /// 注册快捷键
+        /// 注册快捷键, 需要window的handle
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -295,40 +308,35 @@ namespace xiaochao
         {
             IntPtr hWnd = new WindowInteropHelper(this).Handle;
             //HotkeyManager.Current.AddOrReplace("SwitchShow", hotkey.KeyCode, hotkey.Modifiers, HotkeyPressed);
-            Hotkey hotkey = HotkeyConverter.Convert(ConfigManagerInstance.Shortcut);
-            int _key = KeyInterop.VirtualKeyFromKey(hotkey.KeyCode);
-            
-            bool success = NativeMethods.RegisterHotKey(hWnd, HOTKEY_id, (uint)hotkey.Modifiers, (uint)_key);
-            if (!success)
+            //如果是double注册...
+            //如果不是double注册
+            if(HotkeyConverter.Convert(ConfigManagerInstance.Shortcut, out Key _key, out Hotkey _hotkey))
             {
-                System.Windows.MessageBox.Show("快捷键注册失效，请重新设置");
-                Close();
+                //注册双击click的方法
+                _hooker = new WindowHooker();
+                _hooker._c_v_key = (PInvoke.User32.VirtualKey)KeyInterop.VirtualKeyFromKey(_key);
+                _hooker.Key_activate = Switchwindow;
             }
+            else
+            {
+                int key = KeyInterop.VirtualKeyFromKey(_hotkey.KeyCode);
+                bool success = NativeMethods.RegisterHotKey(hWnd, HOTKEY_id, (uint)_hotkey.Modifiers, (uint)key);
+                if (!success)
+                {
+                    System.Windows.MessageBox.Show("快捷键注册失效，请重新设置");
+                    Close();
+                }
+            }
+
 
             HwndSource _source = HwndSource.FromHwnd(hWnd);
             _source.AddHook(HotKeyHook);
 
+
+
+
         }
 
-
-        /// <summary>
-        /// 注册WPF内部的快捷键
-        /// </summary>
-        public void RegisterWPF()
-        {
-            Hotkey hotkey = HotkeyConverter.Convert(ConfigManagerInstance.Shortcut);
-            KeyGesture CloseCmdKeyGesture = new KeyGesture(hotkey.KeyCode, hotkey.Modifiers);
-            
-            RoutedCommand myCommand = new RoutedCommand();
-            myCommand.InputGestures.Add(CloseCmdKeyGesture);
-
-            var bind = new CommandBinding { Command = myCommand };
-            bind.Executed += new ExecutedRoutedEventHandler((sender, e) => {
-                Switchwindow();
-            });
-            CommandBindings.Add(bind);
-
-            }
 
         /// <summary>
         /// 快捷键触发的处理方法
@@ -336,7 +344,7 @@ namespace xiaochao
         private IntPtr HotKeyHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
             const int WM_HOTKEY = 0x0312;
-            if (wParam== (IntPtr)HOTKEY_id && msg == WM_HOTKEY)
+            if (wParam == (IntPtr)HOTKEY_id && msg == WM_HOTKEY)
             {
                 Switchwindow();
                 handled = true;
@@ -348,7 +356,7 @@ namespace xiaochao
 
         //------------------- 工具函数 --------------------
 
-        //打开设置文件夹
+        //打开设置文件夹，必须待在MainWindow中
         private void Setting_Click(object sender, RoutedEventArgs e)
         {
             if (File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "设置.md")))
@@ -364,7 +372,7 @@ namespace xiaochao
 
         }
 
-        //检查是否有数据文件夹，没有则创建
+        //检查是否有数据文件夹，没有则创建，必须待在MainWindow中
         private void Check_Directory_Exist()
         {
             if (!Directory.Exists(_sub_directory))
@@ -377,7 +385,7 @@ namespace xiaochao
             }
         }
 
-        //打开数据文件夹
+        //打开数据文件夹，必须待在MainWindow中
         private void Data_Click(object sender, RoutedEventArgs e)
         {
 
@@ -394,27 +402,26 @@ namespace xiaochao
             helper.EnsureHandle();
         }
 
-        //startUp
+
+
+        /// <summary>
+        /// 此函数负责开机启动。
+        /// </summary>
+        /// <param name="start">true代表开机启动，false代表不</param>
         private void StartUp(bool start)
         {
             if (start)
             {
-                try
-                {
-                    Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-                    Assembly curAssembly = Assembly.GetExecutingAssembly();
-                    key.SetValue(curAssembly.GetName().Name, AppDir+" --autostart");
-                }
-                catch { }
+                Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                Assembly curAssembly = Assembly.GetExecutingAssembly();
+                key.SetValue(curAssembly.GetName().Name, AppDir + " --autostart");
+
             }
             else
             {
-                try
-                {
-                    Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-                    Assembly curAssembly = Assembly.GetExecutingAssembly();
-                    key.DeleteValue(curAssembly.GetName().Name);
-                }catch { }
+                Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                Assembly curAssembly = Assembly.GetExecutingAssembly();
+                key.DeleteValue(curAssembly.GetName().Name);
             }
         }
 
@@ -427,15 +434,21 @@ namespace xiaochao
         //url被点击
         private void Url_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Controls.Button bt = (System.Windows.Controls.Button)sender;
-            var dataContext = (KeyValue)bt.DataContext;
-            string url = dataContext.Url;
-            if(url != "")
+            try
             {
-                System.Diagnostics.Process.Start(url);
-                Hide();
+                System.Windows.Controls.Button bt = (System.Windows.Controls.Button)sender;
+                var dataContext = (KeyValue)bt.DataContext;
+                string url = dataContext.Url;
+                if (url != "")
+                {
+                    System.Diagnostics.Process.Start(url);
+                    Hide();
+                }
+            }catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show("链接有问题，请重新编辑链接");
             }
-            
+
         }
 
 
@@ -445,10 +458,25 @@ namespace xiaochao
             Hide();
         }
 
+        //更新的按钮
         private void Update_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/BetterWorld-Liuser/XiaoChao");
             Hide();
         }
+
+        //处理消息队列
+        //private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        //{
+        //    const int WM_INPUT = 0x00FF;
+
+        //    switch (msg)
+        //    {
+        //        case WM_INPUT:
+
+        //    }
+
+        //    return IntPtr.Zero;
+        //}
     }
 }

@@ -36,10 +36,6 @@
 2. 本软件没有识别不同软件快捷的黑科技，所有快捷键数据都需要人工填写，不过，会逐渐预置快捷键。
 3. 目前支持的设置选项如下:
 
-## 视频教程
-
-https://www.bilibili.com/video/BV13S4y1C7Ui?share_source=copy_web
-
 开机启动 是/否
 
 背景色 #??????
@@ -53,6 +49,11 @@ https://www.bilibili.com/video/BV13S4y1C7Ui?share_source=copy_web
 透明度 0-100
 
 基准大小 15
+
+## 视频教程
+
+https://www.bilibili.com/video/BV13S4y1C7Ui?share_source=copy_web
+
 
 # 开源地址：
 
